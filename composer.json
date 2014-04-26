@@ -9,6 +9,9 @@
             "email": "adrian.skierniewski@gmail.com"
         }
     ],
+    "require": {
+        "gzero/cms": "dev-master"
+    },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "1.*",
         "barryvdh/laravel-debugbar": "1.*"
