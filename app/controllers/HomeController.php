@@ -14,22 +14,22 @@ use Atrauzzi\LaravelDoctrine\Support\Facades\Doctrine;
  */
 class HomeController extends BaseController {
 
-    protected $pageRepository;
+    public function __construct()
+    {
+        parent::__construct();
+        $this->beforeFilter('block.build');
 
-//    public function __construct(ContentRepository $content)
-//    {
-//        parent::__construct();
 //        $this->pageRepository = $content;
-//    }
+    }
 
     public function showWelcome()
     {
-        echo 'Home';
-        $repo   = Doctrine::getRepository('Gzero\Entity\Block');
-        $blocks = $repo->getAllActive(new \Gzero\Entity\Lang('pl', 'pl_PL'));
-        foreach ($blocks as $block) {
-            var_dump($block);
-        }
+        return View::make('hello');
+//        $repo   = Doctrine::getRepository('Gzero\Entity\Block');
+//        $blocks = $repo->getAllActive(new \Gzero\Entity\Lang('pl', 'pl_PL'));
+//        foreach ($blocks as $block) {
+//            var_dump($block);
+//        }
 //        Theme::init('default');
 //        $pages = $this->pageRepository->onlyPublic()->get(1);
 //        $this->pageRepository->loadThumb($pages);
