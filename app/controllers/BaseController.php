@@ -52,22 +52,20 @@ class BaseController extends Controller {
      */
     protected function setupLayout()
     {
-//        $l = View::make(123);
-//        $l->n
         if (!is_null($this->layout)) {
             $this->layout = View::make($this->layout);
         }
     }
 
-//    protected function getRequestedUrl()
-//    {
-//        if (Config::get('gzero-cms::multilang.enabled') and !Config::get('gzero-cms::multilang.subdomain')) {
-//            $segments = Request::segments();
-//            array_shift($segments);
-//            return implode('/', $segments);
-//        }
-//        return ltrim(Request::getRequestUri(), '/');
-//    }
+    protected function getRequestedUrl()
+    {
+        if (Config::get('gzero.multilang.enabled') and !Config::get('gzero.multilang.subdomain')) {
+            $segments = Request::segments();
+            array_shift($segments);
+            return implode('/', $segments);
+        }
+        return ltrim(Request::getRequestUri(), '/');
+    }
 
 //    protected function viewShareLangs()
 //    {
