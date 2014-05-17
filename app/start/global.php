@@ -79,3 +79,9 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+
+/** @TODO Doctrine profiler */
+$debugStack = new Doctrine\DBAL\Logging\DebugStack();
+App::make('doctrine.connection')->getConfiguration()->setSQLLogger($debugStack);
+App::make('debugbar')->addCollector(new DebugBar\Bridge\DoctrineCollector($debugStack));

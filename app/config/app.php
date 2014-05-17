@@ -114,6 +114,7 @@ return array(
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
         'Atrauzzi\LaravelDoctrine\ServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
         'Gzero\Core\ServiceProvider'
 
     ),
