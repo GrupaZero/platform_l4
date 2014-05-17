@@ -33,7 +33,7 @@ return array(
     |
     */
     'metadata'          => array(
-//        __DIR__ . '/../../../../../vendor/gzero/cms/src/Gzero/Entity',
+        __DIR__ . '/../../../../../vendor/gzero/cms/src/Gzero/Entity',
         __DIR__ . '/../../../../../app/models'
     ),
     /*

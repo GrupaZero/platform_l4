@@ -1,4 +1,6 @@
 <?php
+use Gzero\Core\DynamicRouter;
+use Gzero\Entity\Lang;
 
 /**
  * This file is part of the GZERO CMS package.
@@ -14,14 +16,12 @@
 class ContentController extends BaseController {
 
     protected $router;
-    protected $contentRepository;
 
-//    public function __construct(DynamicRouter $router, ContentRepository $content)
-//    {
-//        parent::__construct();
-//        $this->router            = $router;
-//        $this->contentRepository = $content;
-//    }
+    public function __construct(DynamicRouter $router)
+    {
+        parent::__construct();
+        $this->router = $router;
+    }
 
     /**
      * Dynamic router handles CMS content
@@ -30,8 +30,9 @@ class ContentController extends BaseController {
      */
     public function dynamicRouter()
     {
-        echo 'Dynamic router! <br />';
-        dd(App::getLocale());
+        return $this->router->handleRequest($this->getRequestedUrl(), new Lang('pl', 'pl_PL'));
+
+//        dd(App::getLocale());
 //        if (!$this->getLang()) { // If no current language detected
 //            App::abort(404);
 //        }

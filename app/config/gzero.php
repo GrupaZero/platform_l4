@@ -13,6 +13,7 @@ return [
         'basic' => 'Gzero\Core\Handler\Block\Basic'
     ],
     'content_type' => [
-        'content' => 'Gzero\Handlers\Content\Content'
+        'content'  => 'Gzero\Handler\Content\Content',
+        'category' => 'Gzero\Handler\Content\Category'
     ]
 ];
