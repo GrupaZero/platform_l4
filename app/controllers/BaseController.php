@@ -22,7 +22,7 @@ class BaseController extends Controller {
 //        $this->lang     = $langRepository->getCurrent();
 //        $this->langs    = $langRepository->getAll();
 //        $this->viewShareLangs();
-//        $this->beforeFilter('block.build');
+        $this->beforeFilter('block.build');
     }
 
     /**

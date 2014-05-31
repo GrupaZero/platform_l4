@@ -29,5 +29,12 @@
         <?php endforeach; ?>
     <?php endif; ?>
 </pre>
+<hr/>
+<h3>FOOTER</h3>
+<?php if (!empty($regions)): ?>
+    <?php foreach ($regions['footer'] as $block): ?>
+        <?php echo $block->view; ?>
+    <?php endforeach; ?>
+<?php endif; ?>
 </body>
 </html>
