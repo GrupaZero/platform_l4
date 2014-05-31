@@ -14,7 +14,7 @@ return [
         'menu'  => 'Gzero\Core\Handler\Block\Menu'
     ],
     'content_type' => [
-        'content'  => 'Gzero\Handler\Content\Content',
-        'category' => 'Gzero\Handler\Content\Category'
+        'content'  => 'Gzero\Core\Handler\Content\Content',
+        'category' => 'Gzero\Core\Handler\Content\Category'
     ]
 ];

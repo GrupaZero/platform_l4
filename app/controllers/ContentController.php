@@ -30,12 +30,9 @@ class ContentController extends BaseController {
      */
     public function dynamicRouter()
     {
-        return $this->router->handleRequest($this->getRequestedUrl(), new Lang('pl', 'pl_PL'));
-
-//        dd(App::getLocale());
-//        if (!$this->getLang()) { // If no current language detected
-//            App::abort(404);
-//        }
-//        return $this->router->handleRequest($this->getRequestedUrl(), $this->getLang(), $this);
+        if (!$this->getLang()) { // If no current language detected
+            App::abort(404);
+        }
+        return $this->router->handleRequest($this->getRequestedUrl(), $this->getLang());
     }
 } 

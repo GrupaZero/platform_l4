@@ -18,10 +18,11 @@ class BaseController extends Controller {
 
     public function __construct()
     {
-//        $langRepository = App::make('Gzero\Repositories\Lang\LangRepository');
-//        $this->lang     = $langRepository->getCurrent();
-//        $this->langs    = $langRepository->getAll();
-//        $this->viewShareLangs();
+        /** @TODO We need better way to access langs */
+        $langRepository = App::make('Gzero\Repository\LangRepository');
+        $this->lang     = $langRepository->getCurrent();
+        $this->langs    = $langRepository->getAll();
+        $this->viewShareLangs();
         $this->beforeFilter('block.build');
     }
 
@@ -67,10 +68,10 @@ class BaseController extends Controller {
         return ltrim(Request::getRequestUri(), '/');
     }
 
-//    protected function viewShareLangs()
-//    {
-//        View::share('lang', $this->getLang());
-//        View::share('langs', $this->getLangs());
-//    }
+    protected function viewShareLangs()
+    {
+        View::share('lang', $this->getLang());
+        View::share('langs', $this->getLangs());
+    }
 
 }
