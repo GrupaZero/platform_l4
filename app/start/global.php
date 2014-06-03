@@ -89,11 +89,3 @@ require app_path() . '/filters.php';
 $debugStack = new Doctrine\DBAL\Logging\DebugStack();
 App::make('doctrine.connection')->getConfiguration()->setSQLLogger($debugStack);
 App::make('debugbar')->addCollector(new DebugBar\Bridge\DoctrineCollector($debugStack));
-
-
-Auth::extend(
-    'doctrine2',
-    function ($app) {
-        return new Gzero\Core\Auth\Doctrine2UserProvider(\Doctrine::getRepository('Gzero\Entity\User'));
-    }
-);
