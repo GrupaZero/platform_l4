@@ -1,0 +1,17 @@
+{% extends "../layout.twig" %}
+
+{% block title %}
+    {{ trans('common.account') }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ trans('common.account') }}</h1>
+    <h3>User</h3>
+    <p>Login: {{ auth_user().email }}</p>
+    <p>{{ trans('common.password') }}: {{ auth_user().password }}</p>
+    <p>Remember token: {{ auth_user().rememberToken|default('empty') }}</p>
+
+    <a href="{{ url_route('logout') }}"
+       title="{{ trans('common.logout') }}"
+       class="btn btn-danger">{{ trans('common.logout') }}</a>
+{% endblock %}
