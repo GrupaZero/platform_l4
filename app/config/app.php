@@ -116,8 +116,8 @@ return array(
         'Atrauzzi\LaravelDoctrine\ServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Barryvdh\Debugbar\ServiceProvider',
-        'Gzero\Core\ServiceProvider'
-
+        'Gzero\Core\ServiceProvider',
+        'Barryvdh\TwigBridge\ServiceProvider'
     ),
     /*
     |--------------------------------------------------------------------------
@@ -182,7 +182,7 @@ return array(
         'URL'         => 'Illuminate\Support\Facades\URL',
         'Validator'   => 'Illuminate\Support\Facades\Validator',
         'View'        => 'Illuminate\Support\Facades\View',
-
+        'Twig'        => 'Barryvdh\TwigBridge\Twig'
     ),
 
 );
