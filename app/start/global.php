@@ -94,6 +94,6 @@ App::make('debugbar')->addCollector(new DebugBar\Bridge\DoctrineCollector($debug
 Auth::extend(
     'doctrine2',
     function ($app) {
-        return new \Gzero\Auth\Doctrine2UserProvider(\Doctrine::getRepository('Gzero\Entity\User'));
+        return new Gzero\Core\Auth\Doctrine2UserProvider(\Doctrine::getRepository('Gzero\Entity\User'));
     }
 );
