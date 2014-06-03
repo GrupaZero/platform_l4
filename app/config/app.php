@@ -114,6 +114,7 @@ return array(
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
         'Atrauzzi\LaravelDoctrine\ServiceProvider',
+        'Barryvdh\TwigBridge\ServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Barryvdh\Debugbar\ServiceProvider',
         'Philo\Translate\TranslateServiceProvider',

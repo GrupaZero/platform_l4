@@ -1,0 +1,27 @@
+{% extends "../layout.twig" %}
+
+{% block title %}
+    Category
+{% endblock %}
+
+{% block content %}
+    <h1>Category</h1>
+    <p>ID: {{ content.getId() }}</p>
+    <p>Path: {{ content.getPath() }}</p>
+    <p>Type: {{ content.getType().getName() }}</p>
+    {% if children is not empty %}
+        <span><strong>Children:</strong></span>
+        {% for child in children %}
+            <p>ID: {{ child.getId() }}</p>
+            <p>Path: {{ child.getPath() }}</p>
+            <p>Type: {{ child.getType().getName() }}</p>
+        {% endfor %}
+    {% endif %}
+    <hr/>
+    <h3>FOOTER</h3>
+    {% if regions is not empty %}
+        {% for block in regions['footer'] %}
+            {{ block.view|raw }}
+        {% endfor %}
+    {% endif %}
+{% endblock %}
