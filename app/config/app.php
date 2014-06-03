@@ -116,8 +116,8 @@ return array(
         'Atrauzzi\LaravelDoctrine\ServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Barryvdh\Debugbar\ServiceProvider',
+        'Philo\Translate\TranslateServiceProvider',
         'Gzero\Core\ServiceProvider'
-
     ),
     /*
     |--------------------------------------------------------------------------

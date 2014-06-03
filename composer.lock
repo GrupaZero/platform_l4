@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "69b36c6c1d8af57a26e6c3d955913fb4",
+    "hash": "ba823e94bf0712a8a9236f4a4a12c88b",
     "packages": [
         {
             "name": "atrauzzi/laravel-doctrine",
@@ -3084,6 +3084,49 @@
             "time": "2014-04-25 16:30:40"
         },
         {
+            "name": "philo/laravel-translate",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhiloNL/laravel-translate.git",
+                "reference": "86fe752f555a4a4152b621b7535a305c53fa864a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhiloNL/laravel-translate/zipball/86fe752f555a4a4152b621b7535a305c53fa864a",
+                "reference": "86fe752f555a4a4152b621b7535a305c53fa864a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Philo\\Translate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Philo Hermans",
+                    "email": "me@philohermans.com"
+                }
+            ],
+            "description": "Translation manager for Laravel 4",
+            "keywords": [
+                "laravel",
+                "manager",
+                "translate",
+                "translation"
+            ],
+            "time": "2014-01-21 12:54:21"
+        },
+        {
             "name": "phpdocumentor/reflection-docblock",
             "version": "2.0.0",
             "source": {
@@ -3187,7 +3230,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "gzero/cms": 20
+        "gzero/cms": 20,
+        "philo/laravel-translate": 20
     },
     "platform": [
 
