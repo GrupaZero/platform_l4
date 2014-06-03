@@ -11,14 +11,16 @@
 |
 */
 
-ClassLoader::addDirectories(array(
+ClassLoader::addDirectories(
+    array(
 
-	app_path().'/commands',
-	app_path().'/controllers',
-	app_path().'/models',
-	app_path().'/database/seeds',
+        app_path() . '/commands',
+        app_path() . '/controllers',
+        app_path() . '/models',
+        app_path() . '/database/seeds',
 
-));
+    )
+);
 
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +33,7 @@ ClassLoader::addDirectories(array(
 |
 */
 
-Log::useFiles(storage_path().'/logs/laravel.log');
+Log::useFiles(storage_path() . '/logs/laravel.log');
 
 /*
 |--------------------------------------------------------------------------
@@ -46,10 +48,11 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 |
 */
 
-App::error(function(Exception $exception, $code)
-{
-	Log::error($exception);
-});
+App::error(
+    function (Exception $exception, $code) {
+        Log::error($exception);
+    }
+);
 
 /*
 |--------------------------------------------------------------------------
@@ -62,10 +65,11 @@ App::error(function(Exception $exception, $code)
 |
 */
 
-App::down(function()
-{
-	return Response::make("Be right back!", 503);
-});
+App::down(
+    function () {
+        return Response::make("Be right back!", 503);
+    }
+);
 
 /*
 |--------------------------------------------------------------------------
@@ -78,10 +82,18 @@ App::down(function()
 |
 */
 
-require app_path().'/filters.php';
+require app_path() . '/filters.php';
 
 
 /** @TODO Doctrine profiler */
 $debugStack = new Doctrine\DBAL\Logging\DebugStack();
 App::make('doctrine.connection')->getConfiguration()->setSQLLogger($debugStack);
 App::make('debugbar')->addCollector(new DebugBar\Bridge\DoctrineCollector($debugStack));
+
+
+Auth::extend(
+    'doctrine2',
+    function ($app) {
+        return new \Gzero\Auth\Doctrine2UserProvider(\Doctrine::getRepository('Gzero\Entity\User'));
+    }
+);
