@@ -29,9 +29,26 @@ class UserController extends BaseController {
 
     public function postLogin()
     {
-        if (Auth::attempt(array('email' => Input::get('login'), 'password' => Input::get('password')))) {
+        $credentials = [
+            'email'    => Input::get('login'),
+            'password' => Input::get('password')
+        ];
+        $remember    = Input::get('remember');
+
+        if (Auth::check() or Auth::viaRemember()) {
             return Redirect::route('account');
         }
+
+        if (!empty($remember)) {
+            if (Auth::attempt($credentials, TRUE)) {
+                return Redirect::route('account');
+            }
+        } else {
+            if (Auth::attempt($credentials)) {
+                return Redirect::route('account');
+            }
+        }
+
         return Redirect::route('login');
     }
 }
