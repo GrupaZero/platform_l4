@@ -918,15 +918,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "d0c10b934d6976f08b6e4b27939b97062a672ff4"
+                "reference": "14113607c662936bc4e57451f324dc0ab88e5d22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/d0c10b934d6976f08b6e4b27939b97062a672ff4",
-                "reference": "d0c10b934d6976f08b6e4b27939b97062a672ff4",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/14113607c662936bc4e57451f324dc0ab88e5d22",
+                "reference": "14113607c662936bc4e57451f324dc0ab88e5d22",
                 "shasum": ""
             },
             "require": {
+                "gzero/repository": "dev-master",
+                "illuminate/support": "4.1.*",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -955,7 +957,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2014-06-04 07:38:51"
+            "time": "2014-06-04 11:06:02"
         },
         {
             "name": "gzero/cms",
@@ -963,12 +965,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "4ae8dc3deaf49f809c0a7ab27e4a77b30d86d0a8"
+                "reference": "4f2ca96935880533b35cd6e33728b76041e28334"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/4ae8dc3deaf49f809c0a7ab27e4a77b30d86d0a8",
-                "reference": "4ae8dc3deaf49f809c0a7ab27e4a77b30d86d0a8",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/4f2ca96935880533b35cd6e33728b76041e28334",
+                "reference": "4f2ca96935880533b35cd6e33728b76041e28334",
                 "shasum": ""
             },
             "require": {
@@ -982,7 +984,9 @@
                 "robclancy/presenter": "1.2.0"
             },
             "replace": {
-                "gzero/entity": "self.version"
+                "gzero/core": "self.version",
+                "gzero/entity": "self.version",
+                "gzero/repository": "self.version"
             },
             "require-dev": {
                 "fzaninotto/faker": "v1.3.0",
@@ -1011,7 +1015,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-06-04 09:43:15"
+            "time": "2014-06-04 11:16:46"
         },
         {
             "name": "gzero/doctrine2-extensions",

@@ -118,7 +118,8 @@ return array(
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Barryvdh\Debugbar\ServiceProvider',
         'Philo\Translate\TranslateServiceProvider',
-        'Gzero\Core\ServiceProvider'
+        'Gzero\Core\ServiceProvider',
+        'Gzero\Api\ServiceProvider'
     ),
     /*
     |--------------------------------------------------------------------------
