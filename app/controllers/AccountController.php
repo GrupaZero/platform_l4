@@ -17,26 +17,4 @@ class AccountController extends BaseController {
     {
         return View::make('account');
     }
-
-    public function login()
-    {
-        if (Auth::check()) {
-            return Redirect::route('account');
-        }
-        return View::make('login');
-    }
-
-    public function logout()
-    {
-        Auth::logout();
-        return Redirect::route('home');
-    }
-
-    public function postLogin()
-    {
-        if (Auth::attempt(array('email' => Input::get('login'), 'password' => Input::get('password')))) {
-            return Redirect::route('account');
-        }
-        return Redirect::route('login');
-    }
 }
