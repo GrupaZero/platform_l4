@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ba823e94bf0712a8a9236f4a4a12c88b",
+    "hash": "57fe4c85da0395d3130ade84a9215eee",
     "packages": [
         {
             "name": "atrauzzi/laravel-doctrine",
@@ -528,12 +528,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "fcc2a3cfd69eec0734636838fbb782919a0447e9"
+                "reference": "e351fae65807ab46a10e878eddabd499b391cdc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/fcc2a3cfd69eec0734636838fbb782919a0447e9",
-                "reference": "fcc2a3cfd69eec0734636838fbb782919a0447e9",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/e351fae65807ab46a10e878eddabd499b391cdc9",
+                "reference": "e351fae65807ab46a10e878eddabd499b391cdc9",
                 "shasum": ""
             },
             "require": {
@@ -594,7 +594,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2014-05-21 17:49:35"
+            "time": "2014-06-04 00:56:03"
         },
         {
             "name": "doctrine/inflector",
@@ -911,6 +911,51 @@
                 "zf2"
             ],
             "time": "2013-12-04 14:19:30"
+        },
+        {
+            "name": "gzero/api",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrupaZero/api.git",
+                "reference": "d0c10b934d6976f08b6e4b27939b97062a672ff4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/d0c10b934d6976f08b6e4b27939b97062a672ff4",
+                "reference": "d0c10b934d6976f08b6e4b27939b97062a672ff4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+
+                ],
+                "psr-4": {
+                    "Gzero\\": "src/Gzero"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Skierniewski",
+                    "email": "adrian.skierniewski@gmail.com",
+                    "homepage": "https://github.com/AdrianSkierniewski"
+                }
+            ],
+            "description": "Gzero API",
+            "keywords": [
+                "api",
+                "cms",
+                "laravel"
+            ],
+            "time": "2014-06-04 07:38:51"
         },
         {
             "name": "gzero/cms",
@@ -1648,12 +1693,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "c4b592298c8b83e05da3c791a2e0ab26e49708aa"
+                "reference": "a8862f0fdd716f0d99d6cce3b2eacbd1342b0132"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/c4b592298c8b83e05da3c791a2e0ab26e49708aa",
-                "reference": "c4b592298c8b83e05da3c791a2e0ab26e49708aa",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/a8862f0fdd716f0d99d6cce3b2eacbd1342b0132",
+                "reference": "a8862f0fdd716f0d99d6cce3b2eacbd1342b0132",
                 "shasum": ""
             },
             "require": {
@@ -1690,7 +1735,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-05-30 10:22:12"
+            "time": "2014-06-03 14:57:22"
         },
         {
             "name": "psr/log",
@@ -2383,12 +2428,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "084a126a36ed011b098158d4d28daa9883ecc8f7"
+                "reference": "1bf2554713702ed304a57cc12c4a674403dadd1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/084a126a36ed011b098158d4d28daa9883ecc8f7",
-                "reference": "084a126a36ed011b098158d4d28daa9883ecc8f7",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/1bf2554713702ed304a57cc12c4a674403dadd1f",
+                "reference": "1bf2554713702ed304a57cc12c4a674403dadd1f",
                 "shasum": ""
             },
             "require": {
@@ -2447,7 +2492,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2014-05-31 18:42:13"
+            "time": "2014-06-01 15:15:23"
         },
         {
             "name": "symfony/process",
@@ -2750,12 +2795,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/TwigBridge.git",
-                "reference": "6e992ba3e5b005500ffb2a6d13ab7a36dd946f93"
+                "reference": "078208ec7b55bd3b54a4fca8b0dd6b7a3d671c93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/TwigBridge/zipball/6e992ba3e5b005500ffb2a6d13ab7a36dd946f93",
-                "reference": "6e992ba3e5b005500ffb2a6d13ab7a36dd946f93",
+                "url": "https://api.github.com/repos/symfony/TwigBridge/zipball/078208ec7b55bd3b54a4fca8b0dd6b7a3d671c93",
+                "reference": "078208ec7b55bd3b54a4fca8b0dd6b7a3d671c93",
                 "shasum": ""
             },
             "require": {
@@ -2815,7 +2860,7 @@
             ],
             "description": "Symfony Twig Bridge",
             "homepage": "http://symfony.com",
-            "time": "2014-05-26 15:36:48"
+            "time": "2014-06-03 08:31:36"
         },
         {
             "name": "twig/twig",
@@ -3230,6 +3275,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "gzero/api": 20,
         "gzero/cms": 20,
         "philo/laravel-translate": 20
     },
