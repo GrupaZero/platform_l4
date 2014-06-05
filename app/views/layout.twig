@@ -49,18 +49,20 @@
         <!--/.nav-collapse -->
     </div>
 </div>
-{% if regions['header'] is not empty %}
-    <div class="container">
-        <div class="row">
-            {% for block in regions['header'] %}
-                <div class="col-md-6">
-                    {{ block.view|raw }}
-                </div>
-            {% endfor %}
+{% block header_region %}
+    {% if regions['header'] is not empty %}
+        <div class="container">
+            <div class="row">
+                {% for block in regions['header'] %}
+                    <div class="col-md-6">
+                        {{ block.view|raw }}
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-    </div>
-    <hr>
-{% endif %}
+        <hr>
+    {% endif %}
+{% endblock %}
 
 <!-- Begin page content -->
 <div id="content" class="container">
@@ -70,23 +72,26 @@
         </div>
     {% endblock %}
 </div>
-{% if regions['footer'] is not empty %}
-    <hr>
-    <div class="container">
-        <div class="row">
-            {% for block in regions['footer'] %}
-                <div class="col-md-4">
-                    {{ block.view|raw }}
-                </div>
-            {% endfor %}
+{% block footer_region %}
+    {% if regions['footer'] is not empty %}
+        <hr>
+        <div class="container">
+            <div class="row">
+                {% for block in regions['footer'] %}
+                    <div class="col-md-4">
+                        {{ block.view|raw }}
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-    </div>
-{% endif %}
+    {% endif %}
+{% endblock %}
+
 <div id="footer">
     <div class="container">
-        <p class="text-muted">&copy; Copyright 2011 by G-ZERO</p>
         <script src="/js/common.js"></script>
         {% block footer %}
+            <p class="text-muted">&copy; Copyright 2011 by G-ZERO</p>
         {% endblock %}
     </div>
 </div>
