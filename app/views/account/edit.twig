@@ -10,11 +10,11 @@
     <div class="col-md-4 col-md-offset-4">
         <form id="edit-account-form" action="#" method="post" class="form-horizontal" role="form">
             <div class="form-group">
-                <label for="login">{{ trans('common.firstName') }}</label>
+                <label for="firstName">{{ trans('common.firstName') }}</label>
                 <input type="text" id="firstName" name="firstName" class="form-control" value="{{ auth_user().firstName }}">
             </div>
             <div class="form-group">
-                <label for="login">{{ trans('common.lastName') }}</label>
+                <label for="lastName">{{ trans('common.lastName') }}</label>
                 <input type="text" id="lastName" name="lastName" class="form-control" value="{{ auth_user().lastName }}">
             </div>
             <div class="form-group">

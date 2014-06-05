@@ -34,6 +34,8 @@ Route::group(
 
         Route::get('login', ['as' => 'login', 'uses' => 'UserController@login']);
         Route::post('login', ['as' => 'post.login', 'uses' => 'UserController@postLogin']);
+        Route::get('register', ['as' => 'register', 'uses' => 'UserController@register']);
+        Route::post('register', ['as' => 'post.register', 'uses' => 'UserController@postRegister']);
         Route::get('logout', ['as' => 'logout', 'uses' => 'UserController@logout']);
         Route::get('/', ['as' => 'home', 'uses' => 'HomeController@showWelcome']);
         Route::get('{path?}', 'ContentController@dynamicRouter')->where('path', '.*');
