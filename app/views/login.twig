@@ -5,9 +5,10 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{{ trans('common.login') }}</h1>
     <div class="col-md-4 col-md-offset-4">
-        <form class="form-horizontal" method="post" role="form">
+        <h1 class="page-header">{{ trans('common.login') }}</h1>
+
+        <form method="post" role="form">
             <div class="form-group">
                 <label for="login">Login</label>
                 <input type="email" id="login" name="login" class="form-control" placeholder="Login">
@@ -17,7 +18,7 @@
                 <input type="password" id="password" name="password" class="form-control" placeholder="Password">
             </div>
             <div class="form-group">
-                <div class="checkbox col-md-4 col-md-offset-4">
+                <div class="checkbox">
                     <label>
                         <input type="checkbox" name="remember"> {{ trans('common.remember') }}
                     </label>
