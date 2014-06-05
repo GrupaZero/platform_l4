@@ -17,11 +17,4 @@
             <p>Type: {{ child.getType().getName() }}</p>
         {% endfor %}
     {% endif %}
-    <hr/>
-    <h3>FOOTER</h3>
-    {% if regions is not empty %}
-        {% for block in regions['footer'] %}
-            {{ block.view|raw }}
-        {% endfor %}
-    {% endif %}
 {% endblock %}
