@@ -23,6 +23,17 @@
             .container .text-muted {
                 margin : 20px 0;
             }
+
+            /* Main marketing message and sign up button */
+            .jumbotron {
+                text-align       : center;
+                background-color : transparent;
+            }
+
+            .jumbotron .btn {
+                padding   : 14px 24px;
+                font-size : 21px;
+            }
         </style>
     {% endblock %}
 </head>
@@ -68,8 +79,13 @@
 <!-- Begin page content -->
 <div id="content" class="container">
     {% block content %}
-        <div class="page-header">
-            <h1>Frontend</h1>
+        <div class="jumbotron">
+            <h1>Marketing stuff!</h1>
+
+            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo,
+                tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+
+            <p><a class="btn btn-lg btn-success" href="{{ url_route('register') }}" role="button">Get started today</a></p>
         </div>
     {% endblock %}
 </div>
