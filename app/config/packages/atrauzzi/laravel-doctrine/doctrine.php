@@ -13,14 +13,13 @@ return array(
     */
 
     'connection'        => array(
-
         'driver'   => 'pdo_mysql',
         'user'     => 'doctrine2',
         'password' => 'test',
         'dbname'   => 'doctrine2',
         'host'     => 'localhost',
-        'prefix'   => ''
-
+        'prefix'   => '',
+        'charset'  => 'utf8'
     ),
     /*
     |--------------------------------------------------------------------------
