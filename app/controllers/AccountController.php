@@ -17,4 +17,9 @@ class AccountController extends BaseController {
     {
         return View::make('account');
     }
+
+    public function edit()
+    {
+        return View::make('account.edit');
+    }
 }

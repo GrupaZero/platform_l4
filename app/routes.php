@@ -21,6 +21,14 @@ Route::group(
             ['before' => 'auth'],
             function () {
                 Route::get('account', ['as' => 'account', 'uses' => 'AccountController@account']);
+                Route::get('account/edit', ['as' => 'account.edit', 'uses' => 'AccountController@edit']);
+
+                Route::group(
+                    ['prefix' => 'api/v1'],
+                    function () {
+                        Route::resource('account', 'AccountApiController', ['only' => ['show', 'update', 'destroy']]);
+                    }
+                );
             }
         );
 

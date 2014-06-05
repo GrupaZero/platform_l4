@@ -1,12 +1,15 @@
 <?php
 
-# modified at 04-06-2014 07:35
+# modified at 05-06-2014 10:12
 
 return  array(
-	'account'    => 'Account',
-	'login'      => 'Login',
-	'logout'     => 'Logout',
-	'password'   => 'Password',
-	'remember'   => 'Remember me',
-	'submit'     => 'Submit',
+	'account'     => 'Account',
+	'edit'        => 'Edit',
+	'firstName'   => 'First Name',
+	'lastName'    => 'Last Name',
+	'login'       => 'Login',
+	'logout'      => 'Logout',
+	'password'    => 'Password',
+	'remember'    => 'Remember me',
+	'submit'      => 'Submit',
 );
