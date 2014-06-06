@@ -13,8 +13,6 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <style>
             #footer {
-                position         : absolute;
-                bottom           : 0;
                 width            : 100%;
                 height           : 60px;
                 background-color : #f5f5f5;
@@ -70,7 +68,7 @@
     </div>
 </div>
 {% block header_region %}
-    {% if regions['header'] is not empty %}
+    {% if regions['header'] is defined %}
         <div class="container">
             <div class="row">
                 {% for block in regions['header'] %}
@@ -98,7 +96,7 @@
     {% endblock %}
 </div>
 {% block footer_region %}
-    {% if regions['footer'] is not empty %}
+    {% if regions['footer'] is defined %}
         <hr>
         <div class="container">
             <div class="row">
