@@ -1,3 +1,21 @@
-<h2>{{ translations.getTitle() }}</h2>
-<p>{{ translations.getBody() }}</p>
-<p>Menu id: {{ menu.id }}</p>
+{% macro menuTree(menu) %}
+    {% for link in menu %}
+        <li>
+            <p>Link id: {{ link.id }}</p>
+
+            <p>Link path: {{ link.path }}</p>
+
+            {% if link.children is defined %}
+                <ul>
+                    {{ _self.menuTree(link.children) }}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+{% endmacro %}
+
+{% import _self as macros %}
+
+<ul>
+    {{ macros.menuTree(menu) }}
+</ul>
