@@ -1,23 +1,67 @@
 {% extends "../layout.twig" %}
 
+{% block head %}
+    {{ parent() }}
+    <link rel="stylesheet" href="/css/jquery.metisMenu.css">
+{% endblock head %}
+
 {% block title %}
     {{ trans('common.account') }}
-{% endblock %}
+{% endblock title %}
 
 {% block content %}
-    <h1>{{ trans('common.account') }}</h1>
-    <h3>User</h3>
-    <p>Login: {{ auth_user().email }}</p>
-    <p>{{ trans('common.password') }}: {{ auth_user().password }}</p>
-    <p>Remember token: {{ auth_user().rememberToken|default('empty') }}</p>
+    <div class="navbar-default col-md-3" role="navigation">
+        <ul class="nav" id="side-menu">
+            <li>
+                <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li{{ (url_full() ==  url_route('home')) ? ' class="active"' : '' }}>
+                        <a href="{{ url_route('home') }}">Home</a>
+                    </li>
+                    <li{{ (url_full() ==  url_route('login')) ? ' class="active"' : '' }}>
+                        <a href="{{ url_route('login') }}">{{ trans('common.login') }}</a>
+                    </li>
+                    <li{{ (url_full() ==  url_route('register')) ? ' class="active"' : '' }}>
+                        <a href="{{ url_route('register') }}">{{ trans('common.register') }}</a>
+                    </li>
+                    <li{{ (url_full() ==  url_route('logout')) ? ' class="active"' : '' }}>
+                        <a href="{{ url_route('logout') }}">{{ trans('common.logout') }}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- /#side-menu -->
+    </div>
 
-    <a href="{{ url_route('logout') }}"
-       title="{{ trans('common.logout') }}"
-       class="btn btn-danger">{{ trans('common.logout') }}</a>
+    <div class="col-md-9">
+        <h1>{{ trans('common.account') }}</h1>
+
+        <h3>User</h3>
+
+        <p>Login: {{ auth_user().email }}</p>
+
+        <p>{{ trans('common.password') }}: {{ auth_user().password }}</p>
+
+        <p>Remember token: {{ auth_user().rememberToken|default('empty') }}</p>
+
+        <a href="{{ url_route('logout') }}"
+           title="{{ trans('common.logout') }}"
+           class="btn btn-danger">{{ trans('common.logout') }}</a>
+    </div>
 {% endblock %}
 
 {% block header_region %}
 {% endblock %}
 
 {% block footer_region %}
+{% endblock %}
+
+{% block footer %}
+    {{ parent() }}
+    <script src="/js/jquery.metisMenu.js"></script>
+    <script>
+        $(function () {
+            $("#side-menu").metisMenu();
+        });
+    </script>
 {% endblock %}
