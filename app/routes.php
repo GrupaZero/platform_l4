@@ -36,6 +36,10 @@ Route::group(
         Route::post('login', ['as' => 'post.login', 'uses' => 'UserController@postLogin']);
         Route::get('register', ['as' => 'register', 'uses' => 'UserController@register']);
         Route::post('register', ['as' => 'post.register', 'uses' => 'UserController@postRegister']);
+        Route::get('remind', ['as' => 'remind', 'uses' => 'UserController@remind']);
+        Route::post('remind', ['as' => 'post.remind', 'uses' => 'UserController@postRemind']);
+        Route::get('reset', ['as' => 'reset', 'uses' => 'UserController@reset']);
+        Route::post('reset', ['as' => 'post.reset', 'uses' => 'UserController@postReset']);
         Route::get('logout', ['as' => 'logout', 'uses' => 'UserController@logout']);
         Route::get('/', ['as' => 'home', 'uses' => 'HomeController@showWelcome']);
         Route::get('{path?}', 'ContentController@dynamicRouter')->where('path', '.*');

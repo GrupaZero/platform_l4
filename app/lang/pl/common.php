@@ -1,17 +1,19 @@
 <?php
 
-# modified at 05-06-2014 12:47
+# modified at 06-06-2014 07:59
 
 return  array(
-	'account'     => 'Konto',
-	'edit'        => 'Edytuj',
-	'email'       => 'E-mail',
-	'firstName'   => 'Imię',
-	'lastName'    => 'Nazwisko',
-	'login'       => 'Zaloguj',
-	'logout'      => 'Wyloguj',
-	'password'    => 'Hasło',
-	'register'    => 'Zarejestruj',
-	'remember'    => 'Zapamiętaj mnie',
-	'submit'      => 'Wyślij',
+	'account'        => 'Konto',
+	'edit'           => 'Edytuj',
+	'email'          => 'E-mail',
+	'firstName'      => 'Imię',
+	'lastName'       => 'Nazwisko',
+	'login'          => 'Zaloguj',
+	'logout'         => 'Wyloguj',
+	'passReminder'   => 'Przypomnienie hasła',
+	'password'       => 'Hasło',
+	'register'       => 'Zarejestruj',
+	'remember'       => 'Zapamiętaj mnie',
+	'sendReminder'   => 'Wyślij przypomnienie',
+	'submit'         => 'Wyślij',
 );

@@ -12,17 +12,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atrauzzi/laravel-doctrine.git",
-                "reference": "12cc3d900676daeface17c1fe464b7b6ad956bd9"
+                "reference": "41e5abec64a52e505e90ae6d07021b31ff982751"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atrauzzi/laravel-doctrine/zipball/12cc3d900676daeface17c1fe464b7b6ad956bd9",
-                "reference": "12cc3d900676daeface17c1fe464b7b6ad956bd9",
+                "url": "https://api.github.com/repos/atrauzzi/laravel-doctrine/zipball/41e5abec64a52e505e90ae6d07021b31ff982751",
+                "reference": "41e5abec64a52e505e90ae6d07021b31ff982751",
                 "shasum": ""
             },
             "require": {
-                "doctrine/migrations": "1.*",
-                "doctrine/orm": "2.4.0",
+                "doctrine/migrations": "dev-master#46a031ddaea47d0685200027cfe8c83b02aee6f6",
+                "doctrine/orm": "2.4.*",
                 "illuminate/support": "4.*",
                 "php": ">=5.3.0"
             },
@@ -53,7 +53,7 @@
                 "laravel",
                 "orm"
             ],
-            "time": "2014-03-09 22:28:08"
+            "time": "2014-06-06 02:08:58"
         },
         {
             "name": "barryvdh/laravel-twigbridge",
@@ -382,12 +382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "97475b2761f22cd9817c135283ad1079543a4586"
+                "reference": "77bc8cc35b33a2bcdaf5bc2c99fdcab8773f02a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/97475b2761f22cd9817c135283ad1079543a4586",
-                "reference": "97475b2761f22cd9817c135283ad1079543a4586",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/77bc8cc35b33a2bcdaf5bc2c99fdcab8773f02a0",
+                "reference": "77bc8cc35b33a2bcdaf5bc2c99fdcab8773f02a0",
                 "shasum": ""
             },
             "require": {
@@ -442,7 +442,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2014-05-07 01:20:20"
+            "time": "2014-06-05 18:37:07"
         },
         {
             "name": "doctrine/common",
@@ -787,16 +787,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.0",
+            "version": "2.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "57705e0d781719b96daf322a6d6f66ff21e3cdc9"
+                "reference": "859465b6919967a45eabcfd5b26036988a30ffc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/57705e0d781719b96daf322a6d6f66ff21e3cdc9",
-                "reference": "57705e0d781719b96daf322a6d6f66ff21e3cdc9",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/859465b6919967a45eabcfd5b26036988a30ffc1",
+                "reference": "859465b6919967a45eabcfd5b26036988a30ffc1",
                 "shasum": ""
             },
             "require": {
@@ -859,7 +859,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-09-07 16:19:56"
+            "time": "2014-06-03 19:43:21"
         },
         {
             "name": "filp/whoops",
@@ -1023,12 +1023,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdrianSkierniewski/doctrine2-extensions.git",
-                "reference": "f9cd7fc0dde670683a9b90547cbe5be00e0d92b9"
+                "reference": "c2897490a4c4950da47ed4cf749cf535c37cbcf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdrianSkierniewski/doctrine2-extensions/zipball/f9cd7fc0dde670683a9b90547cbe5be00e0d92b9",
-                "reference": "f9cd7fc0dde670683a9b90547cbe5be00e0d92b9",
+                "url": "https://api.github.com/repos/AdrianSkierniewski/doctrine2-extensions/zipball/c2897490a4c4950da47ed4cf749cf535c37cbcf6",
+                "reference": "c2897490a4c4950da47ed4cf749cf535c37cbcf6",
                 "shasum": ""
             },
             "require": {
@@ -1058,7 +1058,7 @@
             "keywords": [
                 "doctrine2"
             ],
-            "time": "2014-04-24 08:41:36"
+            "time": "2014-06-05 17:30:54"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -1390,12 +1390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "016423a804140a33814b8fad4240dbfa49a884da"
+                "reference": "25b16e801979098cb2f120e697bfce454b18bf23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/016423a804140a33814b8fad4240dbfa49a884da",
-                "reference": "016423a804140a33814b8fad4240dbfa49a884da",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/25b16e801979098cb2f120e697bfce454b18bf23",
+                "reference": "25b16e801979098cb2f120e697bfce454b18bf23",
                 "shasum": ""
             },
             "require": {
@@ -1423,7 +1423,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9.x-dev"
+                    "dev-master": "1.10.x-dev"
                 }
             },
             "autoload": {
@@ -1450,7 +1450,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-05-29 15:04:35"
+            "time": "2014-06-04 16:30:04"
         },
         {
             "name": "nesbot/carbon",
@@ -1600,12 +1600,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "8b7a605c0f06acb9d3def47b6591fa7ce6c476f6"
+                "reference": "25d31e5867eff112d747a1f5e13d582b1a2392f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/8b7a605c0f06acb9d3def47b6591fa7ce6c476f6",
-                "reference": "8b7a605c0f06acb9d3def47b6591fa7ce6c476f6",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/25d31e5867eff112d747a1f5e13d582b1a2392f8",
+                "reference": "25d31e5867eff112d747a1f5e13d582b1a2392f8",
                 "shasum": ""
             },
             "require": {
@@ -1689,7 +1689,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2014-06-02 10:51:21"
+            "time": "2014-06-05 14:56:34"
         },
         {
             "name": "predis/predis",
@@ -2380,12 +2380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "138498f3d64981cfafcb5eec3b2b96fce44a178e"
+                "reference": "d11199a98cc8f1338410fe2340581310f19829e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/138498f3d64981cfafcb5eec3b2b96fce44a178e",
-                "reference": "138498f3d64981cfafcb5eec3b2b96fce44a178e",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/d11199a98cc8f1338410fe2340581310f19829e2",
+                "reference": "d11199a98cc8f1338410fe2340581310f19829e2",
                 "shasum": ""
             },
             "require": {
@@ -2426,7 +2426,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-05-22 16:21:00"
+            "time": "2014-06-06 03:56:41"
         },
         {
             "name": "symfony/http-kernel",
