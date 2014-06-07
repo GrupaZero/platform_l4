@@ -1,6 +1,6 @@
 <?php
 
-# modified at 06-06-2014 07:59
+# modified at 07-06-2014 08:13
 
 return  array(
 	'account'        => 'Konto',

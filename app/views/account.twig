@@ -10,24 +10,34 @@
 {% endblock title %}
 
 {% block content %}
-    <div class="navbar-default col-md-3" role="navigation">
+    <div class="col-md-3" role="navigation">
         <ul class="nav" id="side-menu">
             <li>
-                <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard<span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-user fa-fw"></i> {{ trans('user.my_account') }}
+                    <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li{{ (url_full() ==  url_route('home')) ? ' class="active"' : '' }}>
-                        <a href="{{ url_route('home') }}">Home</a>
+                    <li>
+                        <a href="#">{{ trans('user.edit_account') }}</a>
                     </li>
-                    <li{{ (url_full() ==  url_route('login')) ? ' class="active"' : '' }}>
-                        <a href="{{ url_route('login') }}">{{ trans('common.login') }}</a>
-                    </li>
-                    <li{{ (url_full() ==  url_route('register')) ? ' class="active"' : '' }}>
-                        <a href="{{ url_route('register') }}">{{ trans('common.register') }}</a>
-                    </li>
-                    <li{{ (url_full() ==  url_route('logout')) ? ' class="active"' : '' }}>
+                    <li>
                         <a href="{{ url_route('logout') }}">{{ trans('common.logout') }}</a>
                     </li>
                 </ul>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-dollar fa-fw"></i>{{ trans('user.payments') }} <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li>
+                        <a href="#">{{ trans('user.edit_billing_informations') }}</a>
+                    </li>
+                    <li>
+                        <a href="#">{{ trans('user.my_subscriptions') }}</a>
+                    </li>
+                    <li>
+                        <a href="#">{{ trans('user.my_invoices') }}</a>
+                    </li>
+                </ul>
+
             </li>
         </ul>
         <!-- /#side-menu -->
@@ -61,7 +71,9 @@
     <script src="/js/jquery.metisMenu.js"></script>
     <script>
         $(function () {
-            $("#side-menu").metisMenu();
+            $("#side-menu").metisMenu({
+                toggle: false
+            });
         });
     </script>
 {% endblock %}
