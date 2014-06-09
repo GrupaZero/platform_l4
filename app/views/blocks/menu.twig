@@ -1,9 +1,7 @@
 {% macro menuTree(menu) %}
     {% for link in menu %}
         <li>
-            <p>Link id: {{ link.id }}</p>
-
-            <p>Link path: {{ link.path }}</p>
+            <p>Link id: {{ link.id }} path: {{ link.path }}</p>
 
             {% if link.children is defined %}
                 <ul>

@@ -27,8 +27,21 @@ Route::group(
                     ['prefix' => 'api/v1'],
                     function () {
                         Route::resource('account', 'AccountApiController', ['only' => ['show', 'update', 'destroy']]);
+                        Route::resource(
+                            'contents',
+                            'AdminContentApiController',
+                            ['only' => ['index', 'show', 'update', 'destroy']]
+                        );
                     }
                 );
+            }
+        );
+
+        Route::group(
+            ['prefix' => 'api/v1'],
+            function () {
+                Route::resource('contents', 'ContentApiController', ['only' => ['show']]);
+                Route::get('contents/{content}/children', 'ContentApiController@children');
             }
         );
 
