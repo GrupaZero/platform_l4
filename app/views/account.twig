@@ -1,21 +1,16 @@
 {% extends "../layout.twig" %}
 
-{% block head %}
-    {{ parent() }}
-    <link rel="stylesheet" href="/css/jquery.metisMenu.css">
-{% endblock head %}
-
 {% block title %}
     {{ trans('common.account') }}
 {% endblock title %}
 
 {% block content %}
     <div class="col-md-3" role="navigation">
-        <ul class="nav" id="side-menu">
+        <ul class="nav nav-pills nav-stacked">
             <li>
                 <a href="#"><i class="fa fa-user fa-fw"></i> {{ trans('user.my_account') }}
-                    <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse">
+                    <i class="fa arrow"></i></a>
+                <ul class="nav collapse">
                     <li>
                         <a href="#">{{ trans('user.edit_account') }}</a>
                     </li>
@@ -25,8 +20,8 @@
                 </ul>
             </li>
             <li>
-                <a href=""><i class="fa fa-dollar fa-fw"></i>{{ trans('user.payments') }} <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse">
+                <a href=""><i class="fa fa-dollar fa-fw"></i>{{ trans('user.payments') }} <i class="fa arrow"></i></a>
+                <ul class="nav collapse">
                     <li>
                         <a href="#">{{ trans('user.edit_billing_informations') }}</a>
                     </li>

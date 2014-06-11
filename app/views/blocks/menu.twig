@@ -1,12 +1,13 @@
 {% macro menuTree(menu) %}
     {% for link in menu %}
         <li>
-            <p>Link id: {{ link.id }} path: {{ link.path }}</p>
-
             {% if link.children is defined %}
-                <ul>
+                <a href="#">Link id: {{ link.id }} path: {{ link.path }} <i class="fa arrow"></i></a>
+                <ul class="nav collapse">
                     {{ _self.menuTree(link.children) }}
                 </ul>
+            {% else %}
+                <a href="#">Link id: {{ link.id }} path: {{ link.path }}</a>
             {% endif %}
         </li>
     {% endfor %}
@@ -14,6 +15,6 @@
 
 {% import _self as macros %}
 
-<ul>
+<ul class="nav nav-pills nav-stacked">
     {{ macros.menuTree(menu) }}
 </ul>

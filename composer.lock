@@ -61,12 +61,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-twigbridge.git",
-                "reference": "c026de67a6883662e5e8c5d0c7a4f919dbd0551d"
+                "reference": "98cdf67ab29ca145191235db909683efa9837dc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-twigbridge/zipball/c026de67a6883662e5e8c5d0c7a4f919dbd0551d",
-                "reference": "c026de67a6883662e5e8c5d0c7a4f919dbd0551d",
+                "url": "https://api.github.com/repos/barryvdh/laravel-twigbridge/zipball/98cdf67ab29ca145191235db909683efa9837dc1",
+                "reference": "98cdf67ab29ca145191235db909683efa9837dc1",
                 "shasum": ""
             },
             "require": {
@@ -105,7 +105,7 @@
                 "twigbridge",
                 "views"
             ],
-            "time": "2014-05-30 08:57:23"
+            "time": "2014-06-06 06:53:08"
         },
         {
             "name": "bigecko/laravel-theme",
@@ -1153,12 +1153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "1bbb6f16aa03c1de6d89ccbf4ca81bf98e1330ab"
+                "reference": "a80acd8150ea04e74be3bff987e1d5e73d31e983"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/1bbb6f16aa03c1de6d89ccbf4ca81bf98e1330ab",
-                "reference": "1bbb6f16aa03c1de6d89ccbf4ca81bf98e1330ab",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/a80acd8150ea04e74be3bff987e1d5e73d31e983",
+                "reference": "a80acd8150ea04e74be3bff987e1d5e73d31e983",
                 "shasum": ""
             },
             "require": {
@@ -1262,7 +1262,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-06-01 18:30:26"
+            "time": "2014-06-06 16:07:01"
         },
         {
             "name": "machuga/authority",
