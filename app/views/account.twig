@@ -60,15 +60,3 @@
 
 {% block footer_region %}
 {% endblock %}
-
-{% block footer %}
-    {{ parent() }}
-    <script src="/js/jquery.metisMenu.js"></script>
-    <script>
-        $(function () {
-            $("#side-menu").metisMenu({
-                toggle: false
-            });
-        });
-    </script>
-{% endblock %}

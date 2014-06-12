@@ -200,6 +200,9 @@
 </div>
 <div id="footer">
     <div class="container">
+        {% block footer %}
+            <p class="text-muted">&copy; Copyright 2011 by G-ZERO</p>
+        {% endblock %}
         <script src="/js/common.js"></script>
         <script src="/js/jquery.metisMenu.js"></script>
         <script>
@@ -209,9 +212,6 @@
                 });
             });
         </script>
-        {% block footer %}
-            <p class="text-muted">&copy; Copyright 2011 by G-ZERO</p>
-        {% endblock %}
     </div>
 </div>
 </body>
