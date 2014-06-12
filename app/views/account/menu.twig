@@ -1,7 +1,7 @@
 {% macro menuTree(menu) %}
     {% for link in menu %}
         <li{{ (url_full() ==  link.url) ? ' class="active"' : '' }}>
-            {% if link.children is defined %}
+            {% if link.children %}
                 <a href="#">{{ trans(link.title) }} <i class="fa arrow"></i></a>
                 <ul class="nav collapse">
                     {{ _self.menuTree(link.children) }}
