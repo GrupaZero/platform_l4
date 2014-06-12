@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "57fe4c85da0395d3130ade84a9215eee",
+    "hash": "fcb10c491fff4a7604904926cd3e256e",
     "packages": [
         {
             "name": "atrauzzi/laravel-doctrine",
@@ -61,12 +61,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-twigbridge.git",
-                "reference": "98cdf67ab29ca145191235db909683efa9837dc1"
+                "reference": "cafd468fe4da3bee3ae7afba956442c652453f0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-twigbridge/zipball/98cdf67ab29ca145191235db909683efa9837dc1",
-                "reference": "98cdf67ab29ca145191235db909683efa9837dc1",
+                "url": "https://api.github.com/repos/barryvdh/laravel-twigbridge/zipball/cafd468fe4da3bee3ae7afba956442c652453f0c",
+                "reference": "cafd468fe4da3bee3ae7afba956442c652453f0c",
                 "shasum": ""
             },
             "require": {
@@ -105,7 +105,7 @@
                 "twigbridge",
                 "views"
             ],
-            "time": "2014-06-06 06:53:08"
+            "time": "2014-06-09 14:01:33"
         },
         {
             "name": "bigecko/laravel-theme",
@@ -674,12 +674,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "f12a5f74e5f4a9e3f558f3288504e121edfad891"
+                "reference": "db77c80d33d72e33a62b80581e9d150af85de556"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/f12a5f74e5f4a9e3f558f3288504e121edfad891",
-                "reference": "f12a5f74e5f4a9e3f558f3288504e121edfad891",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/db77c80d33d72e33a62b80581e9d150af85de556",
+                "reference": "db77c80d33d72e33a62b80581e9d150af85de556",
                 "shasum": ""
             },
             "require": {
@@ -723,7 +723,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2013-12-20 21:39:00"
+            "time": "2014-06-11 23:09:27"
         },
         {
             "name": "doctrine/migrations",
@@ -791,12 +791,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "859465b6919967a45eabcfd5b26036988a30ffc1"
+                "reference": "84f8ef5ca46f02f3001af47ba25fc917c776a247"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/859465b6919967a45eabcfd5b26036988a30ffc1",
-                "reference": "859465b6919967a45eabcfd5b26036988a30ffc1",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/84f8ef5ca46f02f3001af47ba25fc917c776a247",
+                "reference": "84f8ef5ca46f02f3001af47ba25fc917c776a247",
                 "shasum": ""
             },
             "require": {
@@ -859,7 +859,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-06-03 19:43:21"
+            "time": "2014-06-10 11:49:09"
         },
         {
             "name": "filp/whoops",
@@ -960,6 +960,51 @@
             "time": "2014-06-04 11:06:02"
         },
         {
+            "name": "gzero/billin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrupaZero/billin.git",
+                "reference": "07f10519289ae8f4435d419ba767885ad440c620"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrupaZero/billin/zipball/07f10519289ae8f4435d419ba767885ad440c620",
+                "reference": "07f10519289ae8f4435d419ba767885ad440c620",
+                "shasum": ""
+            },
+            "require": {
+                "gzero/entity": "dev-master",
+                "illuminate/support": "4.1.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gzero\\": "src/Gzero"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Skierniewski",
+                    "email": "adrian.skierniewski@gmail.com",
+                    "homepage": "https://github.com/AdrianSkierniewski"
+                }
+            ],
+            "description": "Billin integration for GZERO CMS",
+            "keywords": [
+                "billin",
+                "gzero"
+            ],
+            "time": "2014-06-12 10:34:23"
+        },
+        {
             "name": "gzero/cms",
             "version": "dev-master",
             "source": {
@@ -1023,12 +1068,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdrianSkierniewski/doctrine2-extensions.git",
-                "reference": "c2897490a4c4950da47ed4cf749cf535c37cbcf6"
+                "reference": "22a1e83b78e6a9fb788f5bba92b509661ff83735"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdrianSkierniewski/doctrine2-extensions/zipball/c2897490a4c4950da47ed4cf749cf535c37cbcf6",
-                "reference": "c2897490a4c4950da47ed4cf749cf535c37cbcf6",
+                "url": "https://api.github.com/repos/AdrianSkierniewski/doctrine2-extensions/zipball/22a1e83b78e6a9fb788f5bba92b509661ff83735",
+                "reference": "22a1e83b78e6a9fb788f5bba92b509661ff83735",
                 "shasum": ""
             },
             "require": {
@@ -1058,7 +1103,7 @@
             "keywords": [
                 "doctrine2"
             ],
-            "time": "2014-06-05 17:30:54"
+            "time": "2014-06-07 08:55:21"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -1600,12 +1645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "25d31e5867eff112d747a1f5e13d582b1a2392f8"
+                "reference": "90bc07e292f72685cc5bfbc6d8d4b406bdc810f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/25d31e5867eff112d747a1f5e13d582b1a2392f8",
-                "reference": "25d31e5867eff112d747a1f5e13d582b1a2392f8",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/90bc07e292f72685cc5bfbc6d8d4b406bdc810f7",
+                "reference": "90bc07e292f72685cc5bfbc6d8d4b406bdc810f7",
                 "shasum": ""
             },
             "require": {
@@ -1689,7 +1734,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2014-06-05 14:56:34"
+            "time": "2014-06-11 06:05:48"
         },
         {
             "name": "predis/predis",
@@ -1697,12 +1742,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "a8862f0fdd716f0d99d6cce3b2eacbd1342b0132"
+                "reference": "18853d1dbb7d35f7c60bcb161447b16c0753e2a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/a8862f0fdd716f0d99d6cce3b2eacbd1342b0132",
-                "reference": "a8862f0fdd716f0d99d6cce3b2eacbd1342b0132",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/18853d1dbb7d35f7c60bcb161447b16c0753e2a3",
+                "reference": "18853d1dbb7d35f7c60bcb161447b16c0753e2a3",
                 "shasum": ""
             },
             "require": {
@@ -1739,7 +1784,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-06-03 14:57:22"
+            "time": "2014-06-10 08:58:02"
         },
         {
             "name": "psr/log",
@@ -1891,12 +1936,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "41a2d6227dbb47c1ec28d1a9508c61646bbb30ee"
+                "reference": "0beeac88365c580ae617d8fe8f37e4fb3a1caf22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/41a2d6227dbb47c1ec28d1a9508c61646bbb30ee",
-                "reference": "41a2d6227dbb47c1ec28d1a9508c61646bbb30ee",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/0beeac88365c580ae617d8fe8f37e4fb3a1caf22",
+                "reference": "0beeac88365c580ae617d8fe8f37e4fb3a1caf22",
                 "shasum": ""
             },
             "require": {
@@ -1937,7 +1982,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-06-01 03:21:42"
+            "time": "2014-06-12 08:08:15"
         },
         {
             "name": "symfony/browser-kit",
@@ -2168,12 +2213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "77881ef11c064a490515a9fb1729b695c632ffe5"
+                "reference": "277c9b7763045d2e5b4e741e59d27415fa28d886"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/77881ef11c064a490515a9fb1729b695c632ffe5",
-                "reference": "77881ef11c064a490515a9fb1729b695c632ffe5",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/277c9b7763045d2e5b4e741e59d27415fa28d886",
+                "reference": "277c9b7763045d2e5b4e741e59d27415fa28d886",
                 "shasum": ""
             },
             "require": {
@@ -2214,7 +2259,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
-            "time": "2014-05-31 02:02:48"
+            "time": "2014-06-12 10:00:57"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2380,12 +2425,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "d11199a98cc8f1338410fe2340581310f19829e2"
+                "reference": "1b6f7c6ad081176650f1ac89be848d12e4849a18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/d11199a98cc8f1338410fe2340581310f19829e2",
-                "reference": "d11199a98cc8f1338410fe2340581310f19829e2",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/1b6f7c6ad081176650f1ac89be848d12e4849a18",
+                "reference": "1b6f7c6ad081176650f1ac89be848d12e4849a18",
                 "shasum": ""
             },
             "require": {
@@ -2426,7 +2471,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-06-06 03:56:41"
+            "time": "2014-06-07 15:45:34"
         },
         {
             "name": "symfony/http-kernel",
@@ -2508,12 +2553,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "a7118cb290c62068b3c8ecfbf8b2eda8421fb841"
+                "reference": "b6fd92d337a6038e8dfc8a6532c99916f8b646ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/a7118cb290c62068b3c8ecfbf8b2eda8421fb841",
-                "reference": "a7118cb290c62068b3c8ecfbf8b2eda8421fb841",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/b6fd92d337a6038e8dfc8a6532c99916f8b646ac",
+                "reference": "b6fd92d337a6038e8dfc8a6532c99916f8b646ac",
                 "shasum": ""
             },
             "require": {
@@ -2548,7 +2593,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-05-22 13:46:01"
+            "time": "2014-06-12 10:00:57"
         },
         {
             "name": "symfony/routing",
@@ -2930,16 +2975,16 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v1.6.1",
+            "version": "v1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "67a3cb07874ebc559ce3f1631f4b97c11540be56"
+                "reference": "11edc69b9276d00b12530552dc562b057d06c83f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/67a3cb07874ebc559ce3f1631f4b97c11540be56",
-                "reference": "67a3cb07874ebc559ce3f1631f4b97c11540be56",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/11edc69b9276d00b12530552dc562b057d06c83f",
+                "reference": "11edc69b9276d00b12530552dc562b057d06c83f",
                 "shasum": ""
             },
             "require": {
@@ -2973,7 +3018,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2014-05-01 08:48:50"
+            "time": "2014-06-10 15:34:55"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -3284,6 +3329,7 @@
     "stability-flags": {
         "gzero/api": 20,
         "gzero/cms": 20,
+        "gzero/billin": 20,
         "philo/laravel-translate": 20
     },
     "platform": [
