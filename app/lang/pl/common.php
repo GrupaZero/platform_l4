@@ -1,6 +1,6 @@
 <?php
 
-# modified at 07-06-2014 08:13
+# modified at 13-06-2014 13:03
 
 return  array(
 	'account'        => 'Konto',
@@ -10,6 +10,7 @@ return  array(
 	'lastName'       => 'Nazwisko',
 	'login'          => 'Zaloguj',
 	'logout'         => 'Wyloguj',
+	'options'        => 'Opcje',
 	'passReminder'   => 'Przypomnienie hasła',
 	'password'       => 'Hasło',
 	'register'       => 'Zarejestruj',

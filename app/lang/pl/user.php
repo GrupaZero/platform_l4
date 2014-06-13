@@ -1,6 +1,6 @@
 <?php
 
-# modified at 07-06-2014 09:13
+# modified at 13-06-2014 12:53
 
 return  array(
 	'edit_account'                => 'Edytuj Konto',
@@ -10,4 +10,5 @@ return  array(
 	'my_invoices'                 => 'Moje Faktury',
 	'my_subscriptions'            => 'Moje Subskrypcje',
 	'payments'                    => 'Płatności',
+	'products'                    => 'Produkty',
 );
