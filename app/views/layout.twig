@@ -61,6 +61,10 @@
                 background : #FAFAFA;
             }
 
+            .nav-stacked ul li.active a {
+                background-color : #EEE;
+            }
+
             #wrapper {
                 background-color : #FFF;
                 padding-bottom   : 40px;
@@ -216,6 +220,8 @@
                 $(".nav-stacked").metisMenu({
                     toggle: false
                 });
+                //Expand parent of an active element
+                $(".nav-stacked li.active").parents('li').addClass('active').has('ul').children('ul').addClass('collapse in');
             });
         </script>
     </div>
