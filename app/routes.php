@@ -58,3 +58,6 @@ Route::group(
         Route::get('{path?}', 'ContentController@dynamicRouter')->where('path', '.*');
     }
 );
+
+App::make('user.menu')->addLink(URL::route('account'), 'user.my_account');
+App::make('user.menu')->addChild(['url' => URL::route('logout'), 'title' => 'common.logout'], URL::route('account'));

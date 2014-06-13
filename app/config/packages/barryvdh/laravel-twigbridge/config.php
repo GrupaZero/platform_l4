@@ -69,7 +69,26 @@ return [
         'pre_escape'        => NULL, // null or 'html'
         'preserves_safety'  => NULL,
     ),
-    'functions'       => array(),
+    'functions'       => array(
+        /**
+         * User account menu builder
+         */
+        'user_menu'   => function () {
+                return App::make('user.menu')->getMenu();
+            },
+        /**
+         * Admin menu builder
+         */
+        'admin_menu'  => function () {
+                return App::make('user.menu')->getMenu();
+            },
+        /**
+         * Option menu builder
+         */
+        'option_menu' => function () {
+                return App::make('user.menu')->getMenu();
+            }
+    ),
     'filters'         => array(),
     'facades'         => array()
 

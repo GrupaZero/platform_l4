@@ -119,7 +119,8 @@ return array(
         'Barryvdh\Debugbar\ServiceProvider',
         'Philo\Translate\TranslateServiceProvider',
         'Gzero\Core\ServiceProvider',
-        'Gzero\Api\ServiceProvider'
+        'Gzero\Billin\ServiceProvider',
+        'Gzero\Api\ServiceProvider',
     ),
     /*
     |--------------------------------------------------------------------------
