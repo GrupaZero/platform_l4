@@ -171,6 +171,9 @@
 
     <!-- Begin page content -->
     <div id="content" class="container">
+        {% block sidebar_left %}
+        {% endblock %}
+
         {% block content %}
             <div class="jumbotron">
                 <h1>Marketing stuff!</h1>
@@ -181,6 +184,9 @@
 
                 <p><a class="btn btn-lg btn-success" href="{{ url_route('register') }}" role="button">Get started today</a></p>
             </div>
+        {% endblock %}
+
+        {% block sidebar_right %}
         {% endblock %}
     </div>
     {% block footer_region %}

@@ -4,13 +4,15 @@
     {{ trans('common.account') }}
 {% endblock title %}
 
-{% block content %}
+{% block sidebar_left %}
     <div class="col-md-3">
         {{ include('account.menu') }}
     </div>
+{% endblock %}
 
+{% block content %}
     <div class="col-md-9">
-        <h1>{{ trans('common.account') }}</h1>
+        <h1 class="page-header">{{ trans('common.account') }}</h1>
 
         <h3>User</h3>
 
@@ -24,6 +26,9 @@
            title="{{ trans('common.logout') }}"
            class="btn btn-danger">{{ trans('common.logout') }}</a>
     </div>
+{% endblock %}
+
+{% block sidebar_right %}
 {% endblock %}
 
 {% block header_region %}
