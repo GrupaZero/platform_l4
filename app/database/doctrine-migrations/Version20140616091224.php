@@ -8,11 +8,11 @@ use Doctrine\DBAL\Schema\Schema;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-class Version20140616091224 extends AbstractMigration {
+class Version20140616091224 extends AbstractMigration
+{
     public function up(Schema $schema)
     {
-        $table = $schema->getTable('User');
-        $table->addColumn('billinId', 'integer', array('unsigned' => TRUE, 'notnull' => FALSE));
+        $this->addSql('ALTER TABLE User ADD billinId INT UNSIGNED DEFAULT NULL AFTER `id`');
     }
 
     public function down(Schema $schema)
