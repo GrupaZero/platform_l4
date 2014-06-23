@@ -13,8 +13,11 @@
 
 App::before(
     function ($request) {
-        if (Config::get('gzero.multilang.enabled') and !Config::get('gzero.multilang.detected')) {
-            return Redirect::home();
+        // if api call, do nothing
+        if (!preg_match('/^api\/.*/', $request->path())) {
+            if (Config::get('gzero.multilang.enabled') and !Config::get('gzero.multilang.detected')) {
+                return Redirect::home();
+            }
         }
     }
 );
