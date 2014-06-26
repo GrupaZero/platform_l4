@@ -17,3 +17,23 @@ $.fn.serializeObject = function () {
     });
     return o;
 };
+
+var Loading = {
+    loadingContainer: '.loading',
+    loadingMinHeight: 200,
+    start: function (container) {
+        var me = this;
+        var destHtml = $(container);
+        if (destHtml.length > 0) {
+            var loading = $(me.loadingContainer);
+            loading.css('top', destHtml.offset().top + 'px');
+            loading.css('left', destHtml.offset().left + 'px');
+            loading.css('width', destHtml.width() + 'px');
+            loading.css('height', me.loadingMinHeight + 'px');
+        }
+    },
+    stop: function () {
+        var me = this;
+        $(me.loadingContainer).removeAttr('style');
+    }
+};
