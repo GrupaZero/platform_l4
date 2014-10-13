@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "57fe4c85da0395d3130ade84a9215eee",
+    "hash": "25358500a1bad6b996774dac5ec5669f",
     "packages": [
         {
             "name": "atrauzzi/laravel-doctrine",
@@ -884,6 +884,48 @@
                 "zf2"
             ],
             "time": "2014-07-11 05:56:54"
+        },
+        {
+            "name": "gzero/admin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrupaZero/admin.git",
+                "reference": "f2cf1c7ee9c3c87c6eb9f0c9ba01060186dfe852"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/f2cf1c7ee9c3c87c6eb9f0c9ba01060186dfe852",
+                "reference": "f2cf1c7ee9c3c87c6eb9f0c9ba01060186dfe852",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.2.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Gzero\\": "src/Gzero"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Skierniewski",
+                    "email": "adrian.skierniewski@gmail.com"
+                }
+            ],
+            "description": "Gzero Admin Panel",
+            "keywords": [
+                "admin panel",
+                "laravel"
+            ],
+            "time": "2014-10-13 17:48:43"
         },
         {
             "name": "gzero/api",
@@ -3200,6 +3242,7 @@
     "stability-flags": {
         "gzero/api": 20,
         "gzero/cms": 20,
+        "gzero/admin": 20,
         "philo/laravel-translate": 20
     },
     "prefer-stable": false,
