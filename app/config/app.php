@@ -74,6 +74,8 @@ return array(
     */
 
     'key'             => 'mfgaY8XwMvzksg1b9eCPV4R4UWcaXAT8',
+
+    'cipher' => MCRYPT_RIJNDAEL_256,
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -119,8 +121,8 @@ return array(
         'Barryvdh\Debugbar\ServiceProvider',
         'Philo\Translate\TranslateServiceProvider',
         'Gzero\Core\ServiceProvider',
-        'Gzero\Billin\ServiceProvider',
-        'Gzero\Api\ServiceProvider',
+//        'Gzero\Billin\ServiceProvider',
+//        'Gzero\Api\ServiceProvider',
     ),
     /*
     |--------------------------------------------------------------------------
