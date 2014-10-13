@@ -14,7 +14,7 @@
 App::before(
     function ($request) {
         // if api call, do nothing
-        if (!preg_match('/^api\/.*/', $request->path())) {
+        if (in_array(Request::segment(0), ['admin', 'api', '_debugbar'], TRUE)) {
             if (Config::get('gzero.multilang.enabled') and !Config::get('gzero.multilang.detected')) {
                 return Redirect::home();
             }
