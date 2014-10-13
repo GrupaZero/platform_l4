@@ -121,6 +121,7 @@ return array(
         'Barryvdh\Debugbar\ServiceProvider',
         'Philo\Translate\TranslateServiceProvider',
         'Gzero\Core\ServiceProvider',
+        'Gzero\Admin\ServiceProvider',
 //        'Gzero\Billin\ServiceProvider',
 //        'Gzero\Api\ServiceProvider',
     ),
@@ -187,7 +188,7 @@ return array(
         'URL'         => 'Illuminate\Support\Facades\URL',
         'Validator'   => 'Illuminate\Support\Facades\Validator',
         'View'        => 'Illuminate\Support\Facades\View',
-
+        'Debugbar' => 'Barryvdh\Debugbar\Facade',
     ),
 
 );
