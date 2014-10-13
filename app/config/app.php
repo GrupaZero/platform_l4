@@ -122,8 +122,8 @@ return array(
         'Philo\Translate\TranslateServiceProvider',
         'Gzero\Core\ServiceProvider',
         'Gzero\Admin\ServiceProvider',
+        'Gzero\Api\ServiceProvider',
 //        'Gzero\Billin\ServiceProvider',
-//        'Gzero\Api\ServiceProvider',
     ),
     /*
     |--------------------------------------------------------------------------
