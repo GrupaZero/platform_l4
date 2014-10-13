@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ba823e94bf0712a8a9236f4a4a12c88b",
+    "hash": "57fe4c85da0395d3130ade84a9215eee",
     "packages": [
         {
             "name": "atrauzzi/laravel-doctrine",
@@ -884,6 +884,50 @@
                 "zf2"
             ],
             "time": "2014-07-11 05:56:54"
+        },
+        {
+            "name": "gzero/api",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrupaZero/api.git",
+                "reference": "5f106d48d1acdbbc52585b793bb7515408f83c35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/5f106d48d1acdbbc52585b793bb7515408f83c35",
+                "reference": "5f106d48d1acdbbc52585b793bb7515408f83c35",
+                "shasum": ""
+            },
+            "require": {
+                "gzero/repository": "dev-master",
+                "illuminate/support": "4.2.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [],
+                "psr-4": {
+                    "Gzero\\": "src/Gzero"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Skierniewski",
+                    "email": "adrian.skierniewski@gmail.com"
+                }
+            ],
+            "description": "Gzero API",
+            "keywords": [
+                "api",
+                "cms",
+                "laravel"
+            ],
+            "time": "2014-10-13 17:12:53"
         },
         {
             "name": "gzero/cms",
@@ -3154,6 +3198,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "gzero/api": 20,
         "gzero/cms": 20,
         "philo/laravel-translate": 20
     },
