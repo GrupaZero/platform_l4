@@ -32,12 +32,13 @@
     "scripts": {
         "post-install-cmd": [
             "php artisan clear-compiled",
-            "php artisan optimize"
+            "php artisan optimize",
+            "php artisan asset:publish"
         ],
         "post-update-cmd": [
             "php artisan clear-compiled",
             "php artisan optimize",
-            "php artisan debugbar:publish"
+            "php artisan asset:publish"
         ],
         "post-create-project-cmd": [
             "php artisan key:generate"
