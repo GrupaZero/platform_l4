@@ -12,7 +12,7 @@ return array(
     |
     */
 
-    'connection'        => array(
+    'connection'                   => array(
         'driver'   => 'pdo_mysql',
         'user'     => 'doctrine2',
         'password' => 'test',
@@ -31,7 +31,8 @@ return array(
     | http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/configuration.html
     |
     */
-    'metadata'          => array(
+
+    'metadata'                     => array(
         __DIR__ . '/../../../../../vendor/gzero/cms/src/Gzero/Entity',
         __DIR__ . '/../../../../../app/models'
     ),
@@ -44,18 +45,20 @@ return array(
     | http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/configuration.html
     |
     */
-    'proxy_classes'     => array(
+
+    'proxy_classes'                => array(
         'auto_generate' => TRUE,
         'directory'     => NULL,
         'namespace'     => NULL,
     ),
     /*
-   |--------------------------------------------------------------------------
-   | Cache providers, supports apc, xcache, memcache, redis
-   | Only redis and memcache have additionals configurations
-   |--------------------------------------------------------------------------
-   */
-    'cache'             => array(
+    |--------------------------------------------------------------------------
+    | Cache providers, supports apc, xcache, memcache, redis
+    | Only redis and memcache have additionals configurations
+    |--------------------------------------------------------------------------
+    */
+
+    'cache'                        => array(
         'provider' => 'redis',
         'redis'    => array(
             'host'     => '127.0.0.1',
@@ -67,24 +70,34 @@ return array(
             'port' => 11211
         )
     ),
-    'migrations'        => array(
+    'migrations'                   => array(
         'directory'  => '/database/doctrine-migrations',
+        'namespace'  => 'DoctrineMigrations',
         'table_name' => 'doctrine_migration_versions'
     ),
     /*
-   |--------------------------------------------------------------------------
-   | Use to specify the default repository
-   | http://docs.doctrine-project.org/en/2.1/reference/configuration.html item 3.7
-   |--------------------------------------------------------------------------
-   */
-    'defaultRepository' => '\Doctrine\ORM\EntityRepository',
+    |--------------------------------------------------------------------------
+    | Use to specify the default repository
+    | http://docs.doctrine-project.org/en/2.1/reference/configuration.html item 3.7
+    |--------------------------------------------------------------------------
+    */
+
+    'defaultRepository'            => '\Doctrine\ORM\EntityRepository',
     /*
-   |--------------------------------------------------------------------------
-   | Use to specify the SQL Logger
-   | http://docs.doctrine-project.org/en/2.1/reference/configuration.html item 3.2.6
-   | To use with \Doctrine\DBAL\Logging\EchoSQLLogger, do:
-   | 'sqlLogger' => new \Doctrine\DBAL\Logging\EchoSQLLogger();
-   |--------------------------------------------------------------------------
-   */
-    'sqlLogger'         => NULL,
+    |--------------------------------------------------------------------------
+    | Annotation Reader
+    | https://github.com/doctrine/doctrine2/blob/master/lib/Doctrine/ORM/Tools/Setup.php
+    |--------------------------------------------------------------------------
+    */
+
+    'use_simple_annotation_reader' => TRUE,
+    /*
+    |--------------------------------------------------------------------------
+    | Use to specify the SQL Logger
+    | http://docs.doctrine-project.org/en/2.1/reference/configuration.html item 3.2.6
+    | To use with \Doctrine\DBAL\Logging\EchoSQLLogger, do:
+    | 'sqlLogger' => new \Doctrine\DBAL\Logging\EchoSQLLogger();
+    |--------------------------------------------------------------------------
+    */
+    'sqlLogger'                    => NULL,
 );
