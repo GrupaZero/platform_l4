@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25358500a1bad6b996774dac5ec5669f",
+    "hash": "c168619cd44ece3d0461945005a32e9e",
     "packages": [
         {
             "name": "atrauzzi/laravel-doctrine",
