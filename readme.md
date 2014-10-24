@@ -11,10 +11,10 @@ Clone this project directly form github
 Install dependencies
 
 ```
-    composer install
+composer install
 ```
 
-Create and configure data base:
+Create and configure database:
  - create database and user
  - create .env.dev.php in root directory and put your credentials in it
  
