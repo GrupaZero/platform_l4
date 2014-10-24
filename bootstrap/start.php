@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(
     function () {
-        return getenv("GZERO_ENV") != NULL ? getenv("GZERO_ENV") : 'prod';
+        return getenv("GZERO_ENV") ?: 'dev';
     }
 );
 

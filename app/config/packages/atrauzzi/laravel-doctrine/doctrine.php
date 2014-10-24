@@ -14,10 +14,10 @@ return array(
 
     'connection'                   => array(
         'driver'   => 'pdo_mysql',
-        'user'     => 'doctrine2',
-        'password' => 'test',
-        'dbname'   => 'doctrine2',
-        'host'     => 'localhost',
+        'user'     => getenv('DB_USER'),
+        'password' => getenv('DB_PASS'),
+        'dbname'   => getenv('DB_NAME'),
+        'host'     => (getenv('DB_HOST')) ? getenv('DB_USER') : 'localhost',
         'prefix'   => '',
         'charset'  => 'utf8'
     ),
