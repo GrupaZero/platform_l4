@@ -4,3 +4,35 @@ GZERO CMS PLATFORM it's a base to build custom application on GZERO CMS
 
 **The project is still in the phase of intensive development**
 
+## Installation
+
+Clone this project directly form github
+
+Install dependencies
+
+    composer install
+
+Create and configure data base:
+ - create database and user
+ - create .env.dev.php in root directory and put your credentials in it
+ 
+ ```PHP
+    <?php
+     return [
+         'DB_NAME' => 'database_name'
+         'DB_USER' => 'database_user',
+         'DB_PASS' => 'database_password',
+     ];
+ ```
+ - create database schema (remember to set env to dev)
+ 
+    php artisan doctrine:schema:create --env=dev
+
+
+ - run php build in server
+  
+    php artisan serve
+    
+ - done
+ 
+ To check progress on project development you can occasionally run composer install
