@@ -21,9 +21,9 @@ Create and configure database:
  ```PHP
     <?php
      return [
-         'DB_NAME' => 'database_name'
+         'DB_NAME' => 'database_name',
          'DB_USER' => 'database_user',
-         'DB_PASS' => 'database_password',
+         'DB_PASS' => 'database_password'
      ];
  ```
  - create database schema (remember to set env to dev)
