@@ -74,8 +74,7 @@ return array(
     */
 
     'key'             => 'mfgaY8XwMvzksg1b9eCPV4R4UWcaXAT8',
-
-    'cipher' => MCRYPT_RIJNDAEL_256,
+    'cipher'          => MCRYPT_RIJNDAEL_256,
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -188,7 +187,7 @@ return array(
         'URL'         => 'Illuminate\Support\Facades\URL',
         'Validator'   => 'Illuminate\Support\Facades\Validator',
         'View'        => 'Illuminate\Support\Facades\View',
-        'Debugbar' => 'Barryvdh\Debugbar\Facade',
+        'Debugbar'    => 'Barryvdh\Debugbar\Facade',
     ),
 
 );
