@@ -123,7 +123,7 @@ return array(
         'Gzero\Core\ServiceProvider',
         'Gzero\Admin\ServiceProvider',
         'Gzero\Api\ServiceProvider',
-//        'Gzero\Billin\ServiceProvider',
+        'Gzero\Billin\ServiceProvider',
     ),
     /*
     |--------------------------------------------------------------------------

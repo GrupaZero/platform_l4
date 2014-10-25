@@ -12,7 +12,8 @@
     "require": {
         "gzero/api": "dev-master",
         "gzero/cms": "dev-master",
-        "gzero/admin": "dev-master"
+        "gzero/admin": "dev-master",
+        "gzero/billin": "dev-master"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "1.*",
