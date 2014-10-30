@@ -510,12 +510,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "a67db17b3d5bf373ba7a827db52dd0c7066cb08a"
+                "reference": "d12672808124e711c2cb78a82d4461ba2e89c7ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/a67db17b3d5bf373ba7a827db52dd0c7066cb08a",
-                "reference": "a67db17b3d5bf373ba7a827db52dd0c7066cb08a",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/d12672808124e711c2cb78a82d4461ba2e89c7ef",
+                "reference": "d12672808124e711c2cb78a82d4461ba2e89c7ef",
                 "shasum": ""
             },
             "require": {
@@ -573,7 +573,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2014-10-27 17:14:07"
+            "time": "2014-10-29 16:12:22"
         },
         {
             "name": "doctrine/inflector",
@@ -891,12 +891,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "71287075e66e6610c8ab8b3fa1275b52b9eb76ca"
+                "reference": "061dcdb306f8985de18b8de476bb27b8419eac56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/71287075e66e6610c8ab8b3fa1275b52b9eb76ca",
-                "reference": "71287075e66e6610c8ab8b3fa1275b52b9eb76ca",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/061dcdb306f8985de18b8de476bb27b8419eac56",
+                "reference": "061dcdb306f8985de18b8de476bb27b8419eac56",
                 "shasum": ""
             },
             "require": {
@@ -929,7 +929,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2014-10-26 12:11:49"
+            "time": "2014-10-30 09:47:36"
         },
         {
             "name": "gzero/api",
@@ -1031,12 +1031,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "95bae48ba6fd1351dcde7bd35d030bd9b004dcb2"
+                "reference": "e32dd7d7f5f8cc9222bcf539e252e36102a2a9fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/95bae48ba6fd1351dcde7bd35d030bd9b004dcb2",
-                "reference": "95bae48ba6fd1351dcde7bd35d030bd9b004dcb2",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/e32dd7d7f5f8cc9222bcf539e252e36102a2a9fa",
+                "reference": "e32dd7d7f5f8cc9222bcf539e252e36102a2a9fa",
                 "shasum": ""
             },
             "require": {
@@ -1081,7 +1081,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-10-26 12:10:41"
+            "time": "2014-10-30 17:15:58"
         },
         {
             "name": "gzero/doctrine2-extensions",
@@ -1454,12 +1454,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "d0a9acbad0643726453e901d9d49c14e13de9f86"
+                "reference": "53c6cf358bf50a3d31a003639245dac1d4de694b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d0a9acbad0643726453e901d9d49c14e13de9f86",
-                "reference": "d0a9acbad0643726453e901d9d49c14e13de9f86",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/53c6cf358bf50a3d31a003639245dac1d4de694b",
+                "reference": "53c6cf358bf50a3d31a003639245dac1d4de694b",
                 "shasum": ""
             },
             "require": {
@@ -1518,7 +1518,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-10-21 20:10:18"
+            "time": "2014-10-29 06:32:01"
         },
         {
             "name": "nesbot/carbon",
@@ -1964,12 +1964,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "613354e08fbddce0943646932b007be9873c658f"
+                "reference": "d0f361d88e5de851bbb8c542d3b6aa46d61a9ffc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/613354e08fbddce0943646932b007be9873c658f",
-                "reference": "613354e08fbddce0943646932b007be9873c658f",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/d0f361d88e5de851bbb8c542d3b6aa46d61a9ffc",
+                "reference": "d0f361d88e5de851bbb8c542d3b6aa46d61a9ffc",
                 "shasum": ""
             },
             "require": {
@@ -2008,7 +2008,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-10-05 19:53:07"
+            "time": "2014-10-30 13:41:35"
         },
         {
             "name": "symfony/browser-kit",
@@ -3100,12 +3100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "3f93355cdf54baaf6628ba43245c0e0b2c7e4c4a"
+                "reference": "3fe312bf234e7f4615621800f9c9810afa64ae98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/3f93355cdf54baaf6628ba43245c0e0b2c7e4c4a",
-                "reference": "3f93355cdf54baaf6628ba43245c0e0b2c7e4c4a",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/3fe312bf234e7f4615621800f9c9810afa64ae98",
+                "reference": "3fe312bf234e7f4615621800f9c9810afa64ae98",
                 "shasum": ""
             },
             "require": {
@@ -3123,7 +3123,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.10-dev"
                 }
             },
             "autoload": {
@@ -3147,7 +3147,7 @@
             "keywords": [
                 "debug"
             ],
-            "time": "2014-10-27 16:01:27"
+            "time": "2014-10-30 15:41:48"
         },
         {
             "name": "philo/laravel-translate",

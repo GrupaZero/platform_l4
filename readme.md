@@ -32,6 +32,11 @@ Create and configure database:
     php artisan doctrine:schema:create --env=dev
  ```
 
+ - you can seed database with example data using this command
+ 
+ ```
+    php artisan db:seed --class="Gzero\Core\CMSSeeder"
+ ```
  - run php build in server
   
   ```
