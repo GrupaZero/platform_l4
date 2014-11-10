@@ -12,8 +12,8 @@
 */
 
 App::before(
-    function ($request) {
-        if (!in_array(Request::segment(1), ['admin', 'api', '_debugbar'], TRUE)) {
+    function ($request) {;
+        if (!preg_match('/^api/', Request::getHost()) && !in_array(Request::segment(1), ['admin', '_debugbar'], true)) {
             if (Config::get('gzero.multilang.enabled') and !Config::get('gzero.multilang.detected')) {
                 return Redirect::home();
             }
