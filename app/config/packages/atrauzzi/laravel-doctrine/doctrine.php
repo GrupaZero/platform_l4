@@ -1,5 +1,5 @@
 <?php
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -12,7 +12,7 @@ return array(
     |
     */
 
-    'connection'                   => array(
+    'connection'                   => [
         'driver'   => 'pdo_mysql',
         'user'     => getenv('DB_USER'),
         'password' => getenv('DB_PASS'),
@@ -20,7 +20,7 @@ return array(
         'host'     => (getenv('DB_HOST')) ? getenv('DB_USER') : 'localhost',
         'prefix'   => '',
         'charset'  => 'utf8'
-    ),
+    ],
     /*
     |--------------------------------------------------------------------------
     | Metadata Sources
@@ -32,10 +32,10 @@ return array(
     |
     */
 
-    'metadata'                     => array(
+    'metadata'                     => [
         __DIR__ . '/../../../../../vendor/gzero/cms/src/Gzero/Entity',
         __DIR__ . '/../../../../../app/models'
-    ),
+    ],
     /*
     |--------------------------------------------------------------------------
     | Sets the directory where Doctrine generates any proxy classes, including
@@ -46,11 +46,11 @@ return array(
     |
     */
 
-    'proxy_classes'                => array(
-        'auto_generate' => TRUE,
-        'directory'     => NULL,
-        'namespace'     => NULL,
-    ),
+    'proxy_classes'                => [
+        'auto_generate' => true,
+        'directory'     => null,
+        'namespace'     => null,
+    ],
     /*
     |--------------------------------------------------------------------------
     | Cache providers, supports apc, xcache, memcache, redis
@@ -58,23 +58,23 @@ return array(
     |--------------------------------------------------------------------------
     */
 
-    'cache'                        => array(
+    'cache'                        => [
         'provider' => 'redis',
-        'redis'    => array(
+        'redis'    => [
             'host'     => '127.0.0.1',
             'port'     => 6379,
             'database' => 1
-        ),
-        'memcache' => array(
+        ],
+        'memcache' => [
             'host' => '127.0.0.1',
             'port' => 11211
-        )
-    ),
-    'migrations'                   => array(
+        ]
+    ],
+    'migrations'                   => [
         'directory'  => '/database/doctrine-migrations',
         'namespace'  => 'DoctrineMigrations',
         'table_name' => 'doctrine_migration_versions'
-    ),
+    ],
     /*
     |--------------------------------------------------------------------------
     | Use to specify the default repository
@@ -90,7 +90,7 @@ return array(
     |--------------------------------------------------------------------------
     */
 
-    'use_simple_annotation_reader' => TRUE,
+    'use_simple_annotation_reader' => false,
     /*
     |--------------------------------------------------------------------------
     | Use to specify the SQL Logger
@@ -99,5 +99,5 @@ return array(
     | 'sqlLogger' => new \Doctrine\DBAL\Logging\EchoSQLLogger();
     |--------------------------------------------------------------------------
     */
-    'sqlLogger'                    => NULL,
-);
+    'sqlLogger'                    => null,
+];
