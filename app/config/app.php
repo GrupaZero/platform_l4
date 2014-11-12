@@ -119,6 +119,7 @@ return array(
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Barryvdh\Debugbar\ServiceProvider',
         'Philo\Translate\TranslateServiceProvider',
+        'Barryvdh\Cors\CorsServiceProvider',
         'Gzero\Core\ServiceProvider',
         'Gzero\Admin\ServiceProvider',
         'Gzero\Api\ServiceProvider',

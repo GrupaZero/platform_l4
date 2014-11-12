@@ -7,6 +7,49 @@
     "hash": "5f7e9d777f290989c71919b0fb7f4d73",
     "packages": [
         {
+            "name": "asm89/stack-cors",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asm89/stack-cors.git",
+                "reference": "2d77e77251a434e4527315313a672f5801b29fa2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/2d77e77251a434e4527315313a672f5801b29fa2",
+                "reference": "2d77e77251a434e4527315313a672f5801b29fa2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/http-foundation": "~2.1",
+                "symfony/http-kernel": "~2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Asm89\\Stack": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                }
+            ],
+            "description": "Cross-origin resource sharing library and stack middleware",
+            "homepage": "https://github.com/asm89/stack-cors",
+            "keywords": [
+                "cors",
+                "stack"
+            ],
+            "time": "2014-07-28 07:22:35"
+        },
+        {
             "name": "atrauzzi/laravel-doctrine",
             "version": "dev-master",
             "source": {
@@ -53,6 +96,50 @@
                 "orm"
             ],
             "time": "2014-10-17 11:58:53"
+        },
+        {
+            "name": "barryvdh/laravel-cors",
+            "version": "v0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-cors.git",
+                "reference": "2da8858a8b8792f4dabd337bd59252a88914699d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-cors/zipball/2da8858a8b8792f4dabd337bd59252a88914699d",
+                "reference": "2da8858a8b8792f4dabd337bd59252a88914699d",
+                "shasum": ""
+            },
+            "require": {
+                "asm89/stack-cors": "0.2.x",
+                "illuminate/support": "~4.1",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Cors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Adds CORS (Cross-Origin Resource Sharing) headers support in your Laravel application",
+            "keywords": [
+                "api",
+                "cors",
+                "crossdomain",
+                "laravel"
+            ],
+            "time": "2014-06-11 07:05:53"
         },
         {
             "name": "barryvdh/laravel-twigbridge",
@@ -891,12 +978,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "a3fb3f26c7db8b39722ed093de9187b0930f1676"
+                "reference": "f537f2d51c886b583db610cce78c0c9886b9a522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/a3fb3f26c7db8b39722ed093de9187b0930f1676",
-                "reference": "a3fb3f26c7db8b39722ed093de9187b0930f1676",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/f537f2d51c886b583db610cce78c0c9886b9a522",
+                "reference": "f537f2d51c886b583db610cce78c0c9886b9a522",
                 "shasum": ""
             },
             "require": {
@@ -929,7 +1016,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2014-11-11 16:28:49"
+            "time": "2014-11-12 18:20:47"
         },
         {
             "name": "gzero/api",
@@ -937,15 +1024,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "26551331d538e7bce5d4f9d7e0358880f6c720dc"
+                "reference": "4a20b717c82a6851f1583edff31e0f66e7caed44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/26551331d538e7bce5d4f9d7e0358880f6c720dc",
-                "reference": "26551331d538e7bce5d4f9d7e0358880f6c720dc",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/4a20b717c82a6851f1583edff31e0f66e7caed44",
+                "reference": "4a20b717c82a6851f1583edff31e0f66e7caed44",
                 "shasum": ""
             },
             "require": {
+                "barryvdh/laravel-cors": "0.2.x",
                 "gzero/core": "dev-master",
                 "gzero/repository": "dev-master",
                 "illuminate/support": "4.2.*",
@@ -982,7 +1070,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2014-11-12 09:52:16"
+            "time": "2014-11-12 21:01:48"
         },
         {
             "name": "gzero/billin",
@@ -1037,12 +1125,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "da431d9d7572f649b7330357510304d5667efc3b"
+                "reference": "55d8206ae67fc7a9be0059b3a4081be6bd976347"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/da431d9d7572f649b7330357510304d5667efc3b",
-                "reference": "da431d9d7572f649b7330357510304d5667efc3b",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/55d8206ae67fc7a9be0059b3a4081be6bd976347",
+                "reference": "55d8206ae67fc7a9be0059b3a4081be6bd976347",
                 "shasum": ""
             },
             "require": {
@@ -1089,7 +1177,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-11-12 09:51:34"
+            "time": "2014-11-12 17:25:44"
         },
         {
             "name": "gzero/doctrine2-extensions",
@@ -3244,12 +3332,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "bbfd3766bd2a76568d2bbf3f33bef684084d5a22"
+                "reference": "7fe0f23aefcef2109dea6b3461850044872874e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/bbfd3766bd2a76568d2bbf3f33bef684084d5a22",
-                "reference": "bbfd3766bd2a76568d2bbf3f33bef684084d5a22",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/7fe0f23aefcef2109dea6b3461850044872874e8",
+                "reference": "7fe0f23aefcef2109dea6b3461850044872874e8",
                 "shasum": ""
             },
             "require": {
@@ -3290,7 +3378,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2014-11-10 15:31:37"
+            "time": "2014-11-12 16:42:53"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -3470,12 +3558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PhiloNL/laravel-translate.git",
-                "reference": "71c5ef9e67f2e81a0d0d8f1500f6ed958c8d8a06"
+                "reference": "48af5f043e63f669dcd038b1cf5546bb35d74540"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhiloNL/laravel-translate/zipball/71c5ef9e67f2e81a0d0d8f1500f6ed958c8d8a06",
-                "reference": "71c5ef9e67f2e81a0d0d8f1500f6ed958c8d8a06",
+                "url": "https://api.github.com/repos/PhiloNL/laravel-translate/zipball/48af5f043e63f669dcd038b1cf5546bb35d74540",
+                "reference": "48af5f043e63f669dcd038b1cf5546bb35d74540",
                 "shasum": ""
             },
             "require": {
@@ -3505,7 +3593,7 @@
                 "translate",
                 "translation"
             ],
-            "time": "2014-07-24 10:32:39"
+            "time": "2014-11-12 20:24:22"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -3809,12 +3897,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2dab9d593997db4abcf58d0daf798eb4e9cecfe1"
+                "reference": "5ef44465641e0293fdcdb931f049ee5ef843b985"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2dab9d593997db4abcf58d0daf798eb4e9cecfe1",
-                "reference": "2dab9d593997db4abcf58d0daf798eb4e9cecfe1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5ef44465641e0293fdcdb931f049ee5ef843b985",
+                "reference": "5ef44465641e0293fdcdb931f049ee5ef843b985",
                 "shasum": ""
             },
             "require": {
@@ -3875,7 +3963,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-11-11 10:11:09"
+            "time": "2014-11-12 13:08:40"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
