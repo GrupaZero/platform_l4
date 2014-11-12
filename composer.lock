@@ -760,12 +760,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "8bb1d5448baf25e6ad0ed0627b7bd099e1738399"
+                "reference": "cfdef3bf19e870fa9c4f3f2dec5606653e5e4f63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/8bb1d5448baf25e6ad0ed0627b7bd099e1738399",
-                "reference": "8bb1d5448baf25e6ad0ed0627b7bd099e1738399",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/cfdef3bf19e870fa9c4f3f2dec5606653e5e4f63",
+                "reference": "cfdef3bf19e870fa9c4f3f2dec5606653e5e4f63",
                 "shasum": ""
             },
             "require": {
@@ -825,7 +825,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-10-06 13:23:31"
+            "time": "2014-11-11 23:31:13"
         },
         {
             "name": "filp/whoops",
@@ -891,12 +891,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "5bd1b0b65126542230171166a8cb0aad9126b5de"
+                "reference": "a3fb3f26c7db8b39722ed093de9187b0930f1676"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/5bd1b0b65126542230171166a8cb0aad9126b5de",
-                "reference": "5bd1b0b65126542230171166a8cb0aad9126b5de",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/a3fb3f26c7db8b39722ed093de9187b0930f1676",
+                "reference": "a3fb3f26c7db8b39722ed093de9187b0930f1676",
                 "shasum": ""
             },
             "require": {
@@ -929,7 +929,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2014-11-11 14:53:04"
+            "time": "2014-11-11 16:28:49"
         },
         {
             "name": "gzero/api",
@@ -937,12 +937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "3318c39549137ac2ca7c8737703773c54ec27290"
+                "reference": "26551331d538e7bce5d4f9d7e0358880f6c720dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/3318c39549137ac2ca7c8737703773c54ec27290",
-                "reference": "3318c39549137ac2ca7c8737703773c54ec27290",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/26551331d538e7bce5d4f9d7e0358880f6c720dc",
+                "reference": "26551331d538e7bce5d4f9d7e0358880f6c720dc",
                 "shasum": ""
             },
             "require": {
@@ -982,7 +982,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2014-11-11 15:00:36"
+            "time": "2014-11-12 09:52:16"
         },
         {
             "name": "gzero/billin",
@@ -990,12 +990,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/billin.git",
-                "reference": "8e4b25e3e49f6e1478a70067376dced7f20bfc9a"
+                "reference": "371464214f658707bcda1efe199d91cbfd81b170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/billin/zipball/8e4b25e3e49f6e1478a70067376dced7f20bfc9a",
-                "reference": "8e4b25e3e49f6e1478a70067376dced7f20bfc9a",
+                "url": "https://api.github.com/repos/GrupaZero/billin/zipball/371464214f658707bcda1efe199d91cbfd81b170",
+                "reference": "371464214f658707bcda1efe199d91cbfd81b170",
                 "shasum": ""
             },
             "require": {
@@ -1029,7 +1029,7 @@
                 "billin",
                 "gzero"
             ],
-            "time": "2014-10-26 11:59:28"
+            "time": "2014-11-11 16:38:19"
         },
         {
             "name": "gzero/cms",
@@ -1037,12 +1037,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "36189e4bf10bf43c302a38383f26073fc177bfd1"
+                "reference": "da431d9d7572f649b7330357510304d5667efc3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/36189e4bf10bf43c302a38383f26073fc177bfd1",
-                "reference": "36189e4bf10bf43c302a38383f26073fc177bfd1",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/da431d9d7572f649b7330357510304d5667efc3b",
+                "reference": "da431d9d7572f649b7330357510304d5667efc3b",
                 "shasum": ""
             },
             "require": {
@@ -1089,7 +1089,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-11-11 14:58:00"
+            "time": "2014-11-12 09:51:34"
         },
         {
             "name": "gzero/doctrine2-extensions",
@@ -2752,12 +2752,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "c483f749392cc64bbf03a0ada4504c2f30b01d70"
+                "reference": "4ba77e44fb38a1e5531516a0e29d84157f63b5d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/c483f749392cc64bbf03a0ada4504c2f30b01d70",
-                "reference": "c483f749392cc64bbf03a0ada4504c2f30b01d70",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/4ba77e44fb38a1e5531516a0e29d84157f63b5d6",
+                "reference": "4ba77e44fb38a1e5531516a0e29d84157f63b5d6",
                 "shasum": ""
             },
             "require": {
@@ -2815,7 +2815,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-03 03:54:42"
+            "time": "2014-11-12 08:14:41"
         },
         {
             "name": "symfony/process",
@@ -3415,12 +3415,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "584e09a81c16813d925ecb80ebb710b931d8d22e"
+                "reference": "d61afd683cc42bf1a9afbc38412f31e055b4731f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/584e09a81c16813d925ecb80ebb710b931d8d22e",
-                "reference": "584e09a81c16813d925ecb80ebb710b931d8d22e",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/d61afd683cc42bf1a9afbc38412f31e055b4731f",
+                "reference": "d61afd683cc42bf1a9afbc38412f31e055b4731f",
                 "shasum": ""
             },
             "require": {
@@ -3462,7 +3462,7 @@
             "keywords": [
                 "debug"
             ],
-            "time": "2014-11-10 16:02:12"
+            "time": "2014-11-11 20:32:23"
         },
         {
             "name": "philo/laravel-translate",
@@ -4250,17 +4250,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "2.6.x-dev",
+            "version": "2.7.x-dev",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "ff1193da791bfbad1a8d506cf91ee4575e3450fe"
+                "reference": "6165f4b5224c22de2873deb6a3a4e622044f0705"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/ff1193da791bfbad1a8d506cf91ee4575e3450fe",
-                "reference": "ff1193da791bfbad1a8d506cf91ee4575e3450fe",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/6165f4b5224c22de2873deb6a3a4e622044f0705",
+                "reference": "6165f4b5224c22de2873deb6a3a4e622044f0705",
                 "shasum": ""
             },
             "require": {
@@ -4269,7 +4269,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
@@ -4293,7 +4293,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-03 03:55:50"
+            "time": "2014-11-10 18:00:54"
         }
     ],
     "aliases": [],
