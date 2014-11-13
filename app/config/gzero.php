@@ -1,9 +1,10 @@
 <?php
 return [
+    'domain'       => 'gzero.dev',
     'multilang'    => [
-        'enabled'   => TRUE,
-        'detected'  => FALSE, // Do not change, changes in runtime!
-        'subdomain' => FALSE
+        'enabled'   => true,
+        'detected'  => false, // Do not change, changes in runtime!
+        'subdomain' => false
     ],
     'upload'       => [
         'path'   => public_path('uploads'),

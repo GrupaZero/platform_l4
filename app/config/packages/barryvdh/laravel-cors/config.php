@@ -32,11 +32,12 @@ return [
             'maxAge'         => 3600,
         ],
         '*'     => [
-            'allowedOrigins' => ['*'],
-            'allowedHeaders' => ['Content-Type', 'Accept'], // Chrome need Accept header
-            'allowedMethods' => ['POST', 'PUT', 'GET', 'DELETE'],
-            'maxAge'         => 3600,
-            'hosts'          => ['api.*'],
+            'supportsCredentials' => true,
+            'allowedOrigins'      => ['*'],
+            'allowedHeaders'      => ['Content-Type', 'Accept'], // Chrome need Accept header
+            'allowedMethods'      => ['POST', 'PUT', 'GET', 'DELETE'],
+            'maxAge'              => 3600,
+            'hosts'               => ['api.*'],
         ],
     ],
 

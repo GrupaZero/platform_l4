@@ -978,12 +978,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "f537f2d51c886b583db610cce78c0c9886b9a522"
+                "reference": "d890e323754a664dcabe94d9022800c6a4547723"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/f537f2d51c886b583db610cce78c0c9886b9a522",
-                "reference": "f537f2d51c886b583db610cce78c0c9886b9a522",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/d890e323754a664dcabe94d9022800c6a4547723",
+                "reference": "d890e323754a664dcabe94d9022800c6a4547723",
                 "shasum": ""
             },
             "require": {
@@ -1016,7 +1016,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2014-11-12 18:20:47"
+            "time": "2014-11-13 18:23:42"
         },
         {
             "name": "gzero/api",
@@ -1024,12 +1024,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "4a20b717c82a6851f1583edff31e0f66e7caed44"
+                "reference": "3343e056d908ed97fe0761430c328ae873d5400f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/4a20b717c82a6851f1583edff31e0f66e7caed44",
-                "reference": "4a20b717c82a6851f1583edff31e0f66e7caed44",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/3343e056d908ed97fe0761430c328ae873d5400f",
+                "reference": "3343e056d908ed97fe0761430c328ae873d5400f",
                 "shasum": ""
             },
             "require": {
@@ -1070,7 +1070,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2014-11-12 21:01:48"
+            "time": "2014-11-13 19:20:49"
         },
         {
             "name": "gzero/billin",
@@ -1125,12 +1125,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "55d8206ae67fc7a9be0059b3a4081be6bd976347"
+                "reference": "2127f151bac1fb6b87534e68c5524f659f807582"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/55d8206ae67fc7a9be0059b3a4081be6bd976347",
-                "reference": "55d8206ae67fc7a9be0059b3a4081be6bd976347",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/2127f151bac1fb6b87534e68c5524f659f807582",
+                "reference": "2127f151bac1fb6b87534e68c5524f659f807582",
                 "shasum": ""
             },
             "require": {
@@ -1177,7 +1177,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-11-12 17:25:44"
+            "time": "2014-11-13 19:05:12"
         },
         {
             "name": "gzero/doctrine2-extensions",
@@ -3332,12 +3332,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "7fe0f23aefcef2109dea6b3461850044872874e8"
+                "reference": "f0e9450fac5009d2e0904a0cc0c0fac78100035a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/7fe0f23aefcef2109dea6b3461850044872874e8",
-                "reference": "7fe0f23aefcef2109dea6b3461850044872874e8",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/f0e9450fac5009d2e0904a0cc0c0fac78100035a",
+                "reference": "f0e9450fac5009d2e0904a0cc0c0fac78100035a",
                 "shasum": ""
             },
             "require": {
@@ -3378,7 +3378,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2014-11-12 16:42:53"
+            "time": "2014-11-13 13:56:24"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -3503,12 +3503,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "d61afd683cc42bf1a9afbc38412f31e055b4731f"
+                "reference": "f0c0e7e88ce8855109542f222e0e68083e3c169a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/d61afd683cc42bf1a9afbc38412f31e055b4731f",
-                "reference": "d61afd683cc42bf1a9afbc38412f31e055b4731f",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/f0c0e7e88ce8855109542f222e0e68083e3c169a",
+                "reference": "f0c0e7e88ce8855109542f222e0e68083e3c169a",
                 "shasum": ""
             },
             "require": {
@@ -3550,7 +3550,7 @@
             "keywords": [
                 "debug"
             ],
-            "time": "2014-11-11 20:32:23"
+            "time": "2014-11-13 13:55:16"
         },
         {
             "name": "philo/laravel-translate",
