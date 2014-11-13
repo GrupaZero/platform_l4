@@ -44,20 +44,10 @@ class UserController extends BaseController {
             'email'    => Input::get('login'),
             'password' => Input::get('password')
         ];
-        $remember    = Input::get('remember');
+        $remember    = Input::get('remember', false);
 
-        if (Auth::check() or Auth::viaRemember()) {
-            return Redirect::route('account');
-        }
-
-        if (!empty($remember)) {
-            if (Auth::attempt($credentials, TRUE)) {
-                return Redirect::route('account');
-            }
-        } else {
-            if (Auth::attempt($credentials)) {
-                return Redirect::route('account');
-            }
+        if (Auth::check() || Auth::viaRemember() || Auth::attempt($credentials, $remember)) {
+            return Redirect::intended('account');
         }
 
         return Redirect::route('login');
@@ -92,8 +82,7 @@ class UserController extends BaseController {
      */
     public function postRemind()
     {
-        switch ($response = Password::remind(Input::only('email')))
-        {
+        switch ($response = Password::remind(Input::only('email'))) {
             case Password::INVALID_USER:
                 return Redirect::back()->with('error', Lang::get($response));
 
@@ -105,12 +94,15 @@ class UserController extends BaseController {
     /**
      * Display the password reset view for the given token.
      *
-     * @param  string  $token
+     * @param  string $token
+     *
      * @return Response
      */
     public function reset($token = null)
     {
-        if (is_null($token)) App::abort(404);
+        if (is_null($token)) {
+            App::abort(404);
+        }
 
         return View::make('password.reset')->with('token', $token);
     }
@@ -123,18 +115,22 @@ class UserController extends BaseController {
     public function postReset()
     {
         $credentials = Input::only(
-            'email', 'password', 'password_confirmation', 'token'
+            'email',
+            'password',
+            'password_confirmation',
+            'token'
         );
 
-        $response = Password::reset($credentials, function($user, $password)
-            {
+        $response = Password::reset(
+            $credentials,
+            function ($user, $password) {
                 $user->password = Hash::make($password);
 
                 $user->save();
-            });
+            }
+        );
 
-        switch ($response)
-        {
+        switch ($response) {
             case Password::INVALID_PASSWORD:
             case Password::INVALID_TOKEN:
             case Password::INVALID_USER:
