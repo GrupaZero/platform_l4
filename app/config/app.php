@@ -25,7 +25,7 @@ return array(
     |
     */
 
-    'url'             => 'http://localhost',
+    'url'             => 'http://' . Config::get('gzero.domain'),
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
