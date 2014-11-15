@@ -978,12 +978,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "99b4d5d16eed8a1c7e9336100c4bc11c8c57e954"
+                "reference": "ea9d11f5b76942297da67ef1ba6af972a0abf6ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/99b4d5d16eed8a1c7e9336100c4bc11c8c57e954",
-                "reference": "99b4d5d16eed8a1c7e9336100c4bc11c8c57e954",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/ea9d11f5b76942297da67ef1ba6af972a0abf6ed",
+                "reference": "ea9d11f5b76942297da67ef1ba6af972a0abf6ed",
                 "shasum": ""
             },
             "require": {
@@ -1016,7 +1016,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2014-11-13 20:26:11"
+            "time": "2014-11-15 18:32:50"
         },
         {
             "name": "gzero/api",
@@ -1024,12 +1024,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "4ff3360d6ea7a16a11fb86483b693a355133e2f4"
+                "reference": "4b2b4e24e9d59c4e6a18453103a6639a6cd4a4b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/4ff3360d6ea7a16a11fb86483b693a355133e2f4",
-                "reference": "4ff3360d6ea7a16a11fb86483b693a355133e2f4",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/4b2b4e24e9d59c4e6a18453103a6639a6cd4a4b7",
+                "reference": "4b2b4e24e9d59c4e6a18453103a6639a6cd4a4b7",
                 "shasum": ""
             },
             "require": {
@@ -1038,6 +1038,7 @@
                 "gzero/repository": "dev-master",
                 "illuminate/support": "4.2.*",
                 "jms/serializer": "~0.17@dev",
+                "league/fractal": "0.10.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -1070,7 +1071,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2014-11-13 21:14:00"
+            "time": "2014-11-15 19:23:29"
         },
         {
             "name": "gzero/billin",
@@ -1078,12 +1079,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/billin.git",
-                "reference": "371464214f658707bcda1efe199d91cbfd81b170"
+                "reference": "7aeac10e7ced7fe6f8779cc9179fedceb6f739d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/billin/zipball/371464214f658707bcda1efe199d91cbfd81b170",
-                "reference": "371464214f658707bcda1efe199d91cbfd81b170",
+                "url": "https://api.github.com/repos/GrupaZero/billin/zipball/7aeac10e7ced7fe6f8779cc9179fedceb6f739d5",
+                "reference": "7aeac10e7ced7fe6f8779cc9179fedceb6f739d5",
                 "shasum": ""
             },
             "require": {
@@ -1117,7 +1118,7 @@
                 "billin",
                 "gzero"
             ],
-            "time": "2014-11-11 16:38:19"
+            "time": "2014-11-14 14:37:22"
         },
         {
             "name": "gzero/cms",
@@ -1125,12 +1126,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "2127f151bac1fb6b87534e68c5524f659f807582"
+                "reference": "437e7698dde9b827437709b2cb8e1273fda3a05b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/2127f151bac1fb6b87534e68c5524f659f807582",
-                "reference": "2127f151bac1fb6b87534e68c5524f659f807582",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/437e7698dde9b827437709b2cb8e1273fda3a05b",
+                "reference": "437e7698dde9b827437709b2cb8e1273fda3a05b",
                 "shasum": ""
             },
             "require": {
@@ -1177,7 +1178,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-11-13 19:05:12"
+            "time": "2014-11-15 18:11:18"
         },
         {
             "name": "gzero/doctrine2-extensions",
@@ -1577,6 +1578,65 @@
                 "laravel"
             ],
             "time": "2014-11-05 20:28:44"
+        },
+        {
+            "name": "league/fractal",
+            "version": "0.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/fractal.git",
+                "reference": "557e1803dabe8ce252a4549a29da6d439f62d3c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/fractal/zipball/557e1803dabe8ce252a4549a29da6d439f62d3c2",
+                "reference": "557e1803dabe8ce252a4549a29da6d439f62d3c2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "illuminate/pagination": "~4.1",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "suggest": {
+                "illuminate/pagination": "The Illuminate Pagination component."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Fractal\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Sturgeon",
+                    "email": "me@philsturgeon.uk",
+                    "homepage": "http://philsturgeon.uk/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Handle the output of complex data structures ready for JSON output.",
+            "homepage": "http://fractal.thephpleague.com/",
+            "keywords": [
+                "api",
+                "json",
+                "league",
+                "rest"
+            ],
+            "time": "2014-10-17 17:12:38"
         },
         {
             "name": "machuga/authority",
@@ -3332,12 +3392,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "5eb06e09a2086c0254b4b808cb5544d140284374"
+                "reference": "3759f0847372f2e0fbd6b0d67d63c10dd7605a62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/5eb06e09a2086c0254b4b808cb5544d140284374",
-                "reference": "5eb06e09a2086c0254b4b808cb5544d140284374",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/3759f0847372f2e0fbd6b0d67d63c10dd7605a62",
+                "reference": "3759f0847372f2e0fbd6b0d67d63c10dd7605a62",
                 "shasum": ""
             },
             "require": {
@@ -3378,7 +3438,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2014-11-14 07:51:09"
+            "time": "2014-11-14 12:48:11"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
