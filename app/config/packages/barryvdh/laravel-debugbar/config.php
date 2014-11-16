@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Config;
 
-return array(
+return [
 
     /*
      |--------------------------------------------------------------------------
@@ -24,10 +24,10 @@ return array(
      | but this can cause problems with large data collectors.
      |
      */
-    'storage'         => array(
-        'enabled' => TRUE,
+    'storage'         => [
+        'enabled' => true,
         'path'    => storage_path() . '/debugbar',
-    ),
+    ],
     /*
      |--------------------------------------------------------------------------
      | Vendors
@@ -42,7 +42,7 @@ return array(
      |
      */
 
-    'include_vendors' => TRUE,
+    'include_vendors' => true,
     /*
      |--------------------------------------------------------------------------
      | Capture Ajax Requests
@@ -53,7 +53,7 @@ return array(
      |
      */
 
-    'capture_ajax'    => TRUE,
+    'capture_ajax'    => true,
     /*
      |--------------------------------------------------------------------------
      | Capture Console Commands
@@ -63,7 +63,7 @@ return array(
      |
      */
 
-    'capture_console' => FALSE,
+    'capture_console' => false,
     /*
      |--------------------------------------------------------------------------
      | DataCollectors
@@ -73,26 +73,26 @@ return array(
      |
      */
 
-    'collectors'      => array(
-        'phpinfo'         => TRUE, // Php version
-        'messages'        => TRUE, // Messages
-        'time'            => TRUE, // Time Datalogger
-        'memory'          => TRUE, // Memory usage
-        'exceptions'      => TRUE, // Exception displayer
-        'log'             => TRUE, // Logs from Monolog (merged in messages if enabled)
-        'db'              => FALSE, // Show database (PDO) queries and bindings
-        'views'           => TRUE, // Views with their data
-        'route'           => TRUE, // Current route information
-        'laravel'         => FALSE, // Laravel version and environment
-        'events'          => FALSE, // All events fired
-        'default_request' => FALSE, // Regular or special Symfony request logger
-        'symfony_request' => TRUE, // Only one can be enabled..
-        'mail'            => TRUE, // Catch mail messages
-        'logs'            => FALSE, // Add the latest log messages
-        'files'           => FALSE, // Show the included files
-        'config'          => FALSE, // Display config settings
-        'auth'            => FALSE, // Display Laravel authentication status
-    ),
+    'collectors'      => [
+        'phpinfo'         => true, // Php version
+        'messages'        => true, // Messages
+        'time'            => true, // Time Datalogger
+        'memory'          => true, // Memory usage
+        'exceptions'      => true, // Exception displayer
+        'log'             => true, // Logs from Monolog (merged in messages if enabled)
+        'db'              => true, // Show database (PDO) queries and bindings
+        'views'           => true, // Views with their data
+        'route'           => true, // Current route information
+        'laravel'         => false, // Laravel version and environment
+        'events'          => false, // All events fired
+        'default_request' => false, // Regular or special Symfony request logger
+        'symfony_request' => true, // Only one can be enabled..
+        'mail'            => true, // Catch mail messages
+        'logs'            => false, // Add the latest log messages
+        'files'           => false, // Show the included files
+        'config'          => false, // Display config settings
+        'auth'            => false, // Display Laravel authentication status
+    ],
     /*
      |--------------------------------------------------------------------------
      | Extra options
@@ -102,27 +102,27 @@ return array(
      |
      */
 
-    'options'         => array(
-        'auth'  => array(
-            'show_name' => FALSE, // Also show the users name/email in the debugbar
-        ),
-        'db'    => array(
-            'with_params' => TRUE, // Render SQL with the parameters substituted
-            'timeline'    => FALSE, // Add the queries to the timeline
-        ),
-        'mail'  => array(
-            'full_log' => FALSE
-        ),
-        'views' => array(
-            'data' => FALSE, //Note: Can slow down the application, because the data can be quite large..
-        ),
-        'route' => array(
-            'label' => TRUE // show complete route on bar
-        ),
-        'logs'  => array(
-            'file' => NULL
-        ),
-    ),
+    'options'         => [
+        'auth'  => [
+            'show_name' => false, // Also show the users name/email in the debugbar
+        ],
+        'db'    => [
+            'with_params' => true, // Render SQL with the parameters substituted
+            'timeline'    => false, // Add the queries to the timeline
+        ],
+        'mail'  => [
+            'full_log' => false
+        ],
+        'views' => [
+            'data' => false, //Note: Can slow down the application, because the data can be quite large..
+        ],
+        'route' => [
+            'label' => true // show complete route on bar
+        ],
+        'logs'  => [
+            'file' => null
+        ],
+    ],
     /*
      |--------------------------------------------------------------------------
      | Inject Debugbar in Response
@@ -134,6 +134,6 @@ return array(
      |
      */
 
-    'inject'          => TRUE,
+    'inject'          => true,
 
-);
+];
