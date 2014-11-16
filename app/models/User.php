@@ -40,7 +40,7 @@ class User extends BaseUser implements UserInterface, RemindableInterface {
 	 */
 	public function getRememberToken()
 	{
-		return $this->remember_token;
+		return $this->rememberToken;
 	}
 
 	/**
@@ -51,7 +51,7 @@ class User extends BaseUser implements UserInterface, RemindableInterface {
 	 */
 	public function setRememberToken($value)
 	{
-		$this->remember_token = $value;
+		$this->rememberToken = $value;
 	}
 
 	/**
@@ -61,7 +61,7 @@ class User extends BaseUser implements UserInterface, RemindableInterface {
 	 */
 	public function getRememberTokenName()
 	{
-		return 'remember_token';
+		return 'rememberToken';
 	}
 
 	/**
