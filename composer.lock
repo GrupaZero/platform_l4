@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5f7e9d777f290989c71919b0fb7f4d73",
+    "hash": "d88a673702cd28f2835a9a9deface3a3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -377,12 +377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "cb218be7fb373d7d0da60e502deda5680b173e7c"
+                "reference": "f23d8aa8883812bffd06b6bbc765d5a621a21d04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/cb218be7fb373d7d0da60e502deda5680b173e7c",
-                "reference": "cb218be7fb373d7d0da60e502deda5680b173e7c",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/f23d8aa8883812bffd06b6bbc765d5a621a21d04",
+                "reference": "f23d8aa8883812bffd06b6bbc765d5a621a21d04",
                 "shasum": ""
             },
             "require": {
@@ -394,7 +394,7 @@
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "fzaninotto/faker": "v1.3.0",
+                "fzaninotto/faker": "1.4.0",
                 "mockery/mockery": "0.9.*",
                 "phpmd/phpmd": "2.*",
                 "phpunit/phpunit": "4.3.*",
@@ -423,7 +423,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2014-11-16 15:17:00"
+            "time": "2014-11-16 16:14:23"
         },
         {
             "name": "gzero/billin",
@@ -478,12 +478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "142f91e0d53fe8bea14eec71a0e66d3ca93e777f"
+                "reference": "6b8a6cc987ff926979bb672d52133405b730d8ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/142f91e0d53fe8bea14eec71a0e66d3ca93e777f",
-                "reference": "142f91e0d53fe8bea14eec71a0e66d3ca93e777f",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/6b8a6cc987ff926979bb672d52133405b730d8ef",
+                "reference": "6b8a6cc987ff926979bb672d52133405b730d8ef",
                 "shasum": ""
             },
             "require": {
@@ -501,7 +501,7 @@
                 "gzero/repository": "self.version"
             },
             "require-dev": {
-                "fzaninotto/faker": "v1.3.0",
+                "fzaninotto/faker": "1.4.0",
                 "mockery/mockery": "0.9.*",
                 "phpmd/phpmd": "2.*",
                 "phpunit/phpunit": "4.3.*",
@@ -529,7 +529,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-11-16 15:19:51"
+            "time": "2014-11-16 16:23:54"
         },
         {
             "name": "gzero/eloquent-tree",
@@ -2658,6 +2658,54 @@
                 "instantiate"
             ],
             "time": "2014-10-13 12:58:55"
+        },
+        {
+            "name": "fzaninotto/faker",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "010c7efedd88bf31141a02719f51fb44c732d5a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/010c7efedd88bf31141a02719f51fb44c732d5a0",
+                "reference": "010c7efedd88bf31141a02719f51fb44c732d5a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": []
+            },
+            "autoload": {
+                "psr-0": {
+                    "Faker": "src/",
+                    "Faker\\PHPUnit": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2014-06-04 14:43:02"
         },
         {
             "name": "maximebf/debugbar",
