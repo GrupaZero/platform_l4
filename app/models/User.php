@@ -2,15 +2,9 @@
 
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
+use \Gzero\Model\User as BaseUser;
 
-class User extends Eloquent implements UserInterface, RemindableInterface {
-
-	/**
-	 * The database table used by the model.
-	 *
-	 * @var string
-	 */
-	protected $table = 'users';
+class User extends BaseUser implements UserInterface, RemindableInterface {
 
 	/**
 	 * The attributes excluded from the model's JSON form.
