@@ -377,12 +377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "4f1c28493e4f02d6b1d83c17c9f8948a815747a4"
+                "reference": "878fab1edce51d578555b674ec1b618d9a835976"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/4f1c28493e4f02d6b1d83c17c9f8948a815747a4",
-                "reference": "4f1c28493e4f02d6b1d83c17c9f8948a815747a4",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/878fab1edce51d578555b674ec1b618d9a835976",
+                "reference": "878fab1edce51d578555b674ec1b618d9a835976",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +423,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2014-11-16 14:08:40"
+            "time": "2014-11-16 14:45:00"
         },
         {
             "name": "gzero/billin",
@@ -478,12 +478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "6eae76d88fd3f7c915f5dcc36c2fa62a653e60d9"
+                "reference": "87128100b26d77a6d36e7a5f580cc1b5e12073b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/6eae76d88fd3f7c915f5dcc36c2fa62a653e60d9",
-                "reference": "6eae76d88fd3f7c915f5dcc36c2fa62a653e60d9",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/87128100b26d77a6d36e7a5f580cc1b5e12073b7",
+                "reference": "87128100b26d77a6d36e7a5f580cc1b5e12073b7",
                 "shasum": ""
             },
             "require": {
@@ -529,7 +529,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-11-16 13:56:48"
+            "time": "2014-11-16 15:01:18"
         },
         {
             "name": "gzero/eloquent-tree",
