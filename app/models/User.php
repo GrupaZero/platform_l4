@@ -2,7 +2,7 @@
 
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
-use \Gzero\Model\User as BaseUser;
+use Gzero\Entity\User as BaseUser;
 
 class User extends BaseUser implements UserInterface, RemindableInterface {
 

@@ -29,7 +29,7 @@ Create and configure database:
  - create database schema (remember to set env to dev)
  
  ```
-    php artisan migrate --path vendor/gzero/cms/src/Gzero/Model/migrations/
+    php artisan migrate --package=gzero/cms
  ```
 
  - you can seed database with example data using this command
