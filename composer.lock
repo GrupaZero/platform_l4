@@ -377,12 +377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "0294937704a9f6199649e72e8969fa882a525495"
+                "reference": "ecbbf053f04cad3ba2fecf73aae52cc8625154ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/0294937704a9f6199649e72e8969fa882a525495",
-                "reference": "0294937704a9f6199649e72e8969fa882a525495",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/ecbbf053f04cad3ba2fecf73aae52cc8625154ee",
+                "reference": "ecbbf053f04cad3ba2fecf73aae52cc8625154ee",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +423,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2014-11-25 15:55:46"
+            "time": "2014-11-25 17:06:16"
         },
         {
             "name": "gzero/billin",
@@ -478,19 +478,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "3729dc3a304e5e599731493da1192efc6b017eb2"
+                "reference": "99a62e9537f7c2c251864a25dd952d2d0e1525f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/3729dc3a304e5e599731493da1192efc6b017eb2",
-                "reference": "3729dc3a304e5e599731493da1192efc6b017eb2",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/99a62e9537f7c2c251864a25dd952d2d0e1525f5",
+                "reference": "99a62e9537f7c2c251864a25dd952d2d0e1525f5",
                 "shasum": ""
             },
             "require": {
                 "barryvdh/laravel-twigbridge": "dev-master",
                 "bigecko/laravel-theme": "dev-master",
                 "gzero/eloquent-tree": "0.7",
-                "laravel/framework": "4.2.*",
+                "laravel/framework": "4.2.11",
                 "machuga/authority-l4": "2.1.0",
                 "php": ">=5.4.0",
                 "robclancy/presenter": "1.2.0"
@@ -532,7 +532,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-11-25 16:03:07"
+            "time": "2014-11-25 19:10:59"
         },
         {
             "name": "gzero/eloquent-tree",
@@ -673,16 +673,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "4.2.x-dev",
+            "version": "v4.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c583ee71b17e52b3d06f97baa0d2e318e20280a0"
+                "reference": "e29253c7f29e3b1ca716de7fe309b272e3ddf47d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c583ee71b17e52b3d06f97baa0d2e318e20280a0",
-                "reference": "c583ee71b17e52b3d06f97baa0d2e318e20280a0",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/e29253c7f29e3b1ca716de7fe309b272e3ddf47d",
+                "reference": "e29253c7f29e3b1ca716de7fe309b272e3ddf47d",
                 "shasum": ""
             },
             "require": {
@@ -784,7 +784,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-11-21 18:43:42"
+            "time": "2014-10-04 18:48:27"
         },
         {
             "name": "league/fractal",
