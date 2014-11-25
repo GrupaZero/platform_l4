@@ -19,7 +19,7 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase {
         \App::setLocale('en'); // We're setting default locale on test env
         $app['config']['gzero.multilang.detected'] = true;
         $this->baseUrl                             = 'http://' . $app['config']['gzero.domain'] . '/';
-        Artisan::call('migrate', ['--path' => 'vendor/gzero/cms/src/Gzero/Model/migrations/']);
+        Artisan::call('migrate', ['--package' => 'gzero/cms']);
         return $app;
     }
 
