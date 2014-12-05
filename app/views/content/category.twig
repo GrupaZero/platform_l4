@@ -6,15 +6,15 @@
 
 {% block content %}
     <h1 class="page-header">Category</h1>
-    <p>ID: {{ content.getId() }}</p>
-    <p>Path: {{ content.getPath() }}</p>
-    <p>Type: {{ content.getType().getName() }}</p>
+    <p>ID: {{ content.id }}</p>
+    <p>Path: {{ content.path }}</p>
+    <p>Type: {{ content.type }}</p>
     {% if children is not empty %}
         <span><strong>Children:</strong></span>
         {% for child in children %}
-            <p>ID: {{ child.getId() }}</p>
-            <p>Path: {{ child.getPath() }}</p>
-            <p>Type: {{ child.getType().getName() }}</p>
+            <p>ID: {{ child.id }}</p>
+            <p>Path: {{ child.path }}</p>
+            <p>Type: {{ child.type }}</p>
         {% endfor %}
     {% endif %}
 {% endblock %}
