@@ -19,29 +19,29 @@ Create and configure database:
  - create .env.dev.php in root directory and put your credentials in it
  
  ```PHP
-    <?php
-     return [
-         'DB_NAME' => 'database_name',
-         'DB_USER' => 'database_user',
-         'DB_PASS' => 'database_password'
-     ];
+<?php
+ return [
+     'DB_NAME' => 'database_name',
+     'DB_USER' => 'database_user',
+     'DB_PASS' => 'database_password'
+ ];
  ```
  - create database schema (remember to set env to dev)
  
- ```
-    php artisan migrate --package=gzero/cms
- ```
+```
+php artisan migrate --package=gzero/cms
+```
 
  - you can seed database with example data using this command
  
- ```
-    php artisan db:seed --class="Gzero\Core\CMSSeeder"
- ```
+```
+php artisan db:seed --class="Gzero\Core\CMSSeeder"
+```
  - run php build in server
   
-  ```
-    php artisan serve
-  ```  
+```
+php artisan serve
+```
  - done
  
  To check progress on project development you can occasionally run composer install
