@@ -1,20 +1,56 @@
 {% extends "../layout.twig" %}
 
 {% block title %}
-    Category
+    {{ translations.title }}
 {% endblock %}
 
 {% block content %}
-    <h1 class="page-header">Category</h1>
-    <p>ID: {{ content.id }}</p>
-    <p>Path: {{ content.path }}</p>
-    <p>Type: {{ content.type }}</p>
+    <h1 class="page-header">{{ translations.title }}</h1>
+    <p>
+        {{ translations.body }}
+    </p>
+    <p>
+        <strong>
+            <small>DETAILS:</small>
+        </strong>
+        <code>
+            ID: {{ content.id }}
+
+            Type: {{ content.type }}
+
+            Path: {{ content.path }}
+
+            Author: {{ author.firstName }} {{ author.lastName }}
+        </code>
+    </p>
     {% if children is not empty %}
-        <span><strong>Children:</strong></span>
+        <h2>Childrens:</h2>
         {% for child in children %}
-            <p>ID: {{ child.id }}</p>
-            <p>Path: {{ child.path }}</p>
-            <p>Type: {{ child.type }}</p>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p>
+                        <code style="display: block">
+                            ID: {{ child.id }}
+
+                            Type: {{ child.type }}
+
+                            Path: {{ child.path }}
+
+                            Author: {{ author.firstName }} {{ author.lastName }}
+                        </code>
+                    </p>
+                    {% for translation in child.translations %}
+                        <div class="media">
+                            <div class="media-body">
+                                <h4 class="media-heading">{{ translation.title }}
+                                    <small class="label label-success">{{ translation.langCode }}</small>
+                                </h4>
+                                {{ translation.body }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         {% endfor %}
     {% endif %}
 {% endblock %}
