@@ -1,12 +1,26 @@
 {% extends "../layout.twig" %}
 
 {% block title %}
-    Content
+    {{ translations.title }}
 {% endblock %}
 
 {% block content %}
-    <h1 class="page-header">Content</h1>
-    <p>ID: {{ content.id }}</p>
-    <p>Path: {{ content.path }}</p>
-    <p>Type: {{ content.type }}</p>
+    <h1 class="page-header">{{ translations.title }}</h1>
+    <p>
+        {{ translations.body }}
+    </p>
+    <p>
+        <strong>
+            <small>DETAILS:</small>
+        </strong>
+        <code>
+            ID: {{ content.id }}
+
+            Type: {{ content.type }}
+
+            Path: {{ content.path }}
+
+            Author: {{ author.firstName }} {{ author.lastName }}
+        </code>
+    </p>
 {% endblock %}
