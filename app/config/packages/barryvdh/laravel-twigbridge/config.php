@@ -40,16 +40,16 @@ return [
      |
      */
 
-    'options'         => array(
+    'options'         => [
         'debug'               => Config::get('app.debug'),
         'charset'             => 'UTF-8',
         'base_template_class' => 'Barryvdh\TwigBridge\TwigTemplate',
-        'auto_reload'         => NULL,
+        'auto_reload'         => null,
         'cache'               => storage_path('twig'),
-        'strict_variables'    => TRUE,
+        'strict_variables'    => true,
         'autoescape'          => 'html',
         'optimizations'       => -1,
-    ),
+    ],
     /*
      |--------------------------------------------------------------------------
      | Functions & Filters
@@ -61,35 +61,44 @@ return [
      |
      */
 
-    'default_options' => array(
-        'needs_environment' => FALSE,
-        'needs_context'     => FALSE,
-        'is_safe'           => NULL, // null or array('html')
-        'is_safe_callback'  => NULL, // null or callback
-        'pre_escape'        => NULL, // null or 'html'
-        'preserves_safety'  => NULL,
-    ),
-    'functions'       => array(
+    'default_options' => [
+        'needs_environment' => false,
+        'needs_context'     => false,
+        'is_safe'           => null, // null or array('html')
+        'is_safe_callback'  => null, // null or callback
+        'pre_escape'        => null, // null or 'html'
+        'preserves_safety'  => null,
+    ],
+    'functions'       => [
         /**
          * User account menu builder
          */
         'user_menu'   => function () {
-                return App::make('user.menu')->getMenu();
-            },
+            return App::make('user.menu')->getMenu();
+        },
         /**
          * Admin menu builder
          */
         'admin_menu'  => function () {
-                return App::make('user.menu')->getMenu();
-            },
+            return App::make('user.menu')->getMenu();
+        },
         /**
          * Option menu builder
          */
         'option_menu' => function () {
-                return App::make('user.menu')->getMenu();
-            }
-    ),
-    'filters'         => array(),
-    'facades'         => array()
+            return App::make('user.menu')->getMenu();
+        },
+        /**
+         * Option menu builder
+         */
+        'getTranslation' => function ($translations, $langCode) {
+            return $translations->filter(function($translation) use ($langCode)
+            {
+                return $translation->langCode == $langCode;
+            })->first();
+        }
+    ],
+    'filters'         => [],
+    'facades'         => []
 
 ];
