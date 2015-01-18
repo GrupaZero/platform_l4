@@ -5,6 +5,7 @@
 @section('title')
     {{ $activeTranslation->title }}
 @stop
+
 @section('content')
     <h1 class="page-header">{{ $activeTranslation->title }}</h1>
     <p>
