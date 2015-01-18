@@ -22,7 +22,7 @@ class HomeController extends BaseController {
 
     public function showWelcome()
     {
-        return View::make('layout');
+        return View::make('layouts.default');
 //        $repo   = Doctrine::getRepository('Gzero\Entity\Block');
 //        $blocks = $repo->getAllActive(new \Gzero\Entity\Lang('pl', 'pl_PL'));
 //        foreach ($blocks as $block) {

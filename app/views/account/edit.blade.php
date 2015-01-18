@@ -1,29 +1,29 @@
-{% extends "../layout.twig" %}
+@extends('layouts.default')
 
-{% block title %}
-    {{ trans('common.edit') }}
-{% endblock %}
+@section('title')
+    @lang('common.edit')
+@stop
 
-{% block content %}
-    <h1 class="page-header">{{ trans('common.edit') }}</h1>
+@section('content')
+    <h1 class="page-header">@lang('common.edit')</h1>
 
     <div class="col-md-4 col-md-offset-4">
         <form id="edit-account-form" action="#" method="post" class="form-horizontal" role="form">
             <div class="form-group">
-                <label for="firstName">{{ trans('common.firstName') }}</label>
-                <input type="text" id="firstName" name="firstName" class="form-control" value="{{ auth_user().firstName }}">
+                <label for="firstName">@lang('common.firstName')</label>
+                <input type="text" id="firstName" name="firstName" class="form-control" value="{{ Auth::user()->firstName }}">
             </div>
             <div class="form-group">
-                <label for="lastName">{{ trans('common.lastName') }}</label>
-                <input type="text" id="lastName" name="lastName" class="form-control" value="{{ auth_user().lastName }}">
+                <label for="lastName">@lang('common.lastName')</label>
+                <input type="text" id="lastName" name="lastName" class="form-control" value="{{ Auth::user()->lastName }}">
             </div>
             <div class="form-group">
-                <label for="password">{{ trans('common.password') }}</label>
+                <label for="password">@lang('common.password')</label>
                 <input type="password" id="password" name="password" class="form-control">
             </div>
             <div class=" form-group">
                 <div class="col-md-4 col-md-offset-4">
-                    <button id="edit-account" type="submit" class="btn btn-default">{{ trans('common.edit') }}</button>
+                    <button id="edit-account" type="submit" class="btn btn-default">@lang('common.edit')</button>
                 </div>
             </div>
         </form>
@@ -45,4 +45,4 @@
             });
         });
     </script>
-{% endblock %}
+@stop
