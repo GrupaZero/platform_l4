@@ -1,6 +1,6 @@
 @extends('layouts.default')
 <?php $activeTranslation = $content->translation($lang->code); ?>
-<?php $activeRoute = $content->routeTranslation($lang->code) ?>
+<?php $activeRoute = $content->routeTranslation($lang->code); ?>
 
 @section('title')
     {{ $activeTranslation->title }}
