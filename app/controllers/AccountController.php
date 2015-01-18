@@ -15,7 +15,8 @@ class AccountController extends BaseController {
 
     public function account()
     {
-        return View::make('account');
+        // TODO we need proper user menu method
+        return View::make('account.index', ['menu' => App::make('user.menu')->getMenu()]);
     }
 
     public function edit()

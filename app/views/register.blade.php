@@ -1,10 +1,10 @@
-{% extends "../layout.twig" %}
+@extends('layouts.default')
 
-{% block title %}
-    {{ trans('common.login') }}
-{% endblock %}
+@section('title')
+    @lang('common.register')
+@stop
 
-{% block content %}
+@section('content')
     <div class="col-md-4 col-md-offset-4">
         <h1 class="page-header">{{ trans('common.register') }}</h1>
 
@@ -36,10 +36,4 @@
             </div>
         </form>
     </div>
-{% endblock %}
-
-{% block header_region %}
-{% endblock %}
-
-{% block footer_region %}
-{% endblock %}
+@stop

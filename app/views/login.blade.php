@@ -1,12 +1,12 @@
-{% extends "../layout.twig" %}
+@extends('layouts.default')
 
-{% block title %}
-    {{ trans('common.login') }}
-{% endblock %}
+@section('title')
+    @lang('common.login')
+@stop
 
-{% block content %}
+@section('content')
     <div class="col-md-4 col-md-offset-4">
-        <h1 class="page-header">{{ trans('common.login') }}</h1>
+        <h1 class="page-header">@lang('common.login')</h1>
 
         <form method="post" role="form">
             <div class="form-group">
@@ -14,23 +14,17 @@
                 <input type="email" id="login" name="login" class="form-control" placeholder="Login">
             </div>
             <div class="form-group">
-                <label for="password">{{ trans('common.password') }}</label>
+                <label for="password">@lang('common.password')</label>
                 <input type="password" id="password" name="password" class="form-control" placeholder="Password">
             </div>
             <div class="form-group">
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" name="remember"> {{ trans('common.remember') }}
+                        <input type="checkbox" name="remember">@lang('common.remember')
                     </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-default">{{ trans('common.login') }}</button>
+            <button type="submit" class="btn btn-default">@lang('common.login')</button>
         </form>
     </div>
-{% endblock %}
-
-{% block header_region %}
-{% endblock %}
-
-{% block footer_region %}
-{% endblock %}
+@stop
