@@ -9,21 +9,23 @@
 @section('content')
     <h1 class="page-header">{{ $activeTranslation->title }}</h1>
     <p>
-    {{ $activeTranslation->body }}
+        {{ $activeTranslation->body }}
     </p>
     <p>
-    <strong>
-    <small>DETAILS:</small>
-    </strong>
-    <code>
-    ID: {{ $content->id }}
+        <strong>
+            <small>DETAILS:</small>
+        </strong>
+        <code>
+            ID: {{ $content->id }}
 
-    Type: {{ $content->type }}
+            Type: {{ $content->type }}
 
-    Path: {{ $content->path }}
+            Path: {{ $content->path }}
 
-    Author: {{ $content->author->firstName }} {{ $content->author->lastName }}
-    </code>
+            Author: {{ $content->author->firstName }} {{ $content->author->lastName }}
+        </code>
+        <br/>
+        Link to this site: {{ HTML::link($activeRoute->langCode .'/' . $activeRoute->url, 'Click!') }}
     </p>
     @if($children)
         <h2>Childrens:</h2>
