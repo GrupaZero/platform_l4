@@ -118,6 +118,7 @@ return array(
         'Barryvdh\Debugbar\ServiceProvider',
         'Philo\Translate\TranslateServiceProvider',
         'Barryvdh\Cors\CorsServiceProvider',
+        'Robbo\Presenter\PresenterServiceProvider',
         'Gzero\Core\ServiceProvider',
         'Gzero\Admin\ServiceProvider',
         'Gzero\Api\ServiceProvider',
