@@ -1,12 +1,14 @@
 @extends('layouts.default')
-@section('title')
-    {{ $translations->title }}
-@stop
+@if ($activeTranslation = $getTranslation($content->translations, $lang->code)) @endif
+@if ($activeRoute = $getTranslation($content->route->translations, $lang->code)) @endif
 
+@section('title')
+    {{ $activeTranslation->title }}
+@stop
 @section('content')
-    <h1 class="page-header">{{ $translations->title }}</h1>
+    <h1 class="page-header">{{ $activeTranslation->title }}</h1>
     <p>
-        {{ $translations->body }}
+        {{ $activeTranslation->body }}
     </p>
     <p>
         <strong>
@@ -22,6 +24,6 @@
             Author: {{ $content->author->firstName }} {{ $content->author->lastName }}
         </code>
         <br/>
-        {{--Link to this site: {{ HTML::link($activeRoute->langCode .'/' . $activeRoute->url, 'Click!') }}--}}
+        Link to this site: {{ HTML::link($activeRoute->langCode .'/' . $activeRoute->url, 'Click!') }}
     </p>
 @stop
