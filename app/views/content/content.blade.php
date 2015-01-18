@@ -1,6 +1,6 @@
 @extends('layouts.default')
-@if ($activeTranslation = $content->translation($lang->code)) @endif
-@if ($activeRoute = $content->routeTranslation($lang->code)) @endif
+<?php $activeTranslation = $content->translation($lang->code); ?>
+<?php $activeRoute = $content->routeTranslation($lang->code) ?>
 
 @section('title')
     {{ $activeTranslation->title }}
