@@ -21,7 +21,6 @@ class ContentController extends BaseController {
     {
         parent::__construct();
         $this->router = $router;
-        $this->viewShareHelpers();
     }
 
     /**
@@ -35,21 +34,5 @@ class ContentController extends BaseController {
             App::abort(404);
         }
         return $this->router->handleRequest($this->getRequestedUrl(), $this->getLang());
-    }
-
-    /** @TODO We need better way to use helper functions */
-    protected function viewShareHelpers()
-    {
-        View::share(
-            'getTranslation',
-            function ($translations, $langCode) {
-                return $translations->filter(
-                    function ($translation) use ($langCode) {
-                        return $translation->langCode == $langCode;
-                    }
-                )->first();
-            }
-        );
-
     }
 } 
