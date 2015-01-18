@@ -427,12 +427,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "2ad85563250b06704e3abd633deef43ef7a0ce6d"
+                "reference": "1b282b98363c065bd3b376c4bdf52b51d18e414a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/2ad85563250b06704e3abd633deef43ef7a0ce6d",
-                "reference": "2ad85563250b06704e3abd633deef43ef7a0ce6d",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/1b282b98363c065bd3b376c4bdf52b51d18e414a",
+                "reference": "1b282b98363c065bd3b376c4bdf52b51d18e414a",
                 "shasum": ""
             },
             "require": {
@@ -441,7 +441,7 @@
                 "laravel/framework": "4.2.11",
                 "machuga/authority-l4": "2.1.0",
                 "php": ">=5.4.0",
-                "robclancy/presenter": "1.3.*"
+                "robclancy/presenter": "1.3.0"
             },
             "replace": {
                 "gzero/core": "self.version",
@@ -481,7 +481,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-01-18 17:30:29"
+            "time": "2015-01-18 17:40:07"
         },
         {
             "name": "gzero/eloquent-tree",
@@ -1326,7 +1326,7 @@
         },
         {
             "name": "robclancy/presenter",
-            "version": "dev-master",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robclancy/presenter.git",
