@@ -30,6 +30,8 @@
     @if($children)
         <h2>Childrens:</h2>
         @foreach($children as $child)
+            <?php $activeTranslation = $child->translation($lang->code); ?>
+            <?php $activeRoute = $child->routeTranslation($lang->code); ?>
             <div class="panel panel-default">
                 <div class="panel-body">
                 <p>
@@ -40,7 +42,7 @@
 
                 Path: {{ $child->path }}
 
-                Author: {{ $content->author->firstName }} {{ $content->author->lastName }}
+                Author: {{ $child->author->firstName }} {{ $child->author->lastName }}
                 </code>
                 </p>
                     <div class="media">
