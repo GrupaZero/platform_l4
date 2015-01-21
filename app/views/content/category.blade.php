@@ -28,33 +28,30 @@
         Link to this site: {{ HTML::link($activeRoute->langCode .'/' . $activeRoute->url, 'Click!') }}
     </p>
     @if($children)
-        <h2>Childrens:</h2>
-        @foreach($children as $child)
-            <?php $activeTranslation = $child->translation($lang->code); ?>
-            <?php $activeRoute = $child->routeTranslation($lang->code); ?>
-            <div class="panel panel-default">
-                <div class="panel-body">
-                <p>
-                <code style="display: block">
-                ID: {{ $child->id }}
-
-                Type: {{ $child->type }}
-
-                Path: {{ $child->path }}
-
-                Author: {{ $child->author->firstName }} {{ $child->author->lastName }}
-                </code>
-                </p>
-                    <div class="media">
-                        <div class="media-body">
-                            <h4 class="media-heading">{{ $activeTranslation->title }}
-                            <small class="label label-success">{{ $activeTranslation->langCode }}</small>
-                            </h4>
-                            {{ $activeTranslation->body }}
-                        </div>
+        <div class="row">
+        @foreach($children as $index => $child)
+            <div class="col-md-6">
+                <?php $activeTranslation = $child->translation($lang->code); ?>
+                <?php $activeRoute = $child->routeTranslation($lang->code); ?>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="{{URL::to('/'). '/' . $activeRoute->langCode .'/' . $activeRoute->url}}">
+                            <img class="media-object thumbnail" src="http://placehold.it/120/120/" width="120" height="120"
+                                 alt="{{$activeTranslation->title}}">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">
+                            {{ HTML::link($activeRoute->langCode .'/' . $activeRoute->url, $activeTranslation->title) }}
+                        </h2>
+                        {{ $activeTranslation->teaser }}
                     </div>
                 </div>
             </div>
+            @if($index % 2 == 1)
+                <hr style="clear: both"/>
+            @endif
         @endforeach
+        </div>
     @endif
 @stop
