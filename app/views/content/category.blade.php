@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.sidebarRight')
 <?php $activeTranslation = $content->translation($lang->code); ?>
 <?php $activeRoute = $content->routeTranslation($lang->code); ?>
 
@@ -6,31 +6,17 @@
     {{ $activeTranslation->title }}
 @stop
 
+@section('sidebarRight')
+    <h1 class="page-header">Menu</h1>
+@stop
+
 @section('content')
     <h1 class="page-header">{{ $activeTranslation->title }}</h1>
     <p>
         {{ $activeTranslation->body }}
     </p>
-    <p>
-        <strong>
-            <small>DETAILS:</small>
-        </strong>
-        <code>
-            ID: {{ $content->id }}
-
-            Type: {{ $content->type }}
-
-            Path: {{ $content->path }}
-
-            Author: {{ $content->author->firstName }} {{ $content->author->lastName }}
-        </code>
-        <br/>
-        Link to this site: {{ HTML::link($activeRoute->langCode .'/' . $activeRoute->url, 'Click!') }}
-    </p>
     @if($children)
-        <div class="row">
         @foreach($children as $index => $child)
-            <div class="col-md-6">
                 <?php $activeTranslation = $child->translation($lang->code); ?>
                 <?php $activeRoute = $child->routeTranslation($lang->code); ?>
                 <div class="media">
@@ -44,14 +30,13 @@
                         <h2 class="media-heading">
                             {{ HTML::link($activeRoute->langCode .'/' . $activeRoute->url, $activeTranslation->title) }}
                         </h2>
+                        <p class="text-muted">
+                            Posted {{ $child->publishDate() }} by {{ $child->author->firstName }} {{ $child->author->lastName }}
+                        </p>
                         {{ $activeTranslation->teaser }}
+                        {{ HTML::link($activeRoute->langCode .'/' . $activeRoute->url, 'More info', ['class' => 'btn btn-default']) }}
                     </div>
                 </div>
-            </div>
-            @if($index % 2 == 1)
-                <hr style="clear: both"/>
-            @endif
         @endforeach
-        </div>
     @endif
 @stop

@@ -26,8 +26,8 @@
         @show
     </div>
 </div>
-<div id="footer">
+<footer id="footer">
     @include('includes.footer')
-</div>
+</footer>
 </body>
 </html>
