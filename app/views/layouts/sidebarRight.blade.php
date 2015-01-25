@@ -5,7 +5,7 @@
 </head>
 <body>
 <div id="wrapper">
-    <header class="row">
+    <header>
         @include('includes.navbar')
     </header>
     <div class="container">

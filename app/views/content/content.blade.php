@@ -8,23 +8,16 @@
 
 @section('content')
     <h1 class="page-header">{{ $activeTranslation->title }}</h1>
-    <p>
-        {{ $activeTranslation->body }}
-    </p>
-    <p>
-        <strong>
-            <small>DETAILS:</small>
-        </strong>
-        <code>
-            ID: {{ $content->id }}
-
-            Type: {{ $content->type }}
-
-            Path: {{ $content->path }}
-
-            Author: {{ $content->author->firstName }} {{ $content->author->lastName }}
-        </code>
-        <br/>
-        Link to this site: {{ HTML::link($activeRoute->langCode .'/' . $activeRoute->url, 'Click!') }}
-    </p>
+    <div class="row">
+        <div class="col-md-8">
+            <p class="text-muted">
+                @lang('common.postedBy') {{ $content->authorName() }}
+                @lang('common.postedOn') {{ $content->publishDate() }}
+            </p>
+        </div>
+        <div class="col-md-4 text-right">
+            <p class="text-muted">@lang('common.rating') {{ $content->ratingStars() }}</p>
+        </div>
+    </div>
+    {{ $activeTranslation->body }}
 @stop
