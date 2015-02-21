@@ -15,8 +15,8 @@
     {{ $activeTranslation->body }}
     @if($children)
         @foreach($children as $index => $child)
-                <?php $activeTranslation = $child->translation($lang->code); ?>
-                @if($activeTranslation)
+            <?php $activeTranslation = $child->translation($lang->code); ?>
+            @if($activeTranslation)
                 <?php $activeRoute = $child->routeTranslation($lang->code); ?>
                 <?php $childUrl = URL::to('/'). '/' . $activeRoute->langCode .'/' . $activeRoute->url; ?>
                 <div class="media">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                @endif
+            @endif
         @endforeach
     @endif
 @stop
