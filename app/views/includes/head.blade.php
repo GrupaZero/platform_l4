@@ -72,7 +72,7 @@
             height : 60px;
         }
 
-        .container .text-muted {
+        #footer .text-muted {
             margin : 20px 0;
         }
 

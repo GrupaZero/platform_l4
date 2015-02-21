@@ -10,16 +10,15 @@
     </header>
     <div class="container">
         <div class="row">
-            <!-- sidebar content -->
-            <div id="sidebarLeft" class="col-md-3 sidebar">
-                @yield('sidebarLeft')
-            </div>
-
             <!-- main content -->
             <div id="content" class="col-md-9">
                 @yield('content')
             </div>
 
+            <!-- sidebar content -->
+            <div id="sidebarRight" class="col-md-3 sidebar">
+                @yield('sidebarRight')
+            </div>
         </div>
     </div>
 </div>
