@@ -279,12 +279,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "5bbe679ca935229075373e38bda9984e21a15ff7"
+                "reference": "2d2c7d1ffb9b6f2c31992a9858fa117bb0a552aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/5bbe679ca935229075373e38bda9984e21a15ff7",
-                "reference": "5bbe679ca935229075373e38bda9984e21a15ff7",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/2d2c7d1ffb9b6f2c31992a9858fa117bb0a552aa",
+                "reference": "2d2c7d1ffb9b6f2c31992a9858fa117bb0a552aa",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2015-01-19 18:21:38"
+            "time": "2015-02-21 15:34:06"
         },
         {
             "name": "gzero/api",
@@ -427,12 +427,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "c9ea44f02d7032cdcebae82d9381db7afc07fb8b"
+                "reference": "5a70deb544559049558ab0979c136b57e943d46e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/c9ea44f02d7032cdcebae82d9381db7afc07fb8b",
-                "reference": "c9ea44f02d7032cdcebae82d9381db7afc07fb8b",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/5a70deb544559049558ab0979c136b57e943d46e",
+                "reference": "5a70deb544559049558ab0979c136b57e943d46e",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +481,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-01-25 13:38:03"
+            "time": "2015-02-21 12:25:52"
         },
         {
             "name": "gzero/eloquent-tree",
@@ -3424,12 +3424,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "d34208f17c9e4b1e628cd720e3d3e46de2b1d7ed"
+                "reference": "eeb76c48e9fa2c56eae8160cba3cf94d0c19686a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/d34208f17c9e4b1e628cd720e3d3e46de2b1d7ed",
-                "reference": "d34208f17c9e4b1e628cd720e3d3e46de2b1d7ed",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/eeb76c48e9fa2c56eae8160cba3cf94d0c19686a",
+                "reference": "eeb76c48e9fa2c56eae8160cba3cf94d0c19686a",
                 "shasum": ""
             },
             "require": {
@@ -3475,7 +3475,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2015-02-18 10:38:04"
+            "time": "2015-02-21 13:05:27"
         },
         {
             "name": "symfony/yaml",
