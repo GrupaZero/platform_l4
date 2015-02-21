@@ -16,10 +16,12 @@
     @if($children)
         @foreach($children as $index => $child)
                 <?php $activeTranslation = $child->translation($lang->code); ?>
+                @if($activeTranslation)
                 <?php $activeRoute = $child->routeTranslation($lang->code); ?>
+                <?php $childUrl = URL::to('/'). '/' . $activeRoute->langCode .'/' . $activeRoute->url; ?>
                 <div class="media">
                     <h2 class="page-header">
-                        <a href="{{ $activeRoute->url }}">
+                        <a href="{{ $childUrl }}">
                             {{ $activeTranslation->title }}
                         </a>
                     </h2>
@@ -36,8 +38,8 @@
                             </div>
                         </div>
                        <p>
-                           <a href="{{URL::to('/'). '/' . $activeRoute->langCode .'/' . $activeRoute->url}}">
-                               <img class="img-responsive" src="http://lorempixel.com/847/312/sports/{{ $index }}"
+                           <a href="{{ $childUrl }}">
+                               <img class="img-responsive" src="http://placehold.it/847x312"
                                     width="847" height="312" alt="{{$activeTranslation->title}}">
                            </a>
                        </p>
@@ -46,7 +48,7 @@
                     <hr/>
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="{{ $activeRoute->url }}" class="btn btn-default">
+                            <a href="{{ $childUrl }}" class="btn btn-default">
                                 @lang('common.readMore')
                             </a>
                         </div>
@@ -55,6 +57,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
         @endforeach
     @endif
 @stop
