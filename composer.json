@@ -16,10 +16,10 @@
         "gzero/billin": "dev-master"
     },
     "require-dev": {
-        "barryvdh/laravel-ide-helper": "1.*",
+        "barryvdh/laravel-ide-helper": "1.11.*",
         "barryvdh/laravel-debugbar": "1.*",
         "ccampbell/chromephp": "4.1.0",
-        "philo/laravel-translate": "dev-master",
+        "philo/laravel-translate": "4.0.*@dev",
         "phpunit/phpunit": "4.3.*",
         "fzaninotto/faker": "1.4.0"
     },
