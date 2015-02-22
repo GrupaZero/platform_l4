@@ -279,12 +279,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "2d2c7d1ffb9b6f2c31992a9858fa117bb0a552aa"
+                "reference": "712e3ac27c97b6b1b1f77f45a2699b6a1b734067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/2d2c7d1ffb9b6f2c31992a9858fa117bb0a552aa",
-                "reference": "2d2c7d1ffb9b6f2c31992a9858fa117bb0a552aa",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/712e3ac27c97b6b1b1f77f45a2699b6a1b734067",
+                "reference": "712e3ac27c97b6b1b1f77f45a2699b6a1b734067",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2015-02-21 15:34:06"
+            "time": "2015-02-21 16:22:52"
         },
         {
             "name": "gzero/api",
@@ -325,12 +325,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "255d5938913a28b14440942c1cd4bf53dae94553"
+                "reference": "7a979b9ba8ddfb3d8d1b6ea575b3ff2e83857750"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/255d5938913a28b14440942c1cd4bf53dae94553",
-                "reference": "255d5938913a28b14440942c1cd4bf53dae94553",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/7a979b9ba8ddfb3d8d1b6ea575b3ff2e83857750",
+                "reference": "7a979b9ba8ddfb3d8d1b6ea575b3ff2e83857750",
                 "shasum": ""
             },
             "require": {
@@ -372,7 +372,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2015-01-13 17:41:22"
+            "time": "2015-02-22 10:05:26"
         },
         {
             "name": "gzero/billin",
@@ -427,12 +427,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "5a70deb544559049558ab0979c136b57e943d46e"
+                "reference": "d1f5ef3647ea92e2834723a001e9b05f95ffb2b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/5a70deb544559049558ab0979c136b57e943d46e",
-                "reference": "5a70deb544559049558ab0979c136b57e943d46e",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/d1f5ef3647ea92e2834723a001e9b05f95ffb2b2",
+                "reference": "d1f5ef3647ea92e2834723a001e9b05f95ffb2b2",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +481,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-02-21 12:25:52"
+            "time": "2015-02-22 10:04:33"
         },
         {
             "name": "gzero/eloquent-tree",
@@ -489,12 +489,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdrianSkierniewski/eloquent-tree.git",
-                "reference": "11f051201b6f8cb6fe52a0d577f23118dcc275eb"
+                "reference": "8b753e7fa0621ec1348efee482bc67c3b1e7c5e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdrianSkierniewski/eloquent-tree/zipball/11f051201b6f8cb6fe52a0d577f23118dcc275eb",
-                "reference": "11f051201b6f8cb6fe52a0d577f23118dcc275eb",
+                "url": "https://api.github.com/repos/AdrianSkierniewski/eloquent-tree/zipball/8b753e7fa0621ec1348efee482bc67c3b1e7c5e9",
+                "reference": "8b753e7fa0621ec1348efee482bc67c3b1e7c5e9",
                 "shasum": ""
             },
             "require": {
@@ -529,7 +529,7 @@
                 "eloquent",
                 "laravel"
             ],
-            "time": "2015-01-03 10:40:12"
+            "time": "2015-02-22 09:25:30"
         },
         {
             "name": "ircmaxell/password-compat",
