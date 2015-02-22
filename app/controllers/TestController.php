@@ -23,10 +23,10 @@ class TestController extends BaseController {
     public function index()
     {
         // All trees
-        $params['filter'] = ['type' => ['value' => 'category', 'relation' => null]];
+        //$params['filter'] = ['type' => ['value' => 'category', 'relation' => null]];
 
         $nodes = $this->repository->getContents(
-            $params['filter'],
+            [],
             [],
             null
         );
