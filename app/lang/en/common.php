@@ -10,6 +10,7 @@ return [
     'lastName'      => 'Last Name',
     'login'         => 'Login',
     'logout'        => 'Logout',
+    'noTranslation' => 'No translation',
     'numberOfViews' => 'Number of views:',
     'options'       => 'Options',
     'passReminder'  => 'Password reminder',

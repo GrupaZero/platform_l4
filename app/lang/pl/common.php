@@ -10,6 +10,7 @@ return [
     'lastName'      => 'Nazwisko',
     'login'         => 'Zaloguj',
     'logout'        => 'Wyloguj',
+    'noTranslation' => 'Brak tłumaczenia',
     'numberOfViews' => 'Liczba wyświetleń:',
     'options'       => 'Opcje',
     'passReminder'  => 'Przypomnienie hasła',
