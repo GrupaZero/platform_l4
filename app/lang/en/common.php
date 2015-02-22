@@ -4,6 +4,7 @@
 
 return [
     'account'       => 'Account',
+    'author'        => 'Author',
     'edit'          => 'Edit',
     'email'         => 'E-mail',
     'firstName'     => 'First Name',
@@ -13,8 +14,10 @@ return [
     'noTranslation' => 'No translation',
     'numberOfViews' => 'Number of views:',
     'options'       => 'Options',
+    'order'         => 'Order',
     'passReminder'  => 'Password reminder',
     'password'      => 'Password',
+    'path'          => 'Path',
     'postedBy'      => 'Posted by',
     'postedOn'      => 'on',
     'rating'        => 'Rating',
@@ -22,5 +25,8 @@ return [
     'register'      => 'Register',
     'remember'      => 'Remember me',
     'sendReminder'  => 'Send reminder',
-    'submit'        => 'Submit'
+    'status'        => 'Status',
+    'submit'        => 'Submit',
+    'title'         => 'Title',
+    'type'          => 'Type'
 ];

@@ -4,6 +4,7 @@
 
 return [
     'account'       => 'Konto',
+    'author'        => 'Autor',
     'edit'          => 'Edytuj',
     'email'         => 'E-mail',
     'firstName'     => 'Imię',
@@ -13,8 +14,10 @@ return [
     'noTranslation' => 'Brak tłumaczenia',
     'numberOfViews' => 'Liczba wyświetleń:',
     'options'       => 'Opcje',
+    'order'         => 'Kolejność',
     'passReminder'  => 'Przypomnienie hasła',
     'password'      => 'Hasło',
+    'path'          => 'Ścieżka',
     'postedBy'      => 'Dodane przez',
     'postedOn'      => 'w dniu',
     'rating'        => 'Ocena',
@@ -22,5 +25,8 @@ return [
     'register'      => 'Zarejestruj',
     'remember'      => 'Zapamiętaj mnie',
     'sendReminder'  => 'Wyślij przypomnienie',
-    'submit'        => 'Wyślij'
+    'status'        => 'Status',
+    'submit'        => 'Wyślij',
+    'title'         => 'Tytuł',
+    'type'          => 'Typ'
 ];
