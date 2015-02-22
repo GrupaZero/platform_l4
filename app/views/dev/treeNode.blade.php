@@ -1,23 +1,22 @@
-<tr{{$content->isActive ? '' : ' class="text-muted"'}}
-        {{ $content->parentId ? ' style="background-color: rgba(182, 182, 182, 0.' . $content->level . ');"' : '' }}>
+<tr{{$content->isActive ? '' : ' class="text-muted"'}} {{ $content->parentId ? ' style="background-color: rgba(182, 182, 182, 0.' . $content->level . ');"' : '' }}>
     <td class="text-left"{{ $content->parentId ? ' style="padding-left: ' . $content->level * 2 . '0px;"' : '' }}>
         <?php $activeTranslation = $content->translation($lang->code); ?>
         <?php $activeRoute = $content->routeTranslation($lang->code); ?>
         @if($activeTranslation)
             @if($content->isActive)
-                <a href="{{ $activeRoute->url }}"> {{ $activeTranslation->title }}</a>
+                <a href="{{ $activeRoute->url }}">{{ $activeTranslation->title }}</a>
             @else
-                <p>{{ $activeTranslation->title }}</p>
+                {{ $activeTranslation->title }}
             @endif
         @else
-            <p>@lang('common.noTranslation')</p>
+            @lang('common.noTranslation')
         @endif
     </td>
     <td>
         @if($content->isActive)
-            <p>@lang('common.published')</p>
+            @lang('common.published')
         @else
-            <p>@lang('common.notPublished')</p>
+            @lang('common.notPublished')
         @endif
     </td>
     <td>
@@ -34,4 +33,3 @@
     </td>
 </tr>
 @each('dev.treeNode', $content->children, 'content')
-

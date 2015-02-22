@@ -5,6 +5,7 @@
 return [
     'account'       => 'Konto',
     'author'        => 'Autor',
+    'contentsList'  => 'Lista Zawartości',
     'edit'          => 'Edytuj',
     'email'         => 'E-mail',
     'firstName'     => 'Imię',

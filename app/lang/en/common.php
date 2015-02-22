@@ -5,6 +5,7 @@
 return [
     'account'       => 'Account',
     'author'        => 'Author',
+    'contentsList'  => 'Contents list',
     'edit'          => 'Edit',
     'email'         => 'E-mail',
     'firstName'     => 'First Name',
