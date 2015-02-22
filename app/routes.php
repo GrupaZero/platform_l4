@@ -42,7 +42,7 @@ Route::group(
         Route::post('reset', ['as' => 'post.reset', 'uses' => 'UserController@postReset']);
         Route::get('logout', ['as' => 'logout', 'uses' => 'UserController@logout']);
         Route::get('/', ['as' => 'home', 'uses' => 'HomeController@showWelcome']);
-        Route::get('test', ['as' => 'test', 'uses' => 'TestController@index']);
+        Route::get('_dev', ['as' => 'test', 'uses' => 'DevController@index']);
         Route::get('{path?}', 'ContentController@dynamicRouter')->where('path', '.*');
     }
 );

@@ -14,7 +14,7 @@
         </thead>
 
         <tbody>
-        @each('test.treeNode', $tree, 'content')
+        @each('dev.treeNode', $tree, 'content')
         </tbody>
     </table>
 @stop

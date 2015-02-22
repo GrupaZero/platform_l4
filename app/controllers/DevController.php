@@ -12,7 +12,7 @@ use Gzero\Repository\ContentRepository;
  * @author     Adrian Skierniewski <adrian.skierniewski@gmail.com>
  * @copyright  Copyright (c) 2015, Adrian Skierniewski
  */
-class TestController extends BaseController {
+class DevController extends BaseController {
 
     public function __construct(ContentRepository $repository)
     {
@@ -32,7 +32,7 @@ class TestController extends BaseController {
         );
 
         return View::make(
-            'test.index',
+            'dev.index',
             [
                 'tree' => $this->repository->buildTree($nodes),
             ]
