@@ -279,12 +279,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "6a6a0699bdfd7f39c18aa26b7548ca6673696dfe"
+                "reference": "130ab9aa34ab5c376600c1e286fbc2abf724fd73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/6a6a0699bdfd7f39c18aa26b7548ca6673696dfe",
-                "reference": "6a6a0699bdfd7f39c18aa26b7548ca6673696dfe",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/130ab9aa34ab5c376600c1e286fbc2abf724fd73",
+                "reference": "130ab9aa34ab5c376600c1e286fbc2abf724fd73",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2015-02-22 11:03:38"
+            "time": "2015-02-22 12:07:15"
         },
         {
             "name": "gzero/api",
@@ -489,12 +489,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdrianSkierniewski/eloquent-tree.git",
-                "reference": "8b753e7fa0621ec1348efee482bc67c3b1e7c5e9"
+                "reference": "7253fedb264bae6a74f6503fd9fa2da3c4be1ddd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdrianSkierniewski/eloquent-tree/zipball/8b753e7fa0621ec1348efee482bc67c3b1e7c5e9",
-                "reference": "8b753e7fa0621ec1348efee482bc67c3b1e7c5e9",
+                "url": "https://api.github.com/repos/AdrianSkierniewski/eloquent-tree/zipball/7253fedb264bae6a74f6503fd9fa2da3c4be1ddd",
+                "reference": "7253fedb264bae6a74f6503fd9fa2da3c4be1ddd",
                 "shasum": ""
             },
             "require": {
@@ -529,7 +529,7 @@
                 "eloquent",
                 "laravel"
             ],
-            "time": "2015-02-22 09:25:30"
+            "time": "2015-02-22 12:39:48"
         },
         {
             "name": "ircmaxell/password-compat",
