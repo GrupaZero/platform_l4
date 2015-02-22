@@ -279,12 +279,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "130ab9aa34ab5c376600c1e286fbc2abf724fd73"
+                "reference": "7aa743a4cb347033f626fe3022aa6d663050938c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/130ab9aa34ab5c376600c1e286fbc2abf724fd73",
-                "reference": "130ab9aa34ab5c376600c1e286fbc2abf724fd73",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/7aa743a4cb347033f626fe3022aa6d663050938c",
+                "reference": "7aa743a4cb347033f626fe3022aa6d663050938c",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2015-02-22 12:07:15"
+            "time": "2015-02-22 16:30:30"
         },
         {
             "name": "gzero/api",
@@ -325,12 +325,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "539f5a23744112e9ff14ea6ae5dccaab7ccd9c29"
+                "reference": "3d7442be39400459488ccf1b5396f0b85da008e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/539f5a23744112e9ff14ea6ae5dccaab7ccd9c29",
-                "reference": "539f5a23744112e9ff14ea6ae5dccaab7ccd9c29",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/3d7442be39400459488ccf1b5396f0b85da008e2",
+                "reference": "3d7442be39400459488ccf1b5396f0b85da008e2",
                 "shasum": ""
             },
             "require": {
@@ -372,7 +372,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2015-02-22 13:07:41"
+            "time": "2015-02-22 16:08:04"
         },
         {
             "name": "gzero/billin",
@@ -489,12 +489,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdrianSkierniewski/eloquent-tree.git",
-                "reference": "bcdf6f39cde3b386f016df0adff0b919552b60e2"
+                "reference": "5f55354e854c24183f216c43e920c36e3d45a619"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdrianSkierniewski/eloquent-tree/zipball/bcdf6f39cde3b386f016df0adff0b919552b60e2",
-                "reference": "bcdf6f39cde3b386f016df0adff0b919552b60e2",
+                "url": "https://api.github.com/repos/AdrianSkierniewski/eloquent-tree/zipball/5f55354e854c24183f216c43e920c36e3d45a619",
+                "reference": "5f55354e854c24183f216c43e920c36e3d45a619",
                 "shasum": ""
             },
             "require": {
@@ -529,7 +529,7 @@
                 "eloquent",
                 "laravel"
             ],
-            "time": "2015-02-22 14:26:12"
+            "time": "2015-02-22 16:36:34"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -3116,12 +3116,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "6dc90302a4cdf8486c221a0ad3a4da53859fcfa5"
+                "reference": "863df9687835c62aa423a22412d26fa2ebde3fd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/6dc90302a4cdf8486c221a0ad3a4da53859fcfa5",
-                "reference": "6dc90302a4cdf8486c221a0ad3a4da53859fcfa5",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/863df9687835c62aa423a22412d26fa2ebde3fd3",
+                "reference": "863df9687835c62aa423a22412d26fa2ebde3fd3",
                 "shasum": ""
             },
             "require": {
@@ -3133,7 +3133,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -3160,7 +3160,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2015-01-01 09:20:29"
+            "time": "2015-02-22 15:13:53"
         },
         {
             "name": "sebastian/environment",
