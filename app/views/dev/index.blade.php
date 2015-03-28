@@ -18,11 +18,13 @@
                     @lang('common.contentsList')
                 </a>
             </li>
-            <li role="presentation">
-                <a href="#user" aria-controls="user" role="tab" data-toggle="tab">
-                    @lang('user.user')
-                </a>
-            </li>
+            @if(Auth::user())
+                <li role="presentation">
+                    <a href="#user" aria-controls="user" role="tab" data-toggle="tab">
+                        @lang('user.user')
+                    </a>
+                </li>
+            @endif
         </ul>
 
         <!-- Tab panes -->
@@ -45,15 +47,17 @@
                     </tbody>
                 </table>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="user">
-                <h3>{{ Auth::user()->firstName }} {{ Auth::user()->lastName }}</h3>
+            @if(Auth::user())
+                <div role="tabpanel" class="tab-pane fade" id="user">
+                    <h3>{{ Auth::user()->firstName }} {{ Auth::user()->lastName }}</h3>
 
-                <p>Login: {{ Auth::user()->email }}</p>
+                    <p>Login: {{ Auth::user()->email }}</p>
 
-                <p>@lang('common.password'): {{ Auth::user()->password }}</p>
+                    <p>@lang('common.password'): {{ Auth::user()->password }}</p>
 
-                <p>Remember token: {{ Auth::user()->rememberToken or'empty' }}</p>
-            </div>
+                    <p>Remember token: {{ Auth::user()->rememberToken or'empty' }}</p>
+                </div>
+            @endif
         </div>
     </div>
     <script type="text/javascript">
