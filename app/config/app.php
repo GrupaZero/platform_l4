@@ -122,6 +122,7 @@ return array(
         'Gzero\Core\ServiceProvider',
         'Gzero\Admin\ServiceProvider',
         'Gzero\Api\ServiceProvider',
+        'Gzero\Social\ServiceProvider',
         'Gzero\Billin\ServiceProvider',
     ),
     /*

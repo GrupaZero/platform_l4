@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5438dfe89e3e5b3e6da4f94e47b3e20e",
+    "hash": "731ff1a10e527cfba1450ced9ffd5e49",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -281,12 +281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "6a6ce5149e5331d3444cb19ec8803c102e512d15"
+                "reference": "d50f47a69e07dfc5bafade028c161e5c2bf8d37c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/6a6ce5149e5331d3444cb19ec8803c102e512d15",
-                "reference": "6a6ce5149e5331d3444cb19ec8803c102e512d15",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/d50f47a69e07dfc5bafade028c161e5c2bf8d37c",
+                "reference": "d50f47a69e07dfc5bafade028c161e5c2bf8d37c",
                 "shasum": ""
             },
             "require": {
@@ -319,7 +319,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2015-02-25 13:42:19"
+            "time": "2015-03-28 09:35:13"
         },
         {
             "name": "gzero/api",
@@ -327,12 +327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "3d7442be39400459488ccf1b5396f0b85da008e2"
+                "reference": "1442c6fdd5eacd67cd3e8c5c7aefa2c730b2d1e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/3d7442be39400459488ccf1b5396f0b85da008e2",
-                "reference": "3d7442be39400459488ccf1b5396f0b85da008e2",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/1442c6fdd5eacd67cd3e8c5c7aefa2c730b2d1e0",
+                "reference": "1442c6fdd5eacd67cd3e8c5c7aefa2c730b2d1e0",
                 "shasum": ""
             },
             "require": {
@@ -374,7 +374,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2015-02-22 16:08:04"
+            "time": "2015-03-26 21:03:50"
         },
         {
             "name": "gzero/billin",
@@ -532,6 +532,110 @@
                 "laravel"
             ],
             "time": "2015-03-26 10:10:11"
+        },
+        {
+            "name": "gzero/laravel-oauth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AdrianSkierniewski/laravel-oauth.git",
+                "reference": "7305d8c0a81f9bb2e5629c11f0bcd2cae2538cd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AdrianSkierniewski/laravel-oauth/zipball/7305d8c0a81f9bb2e5629c11f0bcd2cae2538cd2",
+                "reference": "7305d8c0a81f9bb2e5629c11f0bcd2cae2538cd2",
+                "shasum": ""
+            },
+            "require": {
+                "lusitanian/oauth": "0.3.*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "illuminate/session": "4.*",
+                "illuminate/support": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Gzero\\OAuth": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Skierniewski",
+                    "email": "adrian.skierniewski@gmail.com",
+                    "homepage": "https://github.com/AdrianSkierniewski"
+                }
+            ],
+            "description": "Laravel 4 Oauth1/2 integration",
+            "keywords": [
+                "Lusitanian",
+                "laravel",
+                "oauth",
+                "php"
+            ],
+            "time": "2014-05-09 11:40:45"
+        },
+        {
+            "name": "gzero/social",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrupaZero/social.git",
+                "reference": "fcee42f3c867c4740463e0384c983342f91ca587"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrupaZero/social/zipball/fcee42f3c867c4740463e0384c983342f91ca587",
+                "reference": "fcee42f3c867c4740463e0384c983342f91ca587",
+                "shasum": ""
+            },
+            "require": {
+                "gzero/core": "dev-master",
+                "gzero/laravel-oauth": "@dev",
+                "gzero/repository": "dev-master",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "1.4.0",
+                "mockery/mockery": "0.9.*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "4.3.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gzero\\": "src/Gzero"
+                },
+                "classmap": [
+                    "src/migrations"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Skierniewski",
+                    "email": "adrian.skierniewski@gmail.com"
+                }
+            ],
+            "description": "Gzero Social Plugin",
+            "keywords": [
+                "cms",
+                "framework",
+                "laravel",
+                "plugin",
+                "social"
+            ],
+            "time": "2015-03-28 09:42:39"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -802,6 +906,68 @@
             "time": "2014-12-10 16:59:07"
         },
         {
+            "name": "lusitanian/oauth",
+            "version": "v0.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Lusitanian/PHPoAuthLib.git",
+                "reference": "ac5a1cd5a4519143728dce2213936eea302edf8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Lusitanian/PHPoAuthLib/zipball/ac5a1cd5a4519143728dce2213936eea302edf8a",
+                "reference": "ac5a1cd5a4519143728dce2213936eea302edf8a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "predis/predis": "0.8.*@dev",
+                "symfony/http-foundation": "~2.1"
+            },
+            "suggest": {
+                "ext-openssl": "Allows for usage of secure connections with the stream-based HTTP client.",
+                "predis/predis": "Allows using the Redis storage backend.",
+                "symfony/http-foundation": "Allows using the Symfony Session storage backend."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "OAuth": "src",
+                    "OAuth\\Unit": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Desberg",
+                    "email": "david@daviddesberg.com"
+                },
+                {
+                    "name": "Pieter Hordijk",
+                    "email": "info@pieterhordijk.com"
+                }
+            ],
+            "description": "PHP 5.3+ oAuth 1/2 Library",
+            "keywords": [
+                "Authentication",
+                "authorization",
+                "oauth",
+                "security"
+            ],
+            "time": "2014-09-05 15:19:58"
+        },
+        {
             "name": "machuga/authority",
             "version": "2.1.1",
             "source": {
@@ -927,12 +1093,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac"
+                "reference": "df7da8a5550eb94cb885df6be7ffebe2768c10fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
-                "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/df7da8a5550eb94cb885df6be7ffebe2768c10fd",
+                "reference": "df7da8a5550eb94cb885df6be7ffebe2768c10fd",
                 "shasum": ""
             },
             "require": {
@@ -992,7 +1158,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-03-09 09:58:04"
+            "time": "2015-03-26 18:30:54"
         },
         {
             "name": "nesbot/carbon",
@@ -1290,12 +1456,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "1af1529b49a6e065ae6802e70192aba35d79b7d8"
+                "reference": "bf2c13de4300e227d7b2fd08027673a79c519987"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/1af1529b49a6e065ae6802e70192aba35d79b7d8",
-                "reference": "1af1529b49a6e065ae6802e70192aba35d79b7d8",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/bf2c13de4300e227d7b2fd08027673a79c519987",
+                "reference": "bf2c13de4300e227d7b2fd08027673a79c519987",
                 "shasum": ""
             },
             "type": "library",
@@ -1305,8 +1471,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1325,7 +1491,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2015-02-05 09:32:11"
+            "time": "2015-03-26 14:39:45"
         },
         {
             "name": "robclancy/presenter",
@@ -3428,12 +3594,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "fd044cc4e16c013eb56837ebaec10fef2d034000"
+                "reference": "0c7174b8a7c6b280f11a34094e639484cca2287f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/fd044cc4e16c013eb56837ebaec10fef2d034000",
-                "reference": "fd044cc4e16c013eb56837ebaec10fef2d034000",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/0c7174b8a7c6b280f11a34094e639484cca2287f",
+                "reference": "0c7174b8a7c6b280f11a34094e639484cca2287f",
                 "shasum": ""
             },
             "require": {
@@ -3479,7 +3645,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2015-03-24 11:11:21"
+            "time": "2015-03-27 18:07:56"
         },
         {
             "name": "symfony/yaml",
@@ -3538,6 +3704,7 @@
         "gzero/api": 20,
         "gzero/cms": 20,
         "gzero/admin": 20,
+        "gzero/social": 20,
         "gzero/billin": 20,
         "philo/laravel-translate": 20
     },
