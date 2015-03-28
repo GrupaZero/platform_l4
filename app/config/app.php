@@ -25,7 +25,7 @@ return array(
     |
     */
 
-    'url'             => 'http://gzero.dev',
+    'url'             => 'http://dev.gzero.pl',
     /*
     |--------------------------------------------------------------------------
     | Application Timezone

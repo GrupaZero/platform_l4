@@ -1,6 +1,6 @@
 <?php
 return [
-    'domain'       => 'gzero.dev',
+    'domain'       => 'dev.gzero.pl',
     'multilang'    => [
         'enabled'   => true,
         'detected'  => false, // Do not change, changes in runtime!
