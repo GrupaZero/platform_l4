@@ -30,10 +30,11 @@
                        placeholder="{{ trans('common.password') }}">
             </div>
             <div class=" form-group">
-                <div class="col-md-4 col-md-offset-4">
-                    <button id="edit-account" type="submit" class="btn btn-default">{{ trans('common.register') }}</button>
-                </div>
+                <button id="edit-account" type="submit" class="btn btn-default">{{ trans('common.register') }}</button>
             </div>
         </form>
+        @if(App::bound('oauth'))
+            @include('includes.socialLogin')
+        @endif
     </div>
 @stop

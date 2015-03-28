@@ -10,3 +10,18 @@
     opacity    : 0.8;
     z-index    : 9999999;
 }
+
+.separator {
+    background-color: #ddd;
+    height: 1px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.separator span {
+    background: #fff;
+    padding: 5px;
+    color: #999;
+    position: relative;
+    top: -9px;
+}

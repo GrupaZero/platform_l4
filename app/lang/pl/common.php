@@ -11,6 +11,7 @@ return [
     'firstName'     => 'Imię',
     'lastName'      => 'Nazwisko',
     'login'         => 'Zaloguj',
+    'loginWith'     => 'lub zaloguj się z',
     'logout'        => 'Wyloguj',
     'noTranslation' => 'Brak tłumaczenia',
     'numberOfViews' => 'Liczba wyświetleń:',

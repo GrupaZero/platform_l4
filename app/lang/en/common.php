@@ -11,6 +11,7 @@ return [
     'firstName'     => 'First Name',
     'lastName'      => 'Last Name',
     'login'         => 'Login',
+    'loginWith'     => 'or sign in with',
     'logout'        => 'Logout',
     'noTranslation' => 'No translation',
     'notPublished'  => 'Not published',

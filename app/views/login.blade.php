@@ -26,5 +26,8 @@
             </div>
             <button type="submit" class="btn btn-default">@lang('common.login')</button>
         </form>
+        @if(App::bound('oauth'))
+            @include('includes.socialLogin')
+        @endif
     </div>
 @stop
