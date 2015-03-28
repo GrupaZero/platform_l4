@@ -281,12 +281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "d50f47a69e07dfc5bafade028c161e5c2bf8d37c"
+                "reference": "1a4aa56f40a09bd25834d2b315db20683e593193"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/d50f47a69e07dfc5bafade028c161e5c2bf8d37c",
-                "reference": "d50f47a69e07dfc5bafade028c161e5c2bf8d37c",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/1a4aa56f40a09bd25834d2b315db20683e593193",
+                "reference": "1a4aa56f40a09bd25834d2b315db20683e593193",
                 "shasum": ""
             },
             "require": {
@@ -319,7 +319,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2015-03-28 09:35:13"
+            "time": "2015-03-28 11:17:02"
         },
         {
             "name": "gzero/api",
@@ -429,12 +429,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "f8843bf4b43bbf5cc4ce27456e2dbe10c8d1e681"
+                "reference": "c1a5af8fb6be761c031dcd3cde8cdb82859ff27e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/f8843bf4b43bbf5cc4ce27456e2dbe10c8d1e681",
-                "reference": "f8843bf4b43bbf5cc4ce27456e2dbe10c8d1e681",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/c1a5af8fb6be761c031dcd3cde8cdb82859ff27e",
+                "reference": "c1a5af8fb6be761c031dcd3cde8cdb82859ff27e",
                 "shasum": ""
             },
             "require": {
@@ -483,7 +483,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-03-26 10:22:04"
+            "time": "2015-03-28 10:13:48"
         },
         {
             "name": "gzero/eloquent-tree",
@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AdrianSkierniewski/laravel-oauth.git",
-                "reference": "7305d8c0a81f9bb2e5629c11f0bcd2cae2538cd2"
+                "reference": "facba2aa780669c1cf74de10b37c2c71a43ef156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AdrianSkierniewski/laravel-oauth/zipball/7305d8c0a81f9bb2e5629c11f0bcd2cae2538cd2",
-                "reference": "7305d8c0a81f9bb2e5629c11f0bcd2cae2538cd2",
+                "url": "https://api.github.com/repos/AdrianSkierniewski/laravel-oauth/zipball/facba2aa780669c1cf74de10b37c2c71a43ef156",
+                "reference": "facba2aa780669c1cf74de10b37c2c71a43ef156",
                 "shasum": ""
             },
             "require": {
@@ -568,8 +568,7 @@
             "authors": [
                 {
                     "name": "Adrian Skierniewski",
-                    "email": "adrian.skierniewski@gmail.com",
-                    "homepage": "https://github.com/AdrianSkierniewski"
+                    "email": "adrian.skierniewski@gmail.com"
                 }
             ],
             "description": "Laravel 4 Oauth1/2 integration",
@@ -579,7 +578,7 @@
                 "oauth",
                 "php"
             ],
-            "time": "2014-05-09 11:40:45"
+            "time": "2015-03-28 11:07:46"
         },
         {
             "name": "gzero/social",
@@ -587,12 +586,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/social.git",
-                "reference": "fcee42f3c867c4740463e0384c983342f91ca587"
+                "reference": "977fe1f55808abb733cd711673fd92e4081e556a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/social/zipball/fcee42f3c867c4740463e0384c983342f91ca587",
-                "reference": "fcee42f3c867c4740463e0384c983342f91ca587",
+                "url": "https://api.github.com/repos/GrupaZero/social/zipball/977fe1f55808abb733cd711673fd92e4081e556a",
+                "reference": "977fe1f55808abb733cd711673fd92e4081e556a",
                 "shasum": ""
             },
             "require": {
@@ -635,7 +634,7 @@
                 "plugin",
                 "social"
             ],
-            "time": "2015-03-28 09:42:39"
+            "time": "2015-03-28 11:13:40"
         },
         {
             "name": "ircmaxell/password-compat",
