@@ -9,13 +9,22 @@
         <h1 class="page-header">@lang('common.login')</h1>
 
         <form method="post" role="form">
-            <div class="form-group">
-                <label for="login">Login</label>
-                <input type="email" id="login" name="login" class="form-control" placeholder="Login">
+            <div class="form-group{{ $errors->first('email') ? ' has-error' : '' }}">
+                <label class="control-label" for="email">@lang('common.email')</label>
+                <input type="email" id="email" name="email" class="form-control"
+                       value="{{Input::old('email')}}"
+                       placeholder="@lang('common.email')">
+                @if($errors->first('email'))
+                    <p class="help-block">{{ $errors->first('email') }}</p>
+                @endif
             </div>
-            <div class="form-group">
-                <label for="password">@lang('common.password')</label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+            <div class="form-group{{ $errors->first('password') ? ' has-error' : '' }}">
+                <label class="control-label" for="password">@lang('common.password')</label>
+                <input type="password" id="password" name="password" class="form-control"
+                       placeholder="@lang('common.password')">
+                @if($errors->first('password'))
+                    <p class="help-block">{{ $errors->first('password') }}</p>
+                @endif
             </div>
             <div class="form-group">
                 <div class="checkbox">

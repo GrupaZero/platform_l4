@@ -6,31 +6,46 @@
 
 @section('content')
     <div class="col-md-4 col-md-offset-4">
-        <h1 class="page-header">{{ trans('common.register') }}</h1>
+        <h1 class="page-header">@lang('common.register')</h1>
 
         <form id="register-account-form" method="POST" role="form">
-            <div class="form-group">
-                <label for="email">{{ trans('common.email') }}</label>
+            <div class="form-group{{ $errors->first('email') ? ' has-error' : '' }}">
+                <label class="control-label" for="email">@lang('common.email')</label>
                 <input type="email" id="email" name="email" class="form-control"
-                       placeholder="{{ trans('common.email') }}">
+                       value="{{Input::old('email')}}"
+                       placeholder="@lang('common.email')">
+                @if($errors->first('email'))
+                    <p class="help-block">{{ $errors->first('email') }}</p>
+                @endif
             </div>
-            <div class="form-group">
-                <label for="firstName">{{ trans('common.firstName') }}</label>
+            <div class="form-group{{ $errors->first('firstName') ? ' has-error' : '' }}">
+                <label class="control-label" for="firstName">@lang('common.firstName')</label>
                 <input type="text" id="firstName" name="firstName" class="form-control"
-                       placeholder="{{ trans('common.firstName') }}">
+                       value="{{Input::old('firstName')}}"
+                       placeholder="@lang('common.firstName')">
+                @if($errors->first('firstName'))
+                    <p class="help-block">{{ $errors->first('firstName') }}</p>
+                @endif
             </div>
-            <div class="form-group">
-                <label for="lastName">{{ trans('common.lastName') }}</label>
+            <div class="form-group{{ $errors->first('lastName') ? ' has-error' : '' }}">
+                <label class="control-label" for="lastName">@lang('common.lastName')</label>
                 <input type="text" id="lastName" name="lastName" class="form-control"
-                       placeholder="{{ trans('common.lastName') }}">
+                       value="{{Input::old('lastName')}}"
+                       placeholder="@lang('common.lastName')">
+                @if($errors->first('lastName'))
+                    <p class="help-block">{{ $errors->first('lastName') }}</p>
+                @endif
             </div>
-            <div class="form-group">
-                <label for="password">{{ trans('common.password') }}</label>
+            <div class="form-group{{ $errors->first('password') ? ' has-error' : '' }}">
+                <label class="control-label" for="password">@lang('common.password')</label>
                 <input type="password" id="password" name="password" class="form-control"
-                       placeholder="{{ trans('common.password') }}">
+                       placeholder="@lang('common.password')">
+                @if($errors->first('password'))
+                    <p class="help-block">{{ $errors->first('password') }}</p>
+                @endif
             </div>
             <div class=" form-group">
-                <button id="edit-account" type="submit" class="btn btn-default">{{ trans('common.register') }}</button>
+                <button id="edit-account" type="submit" class="btn btn-default">@lang('common.register')</button>
             </div>
         </form>
         @if(App::bound('oauth'))
