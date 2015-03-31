@@ -10,6 +10,7 @@
     </header>
     <!-- main content -->
     <div id="content" class="container">
+        @include('includes/messages')
         @section('content')
             <div class="jumbotron">
                 <h1>Marketing stuff!</h1>

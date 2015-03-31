@@ -59,8 +59,16 @@ class UserController extends BaseController {
                 }
                 return Redirect::route('login');
             } else {
-                // TODO proper notification
-                throw new Exception('Wrong user credentials!');
+                Session::flash(
+                    'messages',
+                    [
+                        [
+                            'code' => 'error',
+                            'text' => Lang::get('common.incorrectLoginMessage')
+                        ]
+                    ]
+                );
+                return Redirect::route('login')->withInput();
             }
         } catch (ValidationException $e) {
             return Redirect::route('login')->withInput()->withErrors($e->getErrors());

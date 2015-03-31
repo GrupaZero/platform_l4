@@ -26,7 +26,14 @@
     top        : -9px;
 }
 
-/*error box*/
+/*alert error*/
+.alert-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+/*404 page - error box*/
 .error-box {
     overflow : hidden;
     padding  : 0

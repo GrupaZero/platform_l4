@@ -17,6 +17,7 @@
 
             <!-- sidebar content -->
             <div id="sidebarRight" class="col-md-3 sidebar">
+                @include('includes/messages')
                 @yield('sidebarRight')
             </div>
         </div>

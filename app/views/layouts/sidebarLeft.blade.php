@@ -17,6 +17,7 @@
 
             <!-- main content -->
             <div id="content" class="col-md-9">
+                @include('includes/messages')
                 @yield('content')
             </div>
 
