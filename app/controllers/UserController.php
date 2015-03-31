@@ -82,15 +82,29 @@ class UserController extends BaseController {
 
     public function postRegister()
     {
-        // TODO duplicated user verification
         try {
-            $input             = $this->validator->validate('register');
-            $input['password'] = Hash::make($input['password']);
-            $user              = $this->userRepo->create($input);
-            if (!empty($user)) {
-                Auth::login($user);
+            $input        = $this->validator->validate('register');
+            $existingUser = $this->userRepo->retrieveByEmail($input['email']);
+            // duplicated user verification
+            if ($existingUser === null) {
+                $input['password'] = Hash::make($input['password']);
+                $user              = $this->userRepo->create($input);
+                if (!empty($user)) {
+                    Auth::login($user);
+                }
+                return Redirect::intended('account');
+            } else {
+                Session::flash(
+                    'messages',
+                    [
+                        [
+                            'code' => 'error',
+                            'text' => Lang::get('common.emailAlreadyInUseMessage')
+                        ]
+                    ]
+                );
+                return Redirect::route('register')->withInput();
             }
-            return Redirect::intended('account');
         } catch (ValidationException $e) {
             return Redirect::route('register')->withInput()->withErrors($e->getErrors());
         }
