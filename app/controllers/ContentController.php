@@ -1,6 +1,7 @@
 <?php
 use Gzero\Core\DynamicRouter;
 use Gzero\Entity\Lang;
+use Gzero\Repository\RepositoryException;
 
 /**
  * This file is part of the GZERO CMS package.
@@ -33,6 +34,11 @@ class ContentController extends BaseController {
         if (!$this->getLang()) { // If no current language detected
             App::abort(404);
         }
-        return $this->router->handleRequest($this->getRequestedUrl(), $this->getLang());
+
+        try {
+            return $this->router->handleRequest($this->getRequestedUrl(), $this->getLang());
+        } catch (RepositoryException $e) {
+            App::abort(404);
+        }
     }
 } 

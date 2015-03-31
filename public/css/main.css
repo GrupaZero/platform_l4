@@ -12,16 +12,43 @@
 }
 
 .separator {
-    background-color: #ddd;
-    height: 1px;
-    margin: 25px 0;
-    text-align: center;
+    background-color : #DDD;
+    height           : 1px;
+    margin           : 25px 0;
+    text-align       : center;
 }
 
 .separator span {
-    background: #fff;
-    padding: 5px;
-    color: #999;
-    position: relative;
-    top: -9px;
+    background : #FFF;
+    padding    : 5px;
+    color      : #999;
+    position   : relative;
+    top        : -9px;
+}
+
+/*error box*/
+.error-box {
+    overflow : hidden;
+    padding  : 0
+}
+
+.error-box h2 {
+    text-align    : left;
+    line-height   : 30px;
+    margin-bottom : 30px
+}
+
+.error-box .error-code {
+    font-size   : 10em;
+    line-height : 1em;
+    text-align  : center;
+    margin      : 0;
+}
+
+.error-box .indent {
+    text-align : center
+}
+
+.error-box .col-md-6 {
+    margin-bottom : 30px
 }

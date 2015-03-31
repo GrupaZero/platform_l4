@@ -54,6 +54,13 @@ App::error(
     }
 );
 
+// Handling 404 Errors
+App::missing(
+    function ($exception) {
+        return Response::view('errors.404', [], 404);
+    }
+);
+
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler
