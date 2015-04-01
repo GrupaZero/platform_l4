@@ -91,6 +91,14 @@ class UserController extends BaseController {
                 $user              = $this->userRepo->create($input);
                 if (!empty($user)) {
                     Auth::login($user);
+                    Mail::send( // welcome email
+                        'emails.auth.welcome',
+                        ['user' => $user],
+                        function ($message) use ($input) {
+                            $message->subject(Lang::get('emails.welcome.subject', ["siteName" => Config::get('gzero.siteName')]))
+                                ->to($input['email'], $input['firstName'] . ' ' . $input['lastName']);
+                        }
+                    );
                 }
                 return Redirect::intended('account');
             } else {
@@ -117,6 +125,9 @@ class UserController extends BaseController {
      */
     public function remind()
     {
+        if (Auth::check()) {
+            return Redirect::to('/');
+        }
         return View::make('password.remind');
     }
 
@@ -127,12 +138,40 @@ class UserController extends BaseController {
      */
     public function postRemind()
     {
-        switch ($response = Password::remind(Input::only('email'))) {
-            case Password::INVALID_USER:
-                return Redirect::back()->with('error', Lang::get($response));
-
-            case Password::REMINDER_SENT:
-                return Redirect::back()->with('status', Lang::get($response));
+        try {
+            $input    = $this->validator->validate('remind');
+            $response = Password::remind(
+                $input,
+                function ($message) {
+                    $message->subject(Lang::get('emails.passwordReminder.title'));
+                }
+            );
+            switch ($response) {
+                case Password::INVALID_USER:
+                    Session::flash(
+                        'messages',
+                        [
+                            [
+                                'code' => 'error',
+                                'text' => Lang::get($response)
+                            ]
+                        ]
+                    );
+                    return Redirect::back()->withInput();
+                case Password::REMINDER_SENT:
+                    Session::flash(
+                        'messages',
+                        [
+                            [
+                                'code' => 'success',
+                                'text' => Lang::get($response)
+                            ]
+                        ]
+                    );
+                    return Redirect::back();
+            }
+        } catch (ValidationException $e) {
+            return Redirect::back()->withInput()->withErrors($e->getErrors());
         }
     }
 
@@ -147,6 +186,8 @@ class UserController extends BaseController {
     {
         if (is_null($token)) {
             App::abort(404);
+        } elseif (Auth::check()) {
+            return Redirect::to('/');
         }
 
         return View::make('password.reset')->with('token', $token);
@@ -159,30 +200,43 @@ class UserController extends BaseController {
      */
     public function postReset()
     {
-        $credentials = Input::only(
-            'email',
-            'password',
-            'password_confirmation',
-            'token'
-        );
-
-        $response = Password::reset(
-            $credentials,
-            function ($user, $password) {
-                $user->password = Hash::make($password);
-
-                $user->save();
+        try {
+            $input    = $this->validator->validate('reset');
+            $response = Password::reset(
+                $input,
+                function ($user, $password) {
+                    $user->password = Hash::make($password);
+                    $user->save();
+                }
+            );
+            switch ($response) {
+                case Password::INVALID_PASSWORD:
+                case Password::INVALID_TOKEN:
+                case Password::INVALID_USER:
+                    Session::flash(
+                        'messages',
+                        [
+                            [
+                                'code' => 'error',
+                                'text' => Lang::get($response)
+                            ]
+                        ]
+                    );
+                    return Redirect::back()->withInput();
+                case Password::PASSWORD_RESET:
+                    Session::flash(
+                        'messages',
+                        [
+                            [
+                                'code' => 'success',
+                                'text' => Lang::get($response)
+                            ]
+                        ]
+                    );
+                    return Redirect::route('login');
             }
-        );
-
-        switch ($response) {
-            case Password::INVALID_PASSWORD:
-            case Password::INVALID_TOKEN:
-            case Password::INVALID_USER:
-                return Redirect::back()->with('error', Lang::get($response));
-
-            case Password::PASSWORD_RESET:
-                return Redirect::to('/');
+        } catch (ValidationException $e) {
+            return Redirect::back()->withInput()->withErrors($e->getErrors());
         }
     }
 }

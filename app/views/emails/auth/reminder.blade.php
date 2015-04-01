@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<h2>Password Reset</h2>
+@extends('emails.layouts.default')
 
-		<div>
-			To reset your password, complete this form: {{ URL::to('password/reset', array($token)) }}.
-		</div>
-	</body>
-</html>
+@section('emailContent')
+    <h1>@lang('emails.passwordReminder.title')</h1>
+
+    <p>
+        @lang('emails.passwordReminder.body', ["url" => HTML::link(URL::route('password.reset', [$token]), null ,['target' => '_blank'])])
+    </p>
+@stop

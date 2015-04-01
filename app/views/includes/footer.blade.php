@@ -1,7 +1,10 @@
 <div class="loading"><!-- loading container --></div>
 <div class="container">
     @section('footer')
-        <p class="text-muted">&copy; Copyright 2015 by G-ZERO</p>
+        <p class="text-muted">
+           Copyright &copy; {{ Config::get('gzero.domain') }},
+            @lang('common.allRightsReserved')
+        </p>
     @show
     <script src="/js/common.js"></script>
     <script src="/js/jquery.metisMenu.js"></script>

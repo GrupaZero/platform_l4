@@ -10,10 +10,10 @@
 
         <form id="register-account-form" method="POST" role="form">
             <div class="form-group{{ $errors->first('email') ? ' has-error' : '' }}">
-                <label class="control-label" for="email">@lang('common.email')</label>
+                <label class="control-label" for="email">@choice('common.email', 1)</label>
                 <input type="email" id="email" name="email" class="form-control"
                        value="{{Input::old('email')}}"
-                       placeholder="@lang('common.email')">
+                       placeholder="@choice('common.email', 1)">
                 @if($errors->first('email'))
                     <p class="help-block">{{ $errors->first('email') }}</p>
                 @endif
@@ -45,7 +45,7 @@
                 @endif
             </div>
             <div class=" form-group">
-                <button id="edit-account" type="submit" class="btn btn-default">@lang('common.register')</button>
+                <button id="edit-account" type="submit" class="btn btn-primary btn-lg btn-block">@lang('common.register')</button>
             </div>
         </form>
         @if(App::bound('oauth'))

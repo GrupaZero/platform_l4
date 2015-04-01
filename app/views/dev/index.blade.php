@@ -1,5 +1,9 @@
 @extends('layouts.default')
 
+@section('title')
+    Developer
+@stop
+
 @section('content')
     <style type="text/css">
         .table {
@@ -25,6 +29,11 @@
                     </a>
                 </li>
             @endif
+            <li role="presentation">
+                <a href="#emails" aria-controls="emails" role="tab" data-toggle="tab">
+                    @choice('common.email', 2)
+                </a>
+            </li>
         </ul>
 
         <!-- Tab panes -->
@@ -58,6 +67,13 @@
                     <p>Remember token: {{ Auth::user()->rememberToken or'empty' }}</p>
                 </div>
             @endif
+            <div role="tabpanel" class="tab-pane fade" id="emails">
+                <h3>@lang('common.welcome')</h3>
+                <iframe src="{{ URL::route('_dev.emails', 'auth.welcome') }}" frameborder="0" width="100%" height="350"></iframe>
+                <hr/>
+                <h3>@lang('common.passReminder')</h3>
+                <iframe src="{{ URL::route('_dev.emails', 'auth.reminder') }}" frameborder="0" width="100%" height="350"></iframe>
+            </div>
         </div>
     </div>
     <script type="text/javascript">

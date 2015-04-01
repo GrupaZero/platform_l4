@@ -39,4 +39,20 @@ class DevController extends BaseController {
         );
     }
 
+
+    /**
+     * Emails preview
+     *
+     * @param string $email view name in views.emails directory
+     *
+     * @return \Illuminate\View\View
+     */
+    public function emails($email)
+    {
+        return View::make(
+            'emails.' . $email,
+            ['token' => 'dummy-token'] // auth reminder view dummy data
+        );
+    }
+
 }

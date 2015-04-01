@@ -1,6 +1,7 @@
 <?php
 return [
     'domain'       => 'dev.gzero.pl',
+    'siteName'     => 'G-ZERO CMS',
     'multilang'    => [
         'enabled'   => true,
         'detected'  => false, // Do not change, changes in runtime!

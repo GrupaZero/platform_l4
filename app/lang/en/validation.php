@@ -99,6 +99,7 @@ return array(
 	|
 	*/
 
-	'attributes' => array(),
-
+    'attributes' => array(
+        'username'  => 'user name'
+    ),
 );

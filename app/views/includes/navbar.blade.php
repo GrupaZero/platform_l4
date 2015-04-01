@@ -3,12 +3,12 @@
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">@lang('common.toggleNavigation')</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ URL::route('home') }}">G-ZERO CMS</a>
+            <a class="navbar-brand" href="{{ URL::route('home') }}">{{ Config::get('gzero.siteName') }}</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">

@@ -10,10 +10,10 @@
 
         <form method="post" role="form">
             <div class="form-group{{ $errors->first('email') ? ' has-error' : '' }}">
-                <label class="control-label" for="email">@lang('common.email')</label>
+                <label class="control-label" for="email">@choice('common.email', 1)</label>
                 <input type="email" id="email" name="email" class="form-control"
                        value="{{Input::old('email')}}"
-                       placeholder="@lang('common.email')">
+                       placeholder="@choice('common.email', 1)">
                 @if($errors->first('email'))
                     <p class="help-block">{{ $errors->first('email') }}</p>
                 @endif
@@ -27,13 +27,22 @@
                 @endif
             </div>
             <div class="form-group">
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" name="remember">@lang('common.remember')
-                    </label>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="remember" checked="true">@lang('common.remember')
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="checkbox text-right">
+                            <a href="{{ URL::route('password.remind') }}">@lang('common.forgotPassword')</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-default">@lang('common.login')</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">@lang('common.login')</button>
         </form>
         @if(App::bound('oauth'))
             @include('includes.socialLogin')

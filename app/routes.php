@@ -36,13 +36,17 @@ Route::group(
         Route::post('login', ['as' => 'post.login', 'uses' => 'UserController@postLogin']);
         Route::get('register', ['as' => 'register', 'uses' => 'UserController@register']);
         Route::post('register', ['as' => 'post.register', 'uses' => 'UserController@postRegister']);
-        Route::get('remind', ['as' => 'remind', 'uses' => 'UserController@remind']);
-        Route::post('remind', ['as' => 'post.remind', 'uses' => 'UserController@postRemind']);
-        Route::get('reset', ['as' => 'reset', 'uses' => 'UserController@reset']);
-        Route::post('reset', ['as' => 'post.reset', 'uses' => 'UserController@postReset']);
+        Route::get('password/remind', ['as' => 'password.remind', 'uses' => 'UserController@remind']);
+        Route::post('password/remind', ['as' => 'post.password.remind', 'uses' => 'UserController@postRemind']);
+        Route::get('password/reset/{token}', ['as' => 'password.reset', 'uses' => 'UserController@reset']);
+        Route::post('password/reset', ['as' => 'post.password.reset', 'uses' => 'UserController@postReset']);
         Route::get('logout', ['as' => 'logout', 'uses' => 'UserController@logout']);
         Route::get('/', ['as' => 'home', 'uses' => 'HomeController@showWelcome']);
-        Route::get('_dev', ['as' => 'test', 'uses' => 'DevController@index']);
+
+        // dev links
+        Route::get('_dev', ['as' => '_dev', 'uses' => 'DevController@index']);
+        Route::get('_dev/emails/{email}', ['as' => '_dev.emails', 'uses' => 'DevController@emails']);
+
         Route::get('{path?}', 'ContentController@dynamicRouter')->where('path', '.*');
     }
 );
