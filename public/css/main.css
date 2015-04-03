@@ -1,3 +1,85 @@
+body {
+    background-color : #F5F5F5;
+}
+
+/*Navbar user menu*/
+.user-nav .dropdown-toggle {
+    /*padding : 6px 20px;*/
+}
+
+.user-nav .dropdown-toggle img {
+    margin-right       : 6px;
+    width              : 35px;
+    height             : 35px;
+    -webkit-box-shadow : 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow    : 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    box-shadow         : 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.user-nav .dropdown-menu li a i {
+    color : #EFEFEF;
+}
+
+.user-nav .dropdown-menu li a:hover i {
+    color : #686868;
+}
+
+.user-nav .dropdown-menu li.active a:hover i {
+    color : #FFF;
+}
+
+.sidebar .nav-stacked {
+    margin-top : 40px;
+}
+
+.nav-stacked li {
+    border-bottom : 1px solid #E7E7E7;
+
+}
+
+.nav-stacked ul li:last-child {
+    border-bottom : none;
+
+}
+
+.nav-stacked li a {
+    padding : 10px 20px;
+}
+
+.nav-stacked ul a {
+    padding    : 10px 30px;
+    background : #FAFAFA;
+}
+
+.nav-stacked ul li.active a {
+    background-color : #EEE;
+}
+
+#wrapper {
+    background-color : #FFF;
+    padding-bottom   : 40px;
+}
+
+#footer {
+    width  : 100%;
+    height : 60px;
+}
+
+#footer .text-muted {
+    margin : 20px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align       : center;
+    background-color : transparent;
+}
+
+.jumbotron .btn {
+    padding   : 14px 24px;
+    font-size : 21px;
+}
+
 .loading {
     background : #FFF url('/images/loading-dark.gif') no-repeat center center;
     display    : block;
@@ -28,9 +110,9 @@
 
 /*alert error*/
 .alert-error {
-    color: #a94442;
-    background-color: #f2dede;
-    border-color: #ebccd1;
+    color            : #A94442;
+    background-color : #F2DEDE;
+    border-color     : #EBCCD1;
 }
 
 /*404 page - error box*/
@@ -58,4 +140,8 @@
 
 .error-box .col-md-6 {
     margin-bottom : 30px
+}
+/* helper classes */
+.margin-zero-top {
+    margin-top : 0;
 }

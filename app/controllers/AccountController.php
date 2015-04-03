@@ -15,12 +15,14 @@ class AccountController extends BaseController {
 
     public function account()
     {
-        // TODO we need proper user menu method
-        return View::make('account.index', ['menu' => App::make('user.menu')->getMenu()]);
+        $user = Auth::user();
+        /**@TODO we need proper user menu method */
+        return View::make('account.index', ['menu' => App::make('user.menu')->getMenu(), 'user' => $user]);
     }
 
     public function edit()
     {
-        return View::make('account.edit');
+        $user = Auth::user();
+        return View::make('account.edit', ['menu' => App::make('user.menu')->getMenu(), 'user' => $user]);
     }
 }

@@ -1,11 +1,12 @@
 <?php
 
-# modified at 01-04-2015 19:37
+# modified at 03-04-2015 18:40
 
 return  array(
 	'404Message'                 => 'Strona, której szukasz, mogła zostać usunięta, zmieniono jej nazwę lub jest tymczasowo
     niedostępna.',
 	'account'                    => 'Konto',
+	'accountConected'            => 'Konto połaczone z usługą zewnętrzną.',
 	'allRightsReserved'          => 'Wszelkie prawa zastrzeżone.',
 	'author'                     => 'Autor',
 	'backtoHomepage'             => 'Powrót do strony głównej',
@@ -13,6 +14,7 @@ return  array(
 	'edit'                       => 'Edytuj',
 	'email'                      => 'E-mail|Emaile',
 	'emailAlreadyInUseMessage'   => 'Ten e-mail jest już zarejestrowany.',
+	'error'                      => 'BŁĄD',
 	'firstName'                  => 'Imię',
 	'forgotPassword'             => 'Nie pamiętasz hasła?',
 	'forgotPasswordHint'         => 'Wpisz adres e-mail kt&oacute;rego użyłeś do stworzenia konta, a my prześlemy dalsze instrukcje.',
@@ -23,6 +25,7 @@ return  array(
 	'logout'                     => 'Wyloguj',
 	'newPassword'                => 'Nowe hasło',
 	'noTranslation'              => 'Brak tłumaczenia',
+	'notAMember'                 => 'Nie masz jeszcze konta?',
 	'notPublished'               => 'Niepublikowany',
 	'numberOfViews'              => 'Liczba wyświetleń:',
 	'options'                    => 'Opcje',
@@ -41,6 +44,7 @@ return  array(
 	'register'                   => 'Zarejestruj',
 	'remember'                   => 'Zapamiętaj mnie',
 	'returnToSignIn'             => 'Wróć do logowania',
+	'save'                       => 'Zapisz',
 	'send'                       => 'Wyślij',
 	'sendReminder'               => 'Wyślij przypomnienie',
 	'sorry'                      => 'Wybacz!',

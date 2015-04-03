@@ -26,10 +26,11 @@ var Loading = {
         var destHtml = $(container);
         if (destHtml.length > 0) {
             var loading = $(me.loadingContainer);
+            console.log(me.loadingMinHeight + 'px');
             loading.css('top', destHtml.offset().top + 'px');
             loading.css('left', destHtml.offset().left + 'px');
             loading.css('width', destHtml.width() + 'px');
-            loading.css('height', me.loadingMinHeight + 'px');
+            loading.css('height', destHtml.height() + 'px');
         }
     },
     stop: function () {

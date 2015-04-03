@@ -6,12 +6,12 @@
                 <ul class="nav collapse">
                     @foreach($link['children'] as $link)
                         <li{{ (URL::full() ==  $link['url']) ? ' class="active"' : '' }}>
-                            <a href="{{ $link['url'] }}" title="@lang($link['title']) }}">@lang($link['title'])</a>
+                            <a href="{{ $link['url'] }}" title="@lang($link['title'])">@lang($link['title'])</a>
                         </li>
                     @endforeach
                 </ul>
             @else
-                <a href="{{ $link['url'] }}" title="@lang($link['title']) }}">@lang($link['title'])</a>
+                <a href="{{ $link['url'] }}" title="@lang($link['title'])">@lang($link['title'])</a>
             @endif
         </li>
     @endforeach

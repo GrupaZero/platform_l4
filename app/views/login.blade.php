@@ -47,5 +47,9 @@
         @if(App::bound('oauth'))
             @include('includes.socialLogin')
         @endif
+        <hr/>
+        <div class="text-center">
+            @lang('common.notAMember') <a href="{{ URL::route('register') }}"> @lang('common.register')</a>
+        </div>
     </div>
 @stop

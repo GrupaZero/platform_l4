@@ -52,4 +52,4 @@ Route::group(
 );
 
 App::make('user.menu')->addLink(URL::route('account'), 'user.my_account');
-App::make('user.menu')->addChild(['url' => URL::route('logout'), 'title' => 'common.logout'], URL::route('account'));
+//App::make('user.menu')->addChild(['url' => URL::route('logout'), 'title' => 'common.logout'], URL::route('account'));

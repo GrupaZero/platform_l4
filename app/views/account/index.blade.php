@@ -9,17 +9,21 @@
 @stop
 
 @section('content')
-        <h1 class="page-header">@lang('common.account')</h1>
+    <h1 class="page-header">@lang('user.my_account')</h1>
 
-        <h3>User</h3>
+    <h3>{{ $user->firstName }} {{ $user->lastName }}</h3>
 
-        <p>Login: {{ Auth::user()->email }}</p>
+    @if(App::bound('oauth') && strpos($user->email,'social_') !== false)
+        <p>@lang('common.accountConected')</p>
+    @else
+        <p><strong>@choice('common.email', 1):</strong> {{ $user->email }}</p>
+    @endif
 
-        <p>@lang('common.password'): {{ Auth::user()->password }}</p>
+    <a href="{{ URL::route('account.edit') }}" title="@lang('user.edit_account')" class="btn btn-primary">
+        @lang('user.edit_account')
+    </a>
 
-        <p>Remember token: {{ Auth::user()->rememberToken or'empty' }}</p>
-
-        <a href="{{ URL::route('logout') }}" title="@lang('common.logout') }}" class="btn btn-danger">
-            @lang('common.logout')
-        </a>
+    <a href="{{ URL::route('logout') }}" title="@lang('common.logout')" class="btn btn-danger">
+        @lang('common.logout')
+    </a>
 @stop

@@ -1,45 +1,49 @@
-@extends('layouts.default')
+@extends('layouts.sidebarLeft')
 
 @section('title')
     @lang('common.edit')
 @stop
 
+@section('sidebarLeft')
+    @include('account.menu', ['menu' => $menu])
+@stop
+
 @section('content')
     <h1 class="page-header">@lang('common.edit')</h1>
 
-    <div class="col-md-4 col-md-offset-4">
-        <form id="edit-account-form" action="#" method="post" class="form-horizontal" role="form">
-            <div class="form-group">
-                <label for="firstName">@lang('common.firstName')</label>
-                <input type="text" id="firstName" name="firstName" class="form-control" value="{{ Auth::user()->firstName }}">
-            </div>
-            <div class="form-group">
-                <label for="lastName">@lang('common.lastName')</label>
-                <input type="text" id="lastName" name="lastName" class="form-control" value="{{ Auth::user()->lastName }}">
-            </div>
-            <div class="form-group">
-                <label for="password">@lang('common.password')</label>
-                <input type="password" id="password" name="password" class="form-control">
-            </div>
-            <div class=" form-group">
-                <div class="col-md-4 col-md-offset-4">
-                    <button id="edit-account" type="submit" class="btn btn-default">@lang('common.edit')</button>
-                </div>
-            </div>
-        </form>
-    </div>
+   <div class="row">
+       <div class="col-md-4">
+           <form id="edit-account-form" action="#" method="post" role="form">
+               <div class="form-group">
+                   <label for="firstName">@lang('common.firstName')</label>
+                   <input type="text" id="firstName" name="firstName" class="form-control" value="{{ $user->firstName }}">
+               </div>
+               <div class="form-group">
+                   <label for="lastName">@lang('common.lastName')</label>
+                   <input type="text" id="lastName" name="lastName" class="form-control" value="{{ $user->lastName }}">
+               </div>
+               @if(strpos($user->email,'social_') == false)
+                   <div class="form-group">
+                       <label for="password">@lang('common.password')</label>
+                       <input type="password" id="password" name="password" class="form-control">
+                   </div>
+               @endif
+               <button id="edit-account" type="submit" class="btn btn-primary">@lang('common.save')</button>
+           </form>
+       </div>
+   </div>
 
     <script>
         $(function () {
             $('#edit-account').click(function (event) {
                 event.preventDefault();
-
+                Loading.start('body');
                 $.ajax({
-                    url: "/en/api/v1/account/1",
+                    url: "/en/api/v1/account/ <?php echo $user->id;?>",
                     data: $('#edit-account-form').serializeObject(),
                     type: 'PUT'
                 }).done(function () {
-                    console.log('done');
+                    Loading.stop();
                     $(this).addClass("done");
                 });
             });

@@ -29,9 +29,7 @@
                 <ul class="nav navbar-nav navbar-right user-nav">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/claudioguglieri/48.jpg"
-                                 alt="@claudioguglieri"
-                                 class="img-circle"> {{ Auth::user()->firstName }} {{ Auth::user()->lastName }}
+                            {{ Auth::user()->firstName }} {{ Auth::user()->lastName }}
                             <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
@@ -45,9 +43,9 @@
                                     <i class="fa fa-pencil pull-right"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">@lang('user.get_help') <i class="fa fa-question-circle pull-right"></i></a>
-                            </li>
+                            {{--<li>--}}
+                                {{--<a href="#">@lang('user.get_help') <i class="fa fa-question-circle pull-right"></i></a>--}}
+                            {{--</li>--}}
                             <li class="divider"></li>
                             <li>
                                 <a href="{{ URL::route('logout') }}">

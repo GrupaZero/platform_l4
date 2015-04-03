@@ -91,14 +91,20 @@ class UserController extends BaseController {
                 $user              = $this->userRepo->create($input);
                 if (!empty($user)) {
                     Auth::login($user);
-                    Mail::send( // welcome email
-                        'emails.auth.welcome',
-                        ['user' => $user],
-                        function ($message) use ($input) {
-                            $message->subject(Lang::get('emails.welcome.subject', ["siteName" => Config::get('gzero.siteName')]))
-                                ->to($input['email'], $input['firstName'] . ' ' . $input['lastName']);
-                        }
-                    );
+                    try {
+                        $subject = Lang::get('emails.welcome.subject', ['siteName' => Config::get('gzero.siteName')]);
+                        Mail::send( // welcome email
+                            'emails.auth.welcome',
+                            ['user' => $user],
+                            function ($message) use ($input, $subject) {
+                                $message->subject($subject)
+                                    ->to($input['email'], $input['firstName'] . ' ' . $input['lastName']);
+                            }
+                        );
+                    } catch (Swift_TransportException $e) {
+                        /**@TODO Better way to handle exceptions on production */
+                        Log::error('Unable to send welcome email: ' . $e->getMessage());
+                    }
                 }
                 return Redirect::intended('account');
             } else {
