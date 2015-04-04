@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "731ff1a10e527cfba1450ced9ffd5e49",
+    "hash": "544a736f7867377e556165ba84bcd3cb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -375,53 +375,6 @@
                 "laravel"
             ],
             "time": "2015-03-26 21:03:50"
-        },
-        {
-            "name": "gzero/billin",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/GrupaZero/billin.git",
-                "reference": "ae9f5b5e0f1ee17f20c4aeeeb1c72cd8faf5f770"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/billin/zipball/ae9f5b5e0f1ee17f20c4aeeeb1c72cd8faf5f770",
-                "reference": "ae9f5b5e0f1ee17f20c4aeeeb1c72cd8faf5f770",
-                "shasum": ""
-            },
-            "require": {
-                "gzero/core": "dev-master",
-                "gzero/entity": "dev-master",
-                "gzero/repository": "dev-master",
-                "illuminate/support": "4.2.*"
-            },
-            "require-dev": {
-                "mockery/mockery": "dev-master",
-                "phpunit/phpunit": "4.3.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Gzero\\": "src/Gzero"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adrian Skierniewski",
-                    "email": "adrian.skierniewski@gmail.com"
-                }
-            ],
-            "description": "Billin integration for GZERO CMS",
-            "keywords": [
-                "billin",
-                "gzero"
-            ],
-            "time": "2014-12-05 20:06:44"
         },
         {
             "name": "gzero/cms",
@@ -3705,7 +3658,6 @@
         "gzero/cms": 20,
         "gzero/admin": 20,
         "gzero/social": 20,
-        "gzero/billin": 20,
         "philo/laravel-translate": 20
     },
     "prefer-stable": false,
