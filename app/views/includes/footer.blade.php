@@ -8,7 +8,7 @@
     @show
     <script src="/js/common.js"></script>
     <script src="/js/jquery.metisMenu.js"></script>
-    <script>
+    <script type="text/javascript">
         $(function() {
             $(".nav-stacked").metisMenu({
                 toggle: false
@@ -17,4 +17,6 @@
             $(".nav-stacked li.active").parents('li').addClass('active').has('ul').children('ul').addClass('collapse in');
         });
     </script>
+    @section('footerScripts')
+    @show
 </div>

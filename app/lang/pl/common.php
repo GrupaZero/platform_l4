@@ -1,6 +1,6 @@
 <?php
 
-# modified at 03-04-2015 18:40
+# modified at 06-04-2015 16:34
 
 return  array(
 	'404Message'                 => 'Strona, której szukasz, mogła zostać usunięta, zmieniono jej nazwę lub jest tymczasowo
@@ -10,6 +10,7 @@ return  array(
 	'allRightsReserved'          => 'Wszelkie prawa zastrzeżone.',
 	'author'                     => 'Autor',
 	'backtoHomepage'             => 'Powrót do strony głównej',
+	'changesSavedMessage'        => 'Zmiany zostały zapisane!',
 	'contentsList'               => 'Lista Zawartości',
 	'edit'                       => 'Edytuj',
 	'email'                      => 'E-mail|Emaile',
@@ -20,6 +21,7 @@ return  array(
 	'forgotPasswordHint'         => 'Wpisz adres e-mail kt&oacute;rego użyłeś do stworzenia konta, a my prześlemy dalsze instrukcje.',
 	'incorrectLoginMessage'      => 'Nazwa użytkownika lub hasło są niewłaściwe. Spróbuj ponownie.',
 	'lastName'                   => 'Nazwisko',
+	'leaveBlank'                 => 'Pozostaw puste, jeśli nie chcesz zmieniać.',
 	'login'                      => 'Zaloguj',
 	'loginWith'                  => 'lub zaloguj się z',
 	'logout'                     => 'Wyloguj',
@@ -33,6 +35,7 @@ return  array(
 	'pageNotFound'               => 'Nie znaleziono strony',
 	'passReminder'               => 'Przypomnienie hasła',
 	'password'                   => 'Hasło',
+	'passwordChange'             => 'Zmień hasło',
 	'passwordRepeat'             => 'Powtórz hasło',
 	'passwordReset'              => 'Zresetuj hasło',
 	'path'                       => 'Ścieżka',

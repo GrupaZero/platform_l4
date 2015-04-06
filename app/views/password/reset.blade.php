@@ -28,7 +28,7 @@
                 @endif
             </div>
             <div class="form-group{{ $errors->first('password_confirmation') ? ' has-error' : '' }}">
-                <label class="control-label" for="password">@lang('common.passwordRepeat')</label>
+                <label class="control-label" for="passwordConfirmation">@lang('common.passwordRepeat')</label>
                 <input type="password" id="passwordConfirmation" name="password_confirmation" class="form-control"
                        placeholder="@lang('common.passwordRepeat')">
                 @if($errors->first('password_confirmation'))
