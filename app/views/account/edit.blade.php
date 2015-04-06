@@ -68,7 +68,7 @@
                 event.preventDefault();
                 Loading.start('body');
                 $.ajax({
-                    url: "/en/api/v1/account/ <?php echo $user->id;?>",
+                    url: "/<?php echo $lang->code;?>/api/v1/account/ <?php echo $user->id;?>",
                     data: $('#edit-account-form').serializeObject(),
                     type: 'PUT'
                 }).done(function (result) {
@@ -79,6 +79,8 @@
                         hideMessages();
                         clearFormValidationErrors();
                     } else {
+                        // clear previous errors
+                        clearFormValidationErrors();
                         $.each(result.errors, function (index, error) {
                             // set form errors
                             setFormValidationErrors(index, error);
