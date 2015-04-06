@@ -219,16 +219,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "dcce91553e2e056857f1ea844949e9a8a71b613d"
+                "reference": "c982fe62c44798c433229cb0425c61b487cc1883"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/dcce91553e2e056857f1ea844949e9a8a71b613d",
-                "reference": "dcce91553e2e056857f1ea844949e9a8a71b613d",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/c982fe62c44798c433229cb0425c61b487cc1883",
+                "reference": "c982fe62c44798c433229cb0425c61b487cc1883",
                 "shasum": ""
             },
             "require": {
@@ -273,7 +273,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2015-02-17 15:50:31"
+            "time": "2015-03-30 15:26:59"
         },
         {
             "name": "gzero/admin",
@@ -382,12 +382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "2f19096f2ceae990f4b090f50fdc10fbfb8fe020"
+                "reference": "fcf76088dc91932e39748409532fac1bdb09246a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/2f19096f2ceae990f4b090f50fdc10fbfb8fe020",
-                "reference": "2f19096f2ceae990f4b090f50fdc10fbfb8fe020",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/fcf76088dc91932e39748409532fac1bdb09246a",
+                "reference": "fcf76088dc91932e39748409532fac1bdb09246a",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-04-03 19:50:54"
+            "time": "2015-04-06 17:33:00"
         },
         {
             "name": "gzero/eloquent-tree",
@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/social.git",
-                "reference": "a805fe4fb23c514476b4f6673a1abbaea24dea14"
+                "reference": "40db550f0bd6c7393de375561d5cfe0fed6c0daf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/social/zipball/a805fe4fb23c514476b4f6673a1abbaea24dea14",
-                "reference": "a805fe4fb23c514476b4f6673a1abbaea24dea14",
+                "url": "https://api.github.com/repos/GrupaZero/social/zipball/40db550f0bd6c7393de375561d5cfe0fed6c0daf",
+                "reference": "40db550f0bd6c7393de375561d5cfe0fed6c0daf",
                 "shasum": ""
             },
             "require": {
@@ -588,7 +588,7 @@
                 "plugin",
                 "social"
             ],
-            "time": "2015-04-03 19:52:18"
+            "time": "2015-04-06 14:11:12"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -1046,12 +1046,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "875cfb91e1ffb9a7fda4dddfdbc7ed529e52164a"
+                "reference": "a54d460500aeaf653cabc1059cc33d07e7b544ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/875cfb91e1ffb9a7fda4dddfdbc7ed529e52164a",
-                "reference": "875cfb91e1ffb9a7fda4dddfdbc7ed529e52164a",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a54d460500aeaf653cabc1059cc33d07e7b544ad",
+                "reference": "a54d460500aeaf653cabc1059cc33d07e7b544ad",
                 "shasum": ""
             },
             "require": {
@@ -1111,7 +1111,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-03-31 21:43:29"
+            "time": "2015-04-04 10:50:52"
         },
         {
             "name": "nesbot/carbon",
@@ -3547,12 +3547,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "76b0aa46eb697eec831c4ba13dbdcca92fca86a9"
+                "reference": "90811d8e4e215e62944e63c885ebd8112e646331"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/76b0aa46eb697eec831c4ba13dbdcca92fca86a9",
-                "reference": "76b0aa46eb697eec831c4ba13dbdcca92fca86a9",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/90811d8e4e215e62944e63c885ebd8112e646331",
+                "reference": "90811d8e4e215e62944e63c885ebd8112e646331",
                 "shasum": ""
             },
             "require": {
@@ -3598,7 +3598,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2015-04-01 13:08:53"
+            "time": "2015-04-05 07:48:59"
         },
         {
             "name": "symfony/yaml",
