@@ -82,6 +82,10 @@ class UserController extends BaseController {
 
     public function postRegister()
     {
+        if (Input::get('accountIntent')) {
+            return Redirect::to('home'); // Preventing spammer registration
+        }
+
         try {
             $input        = $this->validator->validate('register');
             $existingUser = $this->userRepo->retrieveByEmail($input['email']);

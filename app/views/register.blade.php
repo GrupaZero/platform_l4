@@ -44,9 +44,10 @@
                     <p class="help-block">{{ $errors->first('password') }}</p>
                 @endif
             </div>
-            <div class=" form-group">
+            <div class="form-group">
                 <button id="edit-account" type="submit" class="btn btn-primary btn-lg btn-block">@lang('common.register')</button>
             </div>
+            <input id="accountIntent" type="text" name="accountIntent" class="hidden">
         </form>
         @if(App::bound('oauth'))
             @include('includes.socialLogin')
