@@ -139,12 +139,12 @@
             "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mtdowling/ClassPreloader.git",
+                "url": "https://github.com/ClassPreloader/ClassPreloader.git",
                 "reference": "2c9f3bcbab329570c57339895bd11b5dd3b00877"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mtdowling/ClassPreloader/zipball/2c9f3bcbab329570c57339895bd11b5dd3b00877",
+                "url": "https://api.github.com/repos/ClassPreloader/ClassPreloader/zipball/2c9f3bcbab329570c57339895bd11b5dd3b00877",
                 "reference": "2c9f3bcbab329570c57339895bd11b5dd3b00877",
                 "shasum": ""
             },
@@ -281,12 +281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "99cbfe76c941dd1c6d300772ba091a7803333081"
+                "reference": "cd063989ad9ac92ac3fc20ebcab4ef05d6c70799"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/99cbfe76c941dd1c6d300772ba091a7803333081",
-                "reference": "99cbfe76c941dd1c6d300772ba091a7803333081",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/cd063989ad9ac92ac3fc20ebcab4ef05d6c70799",
+                "reference": "cd063989ad9ac92ac3fc20ebcab4ef05d6c70799",
                 "shasum": ""
             },
             "require": {
@@ -319,7 +319,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2015-04-22 11:56:51"
+            "time": "2015-05-01 18:26:12"
         },
         {
             "name": "gzero/api",
@@ -327,12 +327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "1442c6fdd5eacd67cd3e8c5c7aefa2c730b2d1e0"
+                "reference": "19137748c55815f393e54658193cb52a9457bc27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/1442c6fdd5eacd67cd3e8c5c7aefa2c730b2d1e0",
-                "reference": "1442c6fdd5eacd67cd3e8c5c7aefa2c730b2d1e0",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/19137748c55815f393e54658193cb52a9457bc27",
+                "reference": "19137748c55815f393e54658193cb52a9457bc27",
                 "shasum": ""
             },
             "require": {
@@ -374,7 +374,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2015-03-26 21:03:50"
+            "time": "2015-04-27 19:47:43"
         },
         {
             "name": "gzero/cms",
@@ -382,12 +382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "fcf76088dc91932e39748409532fac1bdb09246a"
+                "reference": "e93e4411942f50ab92f5ff3085b3a63ad7824568"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/fcf76088dc91932e39748409532fac1bdb09246a",
-                "reference": "fcf76088dc91932e39748409532fac1bdb09246a",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/e93e4411942f50ab92f5ff3085b3a63ad7824568",
+                "reference": "e93e4411942f50ab92f5ff3085b3a63ad7824568",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-04-06 17:33:00"
+            "time": "2015-05-01 12:58:57"
         },
         {
             "name": "gzero/eloquent-tree",
@@ -1046,12 +1046,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "03fc68ca1419c7e16050e96c15c7f7e1f2fc26ff"
+                "reference": "1065abe1f7fcc0546c25f0730ce2ce290360898d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/03fc68ca1419c7e16050e96c15c7f7e1f2fc26ff",
-                "reference": "03fc68ca1419c7e16050e96c15c7f7e1f2fc26ff",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1065abe1f7fcc0546c25f0730ce2ce290360898d",
+                "reference": "1065abe1f7fcc0546c25f0730ce2ce290360898d",
                 "shasum": ""
             },
             "require": {
@@ -1065,6 +1065,7 @@
                 "aws/aws-sdk-php": "~2.4, >2.4.8",
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
+                "php-console/php-console": "~3.1, >3.1.2",
                 "phpunit/phpunit": "~4.0",
                 "raven/raven": "~0.5",
                 "ruflin/elastica": "0.90.*",
@@ -1077,6 +1078,7 @@
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
                 "raven/raven": "Allow sending log messages to a Sentry server",
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
                 "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
@@ -1111,7 +1113,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-04-15 18:23:25"
+            "time": "2015-04-30 17:29:05"
         },
         {
             "name": "nesbot/carbon",
@@ -1210,12 +1212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tchwork/utf8.git",
-                "reference": "ffa082111aa3cb23cf2479a17e6785ace91da982"
+                "reference": "65b19607048351f767a034d4cc709db8b136d2c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tchwork/utf8/zipball/ffa082111aa3cb23cf2479a17e6785ace91da982",
-                "reference": "ffa082111aa3cb23cf2479a17e6785ace91da982",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/65b19607048351f767a034d4cc709db8b136d2c5",
+                "reference": "65b19607048351f767a034d4cc709db8b136d2c5",
                 "shasum": ""
             },
             "require": {
@@ -1253,7 +1255,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2015-01-12 08:05:15"
+            "time": "2015-04-26 09:48:22"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -1874,16 +1876,15 @@
         {
             "name": "symfony/event-dispatcher",
             "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "15bbd5beed94cca89ffcce18fb76eeac38937240"
+                "reference": "44bde9645703fe92da9f5dd2755298f7c2c6fa92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/15bbd5beed94cca89ffcce18fb76eeac38937240",
-                "reference": "15bbd5beed94cca89ffcce18fb76eeac38937240",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/44bde9645703fe92da9f5dd2755298f7c2c6fa92",
+                "reference": "44bde9645703fe92da9f5dd2755298f7c2c6fa92",
                 "shasum": ""
             },
             "require": {
@@ -1908,7 +1909,7 @@
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\EventDispatcher\\": ""
                 }
             },
@@ -1928,21 +1929,20 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-10 08:56:33"
+            "time": "2015-04-24 07:03:44"
         },
         {
             "name": "symfony/filesystem",
             "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "59a58a369bafa7c2ded4e0b08d726482be7a7e6b"
+                "reference": "41b7d35d812653a54fd931a6c8cf139767a95abb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/59a58a369bafa7c2ded4e0b08d726482be7a7e6b",
-                "reference": "59a58a369bafa7c2ded4e0b08d726482be7a7e6b",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/41b7d35d812653a54fd931a6c8cf139767a95abb",
+                "reference": "41b7d35d812653a54fd931a6c8cf139767a95abb",
                 "shasum": ""
             },
             "require": {
@@ -1958,7 +1958,7 @@
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Filesystem\\": ""
                 }
             },
@@ -1978,7 +1978,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-10 08:56:33"
+            "time": "2015-04-24 07:03:44"
         },
         {
             "name": "symfony/finder",
@@ -3492,16 +3492,15 @@
         {
             "name": "symfony/class-loader",
             "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/ClassLoader",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ClassLoader.git",
-                "reference": "52102a05bfee76df3f66db6de2e48cc61f479427"
+                "reference": "d5b42e690eb4c1d93cc7acc2d07ad7eba34f03dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/52102a05bfee76df3f66db6de2e48cc61f479427",
-                "reference": "52102a05bfee76df3f66db6de2e48cc61f479427",
+                "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/d5b42e690eb4c1d93cc7acc2d07ad7eba34f03dd",
+                "reference": "d5b42e690eb4c1d93cc7acc2d07ad7eba34f03dd",
                 "shasum": ""
             },
             "require": {
@@ -3518,7 +3517,7 @@
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\ClassLoader\\": ""
                 }
             },
@@ -3538,21 +3537,20 @@
             ],
             "description": "Symfony ClassLoader Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-10 08:56:33"
+            "time": "2015-04-24 07:03:44"
         },
         {
             "name": "symfony/var-dumper",
             "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/VarDumper",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "283ce253795289953992c696b966ba484054a603"
+                "reference": "2bb458cc26efc9fa6ae88bcbcbd0525d4ecf6672"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/283ce253795289953992c696b966ba484054a603",
-                "reference": "283ce253795289953992c696b966ba484054a603",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2bb458cc26efc9fa6ae88bcbcbd0525d4ecf6672",
+                "reference": "2bb458cc26efc9fa6ae88bcbcbd0525d4ecf6672",
                 "shasum": ""
             },
             "require": {
@@ -3574,7 +3572,7 @@
                 "files": [
                     "Resources/functions/dump.php"
                 ],
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\VarDumper\\": ""
                 }
             },
@@ -3598,21 +3596,20 @@
                 "debug",
                 "dump"
             ],
-            "time": "2015-04-21 13:00:43"
+            "time": "2015-04-24 07:03:44"
         },
         {
             "name": "symfony/yaml",
             "version": "2.8.x-dev",
-            "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "fdded56dde4ca9efce6322887bf5eaa7bb0aae3e"
+                "reference": "4ededb1d00dc2c65fcd16ae3dafc785f92b3f95f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/fdded56dde4ca9efce6322887bf5eaa7bb0aae3e",
-                "reference": "fdded56dde4ca9efce6322887bf5eaa7bb0aae3e",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4ededb1d00dc2c65fcd16ae3dafc785f92b3f95f",
+                "reference": "4ededb1d00dc2c65fcd16ae3dafc785f92b3f95f",
                 "shasum": ""
             },
             "require": {
@@ -3628,7 +3625,7 @@
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
                 }
             },
@@ -3648,7 +3645,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-10 08:56:33"
+            "time": "2015-04-24 07:03:44"
         }
     ],
     "aliases": [],
