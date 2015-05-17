@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "544a736f7867377e556165ba84bcd3cb",
+    "hash": "bd95cf0a022a558c1b595eba5df85e55",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -327,12 +327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "b2bc4d0cd7353205df237fc1a7aa5e6f3e69effa"
+                "reference": "20a6cdd5c690f2a24ec65c544c94b9c6b1c3002d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/b2bc4d0cd7353205df237fc1a7aa5e6f3e69effa",
-                "reference": "b2bc4d0cd7353205df237fc1a7aa5e6f3e69effa",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/20a6cdd5c690f2a24ec65c544c94b9c6b1c3002d",
+                "reference": "20a6cdd5c690f2a24ec65c544c94b9c6b1c3002d",
                 "shasum": ""
             },
             "require": {
@@ -376,7 +376,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2015-05-14 09:23:53"
+            "time": "2015-05-16 12:21:21"
         },
         {
             "name": "gzero/cms",
@@ -591,6 +591,63 @@
                 "social"
             ],
             "time": "2015-04-06 14:11:12"
+        },
+        {
+            "name": "gzero/vanilla-integration",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrupaZero/vanilla-integration.git",
+                "reference": "5e52dbe4fb76997baa7b2bcc122da5989e1f36fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrupaZero/vanilla-integration/zipball/5e52dbe4fb76997baa7b2bcc122da5989e1f36fd",
+                "reference": "5e52dbe4fb76997baa7b2bcc122da5989e1f36fd",
+                "shasum": ""
+            },
+            "require": {
+                "gzero/core": "dev-master",
+                "illuminate/auth": "4.2.*",
+                "illuminate/config": "4.2.*",
+                "illuminate/routing": "4.2.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "1.4.0",
+                "mockery/mockery": "0.9.*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "4.3.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [],
+                "files": [
+                    "src/libs/functions.jsconnect.php"
+                ],
+                "psr-4": {
+                    "Gzero\\": "src/Gzero"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Skierniewski",
+                    "email": "adrian.skierniewski@gmail.com"
+                }
+            ],
+            "description": "Gzero Vanilla Integration",
+            "keywords": [
+                "cms",
+                "integration",
+                "laravel",
+                "vanilla forum"
+            ],
+            "time": "2015-05-17 07:22:41"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -3656,6 +3713,7 @@
         "gzero/cms": 20,
         "gzero/admin": 20,
         "gzero/social": 20,
+        "gzero/vanilla-integration": 20,
         "philo/laravel-translate": 20
     },
     "prefer-stable": false,

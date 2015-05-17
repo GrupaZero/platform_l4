@@ -13,7 +13,8 @@
         "gzero/api": "dev-master",
         "gzero/cms": "dev-master",
         "gzero/admin": "dev-master",
-        "gzero/social": "dev-master"
+        "gzero/social": "dev-master",
+        "gzero/vanilla-integration": "dev-master"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "1.11.*",
