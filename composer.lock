@@ -598,12 +598,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/vanilla-integration.git",
-                "reference": "5e52dbe4fb76997baa7b2bcc122da5989e1f36fd"
+                "reference": "4b6d89d2f730c3edcd3f2e9cbba58da5e02ebfb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/vanilla-integration/zipball/5e52dbe4fb76997baa7b2bcc122da5989e1f36fd",
-                "reference": "5e52dbe4fb76997baa7b2bcc122da5989e1f36fd",
+                "url": "https://api.github.com/repos/GrupaZero/vanilla-integration/zipball/4b6d89d2f730c3edcd3f2e9cbba58da5e02ebfb8",
+                "reference": "4b6d89d2f730c3edcd3f2e9cbba58da5e02ebfb8",
                 "shasum": ""
             },
             "require": {
@@ -647,7 +647,7 @@
                 "laravel",
                 "vanilla forum"
             ],
-            "time": "2015-05-17 07:22:41"
+            "time": "2015-05-17 07:59:25"
         },
         {
             "name": "ircmaxell/password-compat",
