@@ -281,12 +281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/admin.git",
-                "reference": "a5cc596aae88572c13f562eca378a1dafbf1069a"
+                "reference": "e54373bb922f474c8ed2bd28671ec649227457c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/a5cc596aae88572c13f562eca378a1dafbf1069a",
-                "reference": "a5cc596aae88572c13f562eca378a1dafbf1069a",
+                "url": "https://api.github.com/repos/GrupaZero/admin/zipball/e54373bb922f474c8ed2bd28671ec649227457c4",
+                "reference": "e54373bb922f474c8ed2bd28671ec649227457c4",
                 "shasum": ""
             },
             "require": {
@@ -319,7 +319,7 @@
                 "gzero cms",
                 "laravel"
             ],
-            "time": "2015-05-14 14:17:01"
+            "time": "2015-05-17 09:58:37"
         },
         {
             "name": "gzero/api",
@@ -327,12 +327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/api.git",
-                "reference": "20a6cdd5c690f2a24ec65c544c94b9c6b1c3002d"
+                "reference": "093ae976dab3317b9b0a284877dba8e1d22b02e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/api/zipball/20a6cdd5c690f2a24ec65c544c94b9c6b1c3002d",
-                "reference": "20a6cdd5c690f2a24ec65c544c94b9c6b1c3002d",
+                "url": "https://api.github.com/repos/GrupaZero/api/zipball/093ae976dab3317b9b0a284877dba8e1d22b02e5",
+                "reference": "093ae976dab3317b9b0a284877dba8e1d22b02e5",
                 "shasum": ""
             },
             "require": {
@@ -376,7 +376,7 @@
                 "cms",
                 "laravel"
             ],
-            "time": "2015-05-16 12:21:21"
+            "time": "2015-05-17 09:58:18"
         },
         {
             "name": "gzero/cms",
@@ -384,12 +384,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrupaZero/cms.git",
-                "reference": "6be0590e2ed5433e69139ae9de8d0f0c710d0d27"
+                "reference": "c425b7656200a907453b0dc96ebbc71d41aca606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/6be0590e2ed5433e69139ae9de8d0f0c710d0d27",
-                "reference": "6be0590e2ed5433e69139ae9de8d0f0c710d0d27",
+                "url": "https://api.github.com/repos/GrupaZero/cms/zipball/c425b7656200a907453b0dc96ebbc71d41aca606",
+                "reference": "c425b7656200a907453b0dc96ebbc71d41aca606",
                 "shasum": ""
             },
             "require": {
@@ -438,7 +438,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-05-17 09:47:25"
+            "time": "2015-05-17 09:57:56"
         },
         {
             "name": "gzero/eloquent-tree",
