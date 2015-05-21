@@ -12,7 +12,8 @@
 */
 
 App::before(
-    function ($request) {;
+    function ($request) {
+        ;
         if (!preg_match('/^api/', Request::getHost()) && !in_array(Request::segment(1), ['admin', '_debugbar'], true)) {
             if (Config::get('gzero.multilang.enabled') and !Config::get('gzero.multilang.detected')) {
                 return Redirect::home();
@@ -48,6 +49,14 @@ Route::filter(
     }
 );
 
+Route::filter(
+    'restrict',
+    function () {
+        if (!Auth::user() || !Auth::user()->isAdmin) {
+            return Redirect::route('home');
+        }
+    }
+);
 
 Route::filter(
     'auth.basic',
